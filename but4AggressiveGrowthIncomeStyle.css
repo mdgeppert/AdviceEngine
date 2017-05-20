@@ -1,0 +1,41 @@
+.displayNone{display: none;}
+
+#aGILinksSection{margin-top: 47vh;; margin-left: 35vw; display: none; overflow: auto; max-height: 47vh; height: 55vh;padding-right: 2vw;}
+
+#aGILinks{list-style-type: none;}
+
+#aGILinks li{padding-bottom: 8px;}
+
+#aGITree{margin-left: 9vw; margin-top: -47vh;}
+
+.aGIMessage{margin-left: 2vw; display: none;}
+
+#aGIChooseApproach{display: none;}
+
+#aGISelectLinkMsg{margin-left: 2vw; }
+
+#aGIL12{display: none;}
+
+#aGIL13{display: none;}
+
+::-webkit-scrollbar{width:1px; }
+
+.aGIPane{height: 41vh; width: 23vw; border: 1px solid #000000; background: #F2F3EE;}
+
+.modal{display: none; position: fixed; z-index: 1; margin-left: 37%; top: 10vh; background: yellow;}
+
+#aGIModalBanner{background: #AABBCC; font-weight: bold; height: 2.5vh;}
+
+#aGIPaneTitle{margin-left: .5vw; margin-top: .5vh; position: absolute;}
+
+.modalLinks{margin-left: 2vw; list-style-type: none;}
+
+.modalLinks li{padding-bottom: .75vh;}
+
+.modalTitle{margin-left: -2vw;}
+
+#cInfo{margin-left: 2vw;}
+
+#contInfo{margin-left: 4vw;}
+
+.aGIClose{margin-left: 10vw;}

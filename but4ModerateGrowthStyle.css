@@ -1,0 +1,13 @@
+.displayNone{display: none;}
+
+#mGLinksSection{margin-left: 35vw; margin-top: 3vh; display: none; overflow: auto; max-height: 42vh; height: 55vh;padding-right: 2vw;}
+
+#mGLinks{list-style-type: none;}
+
+#mGLinks li{padding-bottom: 8px;}
+
+#mGTree{display: none; margin-top: -41.5vh; margin-left: 10vw;}
+
+.mGMessage{margin-left: 2vw; display: none;}
+
+#mGSelectLinkMsg{margin-left: 2vw; }

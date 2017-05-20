@@ -1,0 +1,47 @@
+#aggressiveIncomeSection{margin-left: 23vw; margin-top: 4vh; display: none;}
+
+#aggressiveIncomeLinksSection{margin-left: 35vw; display: none; position: absolute;}
+
+#aggressiveDiscretionaryAdvisoryPortfoliosTitle{margin-top: 2vh;}
+
+#aggressiveApproachChoicesLinks{list-style-type: none;}
+
+#aggIncApproachTactical{list-style-type: none;}
+
+#aggIncSelectLinkMsg{display: none; margin-left: 2vw;}
+
+#aggressivePortfolioSize{display: none;}
+
+#aggIncDesiredInvestmentVehicle{display: none;}
+
+#aggIncAcctMgr{display: none;}
+
+#aggEndPassage{display: none; margin-left: 2vw;}
+
+#aggEndPassage2{display: none; margin-left: 2vw;}
+
+#aggEndPassage3{display: none; margin-left: 2vw;}
+
+#agg500EndMessage{display: none; margin-left: 2vw;}
+
+#tacticalMessage1{display: none; margin-left: 2vw;}
+
+#tacticalMessage1Ext{display: none; margin-left: 2vw;}
+
+#aggTacticalAcctSize{display: none;}
+
+#tacticalMessage2{display: none; margin-left: 2vw;}
+
+#tacticalMessage3{display: none; margin-left: 2vw;}
+
+#tacticalMessage4{display: none; margin-left: 2vw;}
+
+#aggIncTacticalDesiredInvestmentVehicle{display: none;}
+
+#aggGSelectLinkMsg{margin-left: 2vw; }
+
+#aggressiveDiscretionaryAdvisoryPortfoliosTitle{margin-top: 4vh; position: absolute;}
+
+#aggDiscAdvPortLinks{margin-top: 7vh;}
+
+#aggDiscAdvPortLinks li{margin-top: .75vh;}

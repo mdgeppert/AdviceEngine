@@ -1,0 +1,2762 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recommendation Options</title>
+<link href="but4Style.css" rel="stylesheet" type="text/css"/>
+<link href="but4AggressiveIncomeStyle.css" rel="stylesheet" type="text/css"/>
+<link href="but4ConservativeGrowthStyle.css" rel="stylesheet" type="text/css"/>
+<link href="but4ModerateGrowthStyle.css" rel="stylesheet" type="text/css"/>
+<link href="but4AggressiveGrowthStyle.css" rel="stylesheet" type="text/css"/>
+<link href="but4ConservativeGrowthIncomeStyle.css" rel="stylesheet" type="text/css"/>
+<link href="but4moderateGrowthIncomeStyle.css" rel="stylesheet" type="text/css"/>
+<link href="but4AggressiveGrowthIncomeStyle.css" rel="stylesheet" type="text/css"/>
+<link href="/pcg/technology/smartstation_apps/hidden/design/fonts/HCo_fonts.css" rel="stylesheet" type="text/css">
+<link href="/pcg/technology/smartstation_apps/hidden/design/ss_site.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="/pcg/technology/smartstation_apps/hidden/design/vfs8rzg-d.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="but4Script.js" type="text/javascript"></script>
+<script src="but4ConservativeIncomeScript.js" type="text/javascript"></script>
+<script src="but4ModerateIncomeScript.js" type="text/javascript"></script>
+<script src="but4AggressiveIncomeScript.js" type="text/javascript"></script>
+<script src="but4ConservativeGrowthScript.js" type="text/javascript"></script>
+<script src="but4ModerateGrowthScript.js" type="text/javascript"></script>
+<script src="but4AggressiveGrowthScript.js" type="text/javascript"></script>
+<script src="but4ConservativeGrowthIncomeScript.js" type="text/javascript"></script>
+<script src="but4ModerateGrowthIncomeScript.js" type="text/javascript"></script>
+<script src="but4AggressiveGrowthIncomeScript.js" type="text/javascript"></script>
+<script src="aGIModalScripts.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<!-- Master Row -->
+<div class="col-sm-12">
+<!-- Master Row Column -->
+<table id="master">
+<tr>
+  <div id="banner"> <span id="bannerText">Advice Engine</span> </div>
+  
+  <!------------------------------------Main Menu Radio Buttons----------------------------------------------->
+  
+  <div id="radioBlock" class="col-md-11">
+  <section class="masterRadio">
+    <h1>Select a Recommendation Option</h1>
+    <h4>Click the button beside the appropriate Asset Allocation.</h4>
+    <form action="">
+      <ul class="mainMenu">
+        <li class="radioLeft">
+          <input type="radio" onClick="showConservativeIncome();" name="recommendation" id="conservativeIncomeButton"/>
+          Conservative Income</li>
+        <li class="columnSpacer"></li>
+        <li class="radioCenter">
+          <input class="radioMiddle" type="radio" name="recommendation" onclick="showConservativeGrowth();" id="conservativeGrowthButton"/>
+          Conservative Growth</li>
+        <li class="columnSpacer"></li>
+        <li class="radioRight">
+          <input type="radio" name="recommendation" onclick="showConservativeGI();" id="Conservative_Growth_and_Income"/>
+          Conservative Growth and Income</li>
+      </ul>
+      <ul class="mainMenu">
+        <li class="radioLeft">
+          <input type="radio" name="recommendation" onclick="showModerateIncome();" id="moderateIncomeButton"/>
+          Moderate Income</li>
+        <li class="columnSpacer"></li>
+        <li class="radioCenter">
+          <input class="radioMiddle" type="radio" name="recommendation" onclick="showModerateGrowth()" id="Moderate_Growth"/>
+          Moderate Growth</li>
+        <li class="columnSpacer"></li>
+        <li class="radioRight">
+          <input  type="radio" name="recommendation" onclick="showModerateGrowthIncome()" id="Moderate_Growth_and_Income"/>
+          Moderate Growth and Income</li>
+      </ul>
+      <ul class="mainMenu">
+        <li class="radioLeft">
+          <input type="radio" name="recommendation" onclick="aggressiveIncomeOne();" id="Aggressive_Income"/>
+          Aggressive Income</li>
+        <li class="columnSpacer"></li>
+        <li class="radioCenter">
+          <input class="radioMiddle" type="radio" name="recommendation" onclick="showAggressiveGrowth();" id="Aggressive_Growth"/>
+          Aggressive Growth</li>
+        <li class="columnSpacer"></li>
+        <li class="radioRight">
+          <input type="radio" name="recommendation" onclick="showAggressiveGrowthIncome();" id="Aggressive_Growth_and_Income"/>
+          Aggressive Growth and Income</li>
+      </ul>
+    </form>
+  </section>
+  <!--------------------------------End Main Menu Radio Buttons---------------------------------------------->
+  <table id="buttons"class="col-md-4">
+    <tr>
+      <td><form action="https://my.advisor-connection.com/infomax/pcg/home.aspx?srcApp=teamworks">
+          <input class="navButton" id="goHome" type="submit" value="InfoMax Home"/>
+        </form></td>
+      <td><form action="but4.html">
+          <input class="navButton" id="startOver" type="submit" value="Start Over"/>
+        </form></td>
+      <td><form action="index.html">
+          <input class="navButton" id="aEHome" type="submit" value="Advice Engine Home"/>
+        </form></td>
+		</tr>
+  </table>
+  <!---------------------------------------Initial Links and Info-------------------------------------------------->
+  <section id="sectionOne" class="col-md-11">
+    <div id="discretionaryAdvisoryPortfolios" class="col-md-2"> <strong id="diaTitle">Discretionary Advisory Portfolios</strong>
+      <ul id="menuList1">
+        <li class="listItem1"><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/pcg/products/advisory/separateaccounts/allocationadvisors/default.aspx','name','width=1600vw height=800vh')">Allocation Advisors</a></li>
+        <li class="listItem1"><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/pcg/products/advisory/separateaccounts/compass/default.aspx','name','width=1600vw height=800vh')">Wells Fargo Compass</a></li>
+        <li class="listItem1"><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/pcg/products/advisory/separateaccounts/dma/default.aspx','name','width=1600vw height=800vh')">DMA</a></li>
+        <li class="listItem1"><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/pcg/products/advisory/mfadvisory/fundsource/default.aspx','name','width=1600vw height=800vh')">Fund Source</a></li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <p id="clause1">For more information click on the
+        product name and<br> you will be taken
+        to the product's home page.</p>
+      <i id="clause2">Exchange traded funds (ETF) mutual funds and Unit<br>
+      Investment Trusts (UIT) in our advisory programs are<br>
+      available by prospectus only.  Please consider the<br>
+      investment objectives, risk, charges and expenses<br>
+      carefully before investing.  The prospectuses, which<br>
+      contain this and other information, can be obtained by<br>
+      calling the ETF/UIT sponsor or mutual fund wholesaler.<br>
+      You and your client should read it carefully before<br>
+      investing.</i> <i id="clause3">Advisory programs are not designed for excessively<br>
+      traded or inactive accounts and may not be suitable<br>
+      for all investors. Please carefully review the Wells<br>
+      Fargo Advisors advisory disclosure document for a full<br>
+      description of our services. The minimum account size<br>
+      for these programs is between $25,000 and<br>
+      $2,000,000.</i></div>
+  </section>
+  <!---------------------------------------End Initial Links and Info--------------------------------------------------> 
+
+  <!----------------------------------Conservative Income Section------------------------------------>
+  <section class="master">
+  <section id="sectionConservativeIncome"> <strong id="chooseApproachText">Choose an Approach</strong>
+    <form action="">
+      <ul id="chooseApproachRadio">
+        <li>
+          <input type="radio" name="choiceType" id="strategic" onclick="consIncStrategic();" value="strategic">
+          <span id="strategicText">Strategic</span>
+        </li>
+        <li>
+          <input type="radio" id="tactical" name="choiceType" onclick="consIncTactical();" value="tactical">
+          <span id="tacticalName">Tactical</span>
+        </li>
+      </ul>
+    </form>
+  </section>
+  <section id="conservativeIncomeLinks"> <strong id="dAP">Discretionary Advisory Portfolios</strong>
+    <ul id="chooseApproachConservativeIncome">
+      <li><a id="cia1" href="https://my.advisor-connection.com/infomax/PCG/research/wachovia_compass/newbuyersheets/ecinewbuysheet.xls">Alloc. Advisors: Compass ETF Conservative Income</a></li>
+      <li><a id="cia2" href="javascript:void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/dma/research/optimalblends/conservativeincome/ci500.aspx','n','width=1600vw height=800vh')">DMA Conservative Income Optimal Blend ($500,000)</a></li>
+      <li><a id="cia3" href="javascript:void window.open('https://my.advisor-connection.com/infomax/pcg/products/advisory/mfadvisory/fundsource/research/optimalblends/standardv3/conservativeinc.aspx','n','width=1600vw height=800vh')">FundSource Optimal Blend Conservative Income</a></li>
+      <li><a id="cia4" href="javascript:void window.open('https://my.advisor-connection.com/infomax/pcg/products/advisory/mfadvisory/fundsource/research/optimalblends/taxmanagedv3/conservativeinc.aspx','n','width=1600vw height=800vh')">FundSource Tax-Managed Conservative Income</a></li>
+      <li><a id="cia5" href="javascript:void window.open('https://my.advisor-connection.com/infomax/PCG/Products/Advisory/mfadvisory/fundsource/research/optimalblends/pathways/conservativeinc.aspx','n','width=1600vw height=800vh')">Pathways Conservative Income</a></li>
+    </ul>
+    <p id="showOnStrategic">Strategic asset allocation uses assumptions<br>
+      based on long-term trends and expectations<br>
+      for the intermediate to distant future (7-10 years).</p>
+    <p id="showOnStrategic2">You have selected a Conservative Income<br>
+      portfolio over $500K that uses strategic asset<br>
+      allocation and is managed by a third party.<br>
+      Pathways best meets these criteria.<br>
+      Select the link above to learn more about this model.</p>
+    
+    <p id="showOnStrategic3">You have selected a Conservative Income<br>
+      portfolio over $500K that uses strategic asset<br>
+      allocation and invests in mutual funds and<br>
+      individual securities.  DMA best meets these<br>
+      criteria. Select a link above to learn more<br>
+      about the DMA model and he corresponding<br>
+      minimums.</p>
+    <p id="showOnStrategic4">You have selected a Conservative Income<br>
+      portfolio over $500K that uses strategic asset<br>
+      allocation and is managed by Wells Fargo<br>
+      Advisors. FundShare best meets these criteria. Select a<br>
+      link above to learn more about this model.</p>
+    <p id="showOnTactical1">Sometimes we recognize the need for short-<br>
+      term adjustments to these models, to reflect<br>
+      our current thinking about near-term risks and<br>
+      opportunities -- and we make these<br>
+      adjustments on an ad hoc or as-needed basis.<br>
+      This process is often referred to as tactical<br>
+      asset allocation, and the adjustments are<br>
+      called tilts.</p>
+    <p id="showOnTactical2">You have selected a Conservative Income<br>
+      portfolio that uses tactical asset allocation.<br>
+      Compass ETF Advantage best meets these<br>
+      criteria.  The minimum for this portfolio is<br>
+      $50,000. Select the link above to learn more<br>
+      about this model.</p>
+    <p id="selectLink">Select a link above to learn more about the portfolio.</p>
+    <p id="showOnTactical3">If you would like to change your criteria, please click "start over." </p>
+  </section>
+  
+  <!------------------------Conservative Income question tree--------------------------->
+  
+  <section id="conservativeIncomeOptions">
+    <div id="conservativePortfolioSize">What is the account size?
+      <form action="">
+        <ul id="accountSizeRadio">
+          <li>
+            <input type="radio" name="acctSize" onclick="size25to500k();" id="dummy">
+            <span id="dummies"> $25K to $500K</span></li>
+          <li>
+            <input type="radio" name="acctSize" onclick="bigsize();" id="$500+k">
+            <span id="$500+kText">$500K+</span></li>
+        </ul>
+      </form>
+    </div>
+    <div id="investmentVehicle">What is the desired investment vehicle?
+      <form action="">
+        <ul id="mfRadio">
+          <li>
+            <input type="radio" name="vehicle" onclick="consIncMutualFund()" id="mutualFunds">
+            <span id="mutualFundText"> Mutual Funds</span></li>
+          <li>
+            <input type="radio" name="vehicle" onclick="conservativeIncSMAs()" id="SMARadio">
+            <span id="SMAText">Mutual Funds and Individual Securities (SMAs)</span></li>
+        </ul>
+      </form>
+    </div>
+    <div id="acctMgr">Who is managing the account?
+      <form action="">
+        <ul id="acctManagerRadio">
+          <li>
+            <input type="radio" name="manager" onclick="cIWFAEnd()" id="WFAManager">
+            <span id="wfaManagerTxt"> Wells Fargo Advisors</span></li>
+          <li>
+            <input type="radio" name="manager" onclick="thirdPartyManager()" id="3PManager">
+            <span id="3PManagerText">Third Party Manager</span></li>
+        </ul>
+      </form>
+    </div>
+  </section>
+  </section>
+  <!-----------------------End Conservative Income question tree----------------------------> 
+  
+  <!----------------------------------Moderate Income------------------------------------->
+  <section class="master">
+  <section id="moderateIncomeLinksSection"> <strong id="moderateDiscretionaryAdvisoryPortfoliosTitle">Discretionary Advisory Portfolios</strong>
+    <ul id="modDiscAdvPortLinks">
+      <li id="mDAPL1"><a href="https://my.advisor-connection.com/infomax/PCG/Marketing/Advisory/Program_Model_Sheets/Allocation_Advisors/strategic_etf_mod_inc.pdf">Alloc. Advisors Strategic ETF Moderate Income</a></li>
+      <li id="mDAPL2"><a href="https://my.advisor-connection.com/infomax/PCG/Marketing/Advisory/Program_Model_Sheets/Allocation_Advisors/ibbotson_etf_mod_inc.pdf">Alloc. Advisors Ibbotson ETF Moderate Income</a></li>
+      <li id="mDAPL3"><a href="https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/research/optimalblends/globalopportunities/strategicincome.aspx">FundSource Global Opportunities Income</a></li>
+      <li id="mDAPL4"><a href="https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/research/optimalblends/standardv3/moderateinc.aspx">FundSource Optimal Blend Moderate Income</a></li>
+      <li id="mDAPL5"><a href="https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/research/optimalblends/taxmanagedv3/moderateinc.aspx">FundSource Tax-Management Moderate Income</a></li>
+      <li id="mDAPL6"><a href="https://my.advisor-connection.com/infomax/PCG/Products/Advisory/mfadvisory/fundsource/research/optimalblends/pathways/moderateinc.aspx">Pathways Moderate Income</a></li>
+      <li id="mDAPL7"><a href="https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/dma/research/optimalblends/moderateincome/mi500.aspx">DMA: Moderate IncomeOptimal Blend ($500,000)</a></li>
+      <li id="mDAPL8"><a href="https://my.advisor-connection.com/infomax/PCG/research/wachovia_compass/newbuyersheets/eminewbuysheet.xls">Alloc. Advisors Compass ETF Moderate Income</a></li>
+      <li id="mDAPL9"><a href="https://my.advisor-connection.com/infomax/PCG/Marketing/Advisory/Program_Model_Sheets/Allocation_Advisors/caap_plus_mod_inc.pdf">Alloc. Advisors CAAP Plus Moderate Income</a></li>
+    </ul>
+    <p id="moderateIncomePassage">Strategic asset allocation uses assumptions<br>
+      based on long-term trends and expectations<br>
+      for the intermediate to distant future(7-10<br>
+      years).</p>
+    <p id="discretionaryTacticalPassage">Sometimes we recognize the need for short-<br>
+      term adjustments to these models. To reflect<br>
+      our current thinking about near-term risks<br>
+      and opportunities -- and we make these<br>
+      adjustments on an ad hoc or as needed<br>
+      basis. This process is often referred to as<br>
+      tactical asset allocation, and the<br>
+      adjustments are called tilts.</p>
+    <p id="modIncAcct25to49">You have chosen a Moderate Income<br>
+      portfolio between $25K and $49K that uses<br>
+      tactical asset allocation. FundSource best<br>
+      meets these criteria.</p>
+    <p id="modIncAcct50">You have chosen a Moderate Income<br>
+      portfolio over $50K that uses tactical asset<br>
+      allocation and invests in mutual funds.<br>
+      FundSource best meets these criteria.</p>
+    <p id="modCyclicalPassage1">Cyclical asset allocation is a process that<br>
+      reevaluates capital market assumptions for<br>
+      most critical asset classes every three<br>
+      months with an eye toward positioning<br>
+      portfolios appropriately for the next 36<br>
+      months.</p>
+    <p id="modCyclicalPassage2">You have selected a Moderate Income<br>
+      portfolio that uses cyclical asset allocation.<br>
+      CAAP Plus best meets these criteria.<br>
+      Select the link above to learn more about<br>
+      this model.</p>
+    <p id="moderateIncomePassageEnd3rdParty">You have selected a Moderate Income<br>
+      portfolio between $25K and $500K that uses<br>
+      strategic asset allocation, invests in mutual<br>
+      funds and is managed by a third party.<br>
+      Pathways best meets these criteria. Select<br>
+      the link above to learn about this model.</p>
+    <p id="moderateIncomePassage1">Select a link above to learn more about the portfolio.</p>
+  </section>
+  <section id="moderateIncomeSection">
+    <div id="moderateIncomeChooseApproach"> <strong id="moderateChooseApproach">Choose an Approach</strong>.
+      <form>
+        <ul id="moderateApproachChoicesLinks">
+          <li>
+            <input type="radio" name="moderateincApproach" id="modIncApproachStrategic" onclick="moderateIncChoiceStrategic();" value="Strategic">
+            <span id="mIAS">Strategic</span></li>
+          <li>
+            <input type="radio" name="moderateincApproach" id="modIncApproachTactical" onclick="moderateIncChoiceTactical();" value="Tactical">
+            <span id="mIAT">Tactical</span></li>
+          <li>
+            <input type="radio" name="moderateincApproach" id="modIncApproachCyclical" onclick="moderateIncChoiceCyclical();" value="Cyclical">
+            <span id="mIAC">Cyclical</span></li>
+        </ul>
+      </form>
+    </div>
+  </section>
+  <section id="moderateIncomeOptions">
+    <div id="modIncAcctSize">
+      <form>
+        <strong id="moderateIncAcctSize">What is the account size?</strong>
+        <ul id="modIncAcctSizeRadio">
+          <li>
+            <input type="radio" name="modAcctSize" id="modAcctSz25to500" onclick="funcmodAcctSz25to500()">
+            <span id="twentyfiveKtoFiveHundredK">$25K to $500K</span></li>
+          <li>
+            <input type="radio" name="modAcctSize" id="modAcctS500" onclick="funcmodAcctFiveHundredK()">
+            <span id="FiveHundredK">$500K +</span></li>
+        </ul>
+      </form>
+    </div>
+    <div id="modIncDesiredInvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="modIncDesiredInvestmentVehicleRadio">
+          <li>
+            <input type="radio" name="modIncDesired" onclick="funcModIncMutualFunds();" id="modIncMutualFunds"/>
+            <span id="mIDIVMF"> Mutual Funds</span></li>
+          <li>
+            <input type="radio" name="modIncDesired" onclick="funcModIncETFs();" id="modIncETF"/>
+            <span id="mIDIVE"> Exchange Traded Funds (ETFs)</span></li>
+          <input type="radio" name="modIncDesired" onclick="conservativeIncSMAs();" id="modIncSMA"/>
+          <span id="mIDIVR"> Mutual Funds and Individual Securities (SMA)</span>
+        </ul>
+      </form>
+    </div>
+    <div id="modIncAcctMgr"> <strong>Who is managing the account?</strong>
+      <ul id="modIncAcctMgrRadio">
+        <li>
+          <input type="radio" name="modIncDesired" onclick="funcModIncMgrWFA();" id="modIncWFA"/>
+          <span id="mIDMWF"> Wells Fargo Advisors</span></li>
+        <li>
+          <input type="radio" name="modIncDesired" onclick="funcModIncMgrThirdParty();" id="modIncThirdParty"/>
+          <span id="mIDIV3"> Third Party Manager</span></li>
+      </ul>
+    </div>
+    <div id="modTacticalAcctSize"><strong>What is the account size?</strong>
+      <form>
+        <ul id="modTacicalAcctSizeRadio">
+          <li>
+            <input type="radio" name="modTacAcctSize" onclick="modTac25Kto49K();" id="modTac$25Kto$49K">
+            <span id="mTASR25">$25K to $49K</span></li>
+          <li>
+            <input type="radio" name="modTacAcctSize" onclick="modTac50k();" id="modTac$50K">
+            <span id="mTASR50">$50K +</span></li>
+        </ul>
+      </form>
+    </div>
+    <div id="modIncTacticalDesiredInvestmentVehicle"> <strong>What is the desired investment vehicle?"</strong>
+      <form>
+        <ul id="modIncDesiredInvestmentVehicleRadio">
+          <li>
+            <input type="radio" name="modIncDesired" onclick="funcModTactIncMutualFunds();" id="modIncTactMutualFunds"/>
+            <span id="mTIDIVMF"> Mutual Funds</span></li>
+          <li>
+            <input type="radio" name="modIncDesired" onclick="funcModTactIncETFs();" id="modIncTactETF"/>
+            <span id="mTIDIVE"> Exchange Traded Funds (ETFs)</span></li>
+        </ul>
+      </form>
+    </div>
+    <p id="moderateIncomePassageEnd">You have selected a Moderate Income<br>
+      portfolio between $25K and $500K that uses<br>
+      strategic asset allocation, invests in mutual<br>
+      funds and is managed by Wells Fargo<br>
+      Advisors. FuncSource best meets these<br>
+      criteria. Select a link above to learn more<br>
+      about this model.</p>
+    <p id="moderateIncomePassageEnd500">You have selected a Moderate Income<br>
+      portfolio over $500K that uses
+      strategic<br>
+      asset allocation, invests in mutual
+      funds and<br>
+      is managed by Wells Fargo
+      Advisors.<br>
+      FuncSource best meets these<br>
+      criteria. Select a link above to learn more<br>
+      about this model.</p>
+    <p id="moderateIncomePassageEnd500B">You have selected a Moderate Income<br>
+      portfolio over $500K that uses
+      strategic<br>
+      asset allocation, invests in mutual
+      funds and<br>
+      is managed by Wells Fargo
+      Advisors.<br>
+      Allocation Advisors best meets<br>
+      these
+      criteria. Select a link above to learn<br>
+      more
+      about this model.</p>
+    <p id="moderateIncomePassageEnd500C">You have selected a Moderate Income<br>
+      portfolio over $500K that uses
+      strategic<br>
+      asset allocation, invests in mutual
+      funds and<br>
+      is managed by a third party.<br>
+      Allocation Advisors Ibbotson best<br>
+      meets these
+      criteria. Select a link above to<br>
+      learn more
+      about this model.</p>
+    <p id="moderateIncomePassageEnd500Third">You have selected a Moderate Income<br>
+      portfolio over $500K that uses strategic asset<br>
+      allocation, invests in mutual
+      funds and is<br>
+      managed by a third party. Pathways best<br>
+      meets these criteria. Select the link above to<br>
+      learn more about this model.</p>
+    <p id="moderateIncomePassageEndCont">Select a link above to learn more about<br>
+      the various DMA models and their<br>
+      corresponding minimums.</p>
+  </section>
+  </section>
+  <!---------------------------End Moderate Income------------------------------> 
+  
+  <!-----------------------------Aggressive Income--------------------------------->
+  <section class="master">
+  <section id="aggressiveIncomeLinksSection"> <strong id="aggressiveDiscretionaryAdvisoryPortfoliosTitle">Discretionary Advisory Portfolios</strong>
+    <ul id="aggDiscAdvPortLinks" style="list-style-type: none">
+      <li id="aDAPL1"><a href="https://my.advisor-connection.com/LoginApp/InfoMaxLoginServlet?url=https%3A%2F%2Fmy.advisor-connection.com%2Finfomax%2FPCG%2Fproducts%2Fadvisory%2Fmfadvisory%2Ffundsource%2Fresearch%2Foptimalblends%2Fglobalopportunities%2Fstrategicincome.aspx">FundSource Global Opportunities Income</a></li>
+      <li id="aDAPL2"><a href="https://my.advisor-connection.com/LoginApp/InfoMaxLoginServlet?url=https%3A%2F%2Fmy.advisor-connection.com%2Finfomax%2FPCG%2Fproducts%2Fadvisory%2Fmfadvisory%2Ffundsource%2Fresearch%2Foptimalblends%2Fstandardv3%2Flongterminc.aspx">FundSource Optimal Blend Aggressive Income</a></li>
+      <li id="aDAPL3"><a href="https://my.advisor-connection.com/LoginApp/InfoMaxLoginServlet?url=https%3A%2F%2Fmy.advisor-connection.com%2Finfomax%2FPCG%2Fproducts%2Fadvisory%2Fmfadvisory%2Ffundsource%2Fresearch%2Foptimalblends%2Ftaxmanagedv3%2Flongterminc.aspx">FuncSource Tax-Managed Aggressive Income</a></li>
+      <li id="aDAPL4"><a href="https://my.advisor-connection.com/LoginApp/InfoMaxLoginServlet?url=https%3A%2F%2Fmy.advisor-connection.com%2Finfomax%2FPCG%2FProducts%2FAdvisory%2Fmfadvisory%2Ffundsource%2Fresearch%2Foptimalblends%2Fpathways%2Flongterminc.aspx">Pathways Aggressive Income</a></li>
+      <li id="aDAPL5"><a href="https://my.advisor-connection.com/LoginApp/InfoMaxLoginServlet?url=https%3A%2F%2Fmy.advisor-connection.com%2Finfomax%2FPCG%2Fproducts%2Fadvisory%2Fseparateaccounts%2Fdma%2Fresearch%2Foptimalblends%2Flongtermincome%2Flti500.aspx">DMA Aggressive Income Optimal Blend ($500,000)</a></li>
+      <li id="aDAPL6"><a href="https://my.advisor-connection.com/LoginApp/InfoMaxLoginServlet?url=https%3A%2F%2Fmy.advisor-connection.com%2Finfomax%2FPCG%2Fresearch%2Fwachovia_compass%2Fnewbuyersheets%2Felinewbuysheet.xls">Alloc. Advisors: Compass ETF Aggressive Income</a></li>
+      <li id="aDAPL7"><a href="https://my.advisor-connection.com/infomax/PCG/research/wachovia_compass/newbuyersheets/elinewbuysheet.xls">Alloc. Advisors: Compass ETF Aggressive Income</a></li>
+    </ul>
+    <p id="aggEndPassage">You have selected an Aggressive Income<br>
+      portfolio between $25K and $500K that uses<br>
+      strategic asset allocation, invests with mutual<br>
+      funds and is managed by Wells Fargo<br>
+      Advisors. FundSource best meets these<br>
+      criteria.</p>
+    <p id="aggEndPassage2">You have selected an Aggressive Income<br>
+      portfolio between $25K and $500K that uses<br>
+      strategic asset allocation, invests with mutual<br>
+      funds and is managed by a third party.<br>
+      Pathways best meets these criteria.</p>
+    <p id="aggEndPassage3">You have selected an Aggressive Income<br>
+      portfolio between over $500K that uses<br>
+      strategic asset allocation, invests with mutual<br>
+      funds and is managed by a third party.<br>
+      Pathways best meets these criteria.</p>
+    <p id="agg500EndMessage">You have selected an Aggressive Income<br>
+      portfolio over $500K that uses strategic asset<br>
+      allocation and invests with mutual funds and<br>
+      individual securities. DMA best meets these<br>
+      criteria. Select a link above to learn more<br>
+      about the various DMA models and their<br>
+      corresponding minimums.</p>
+    <p id="tacticalMessage1">Sometimes we recognize the need for short-<br>
+      term adjustments to these models, to reflect<br>
+      our current thinking about near-term risks and<br>
+      opportunities -- and we make these<br>
+      adjustmentson an ad hoc or as needed<br>
+      basis. This process is often referred to as<br>
+      tactical asset allocation, and the adjustments<br>
+      are called tilts.<br>
+    
+    <p id="tacticalMessage1Ext">You have selected an Agressive Income<br>
+      portfolio that uses tactical asset allocation.<br>
+      FundSource best meets these criteria.</p>
+    <p id="tacticalMessage2">You have selected an Agressive Income<br>
+      portfolio between $25K and $49K that uses<br>
+      tactical asset allocation. FundSource best meets<br>
+      these criteria. Select a link above to learn more<br>
+      about the
+      portfolio.</p>
+    <p id="tacticalMessage3">You have selected an Aggressive Income<br>
+      portfolio over $50K that uses tactical asset<br>
+      allocation and invests with mutual funds<br>
+      FundSource best meets this criteria.</p>
+    <p id="tacticalMessage4">You have selected an Aggressive Income<br>
+      portfolio over $50K that uses tactical asset<br>
+      allocation and invests with ETFs.  Alloc.<br>
+      Advisors Compass ETF Aggressive Income<br>
+      best meets this criteria.
+    
+    <p id="aggGSelectLinkMsg">Select a link above to learn more about the portfolio.</p>
+  </section>
+  </section>
+  <section id="aggressiveIncomeSection">
+    <div id="aggressiveIncomeChooseApproach"> <strong id="aggressiveChooseApproach">Choose an Approach</strong>.
+      <form>
+        <ul id="aggressiveApproachChoicesLinks" style="list-style-type: none;">
+          <li>
+            <input type="radio" name="aggressiveincApproach" id="aggIncApproachStrategic" onclick="aggIncChoiceStrategic();" value="Strategic">
+            <span id="aIAS">Strategic</span></li>
+          <li>
+            <input type="radio" name="aggressiveincApproach" id="aggIncApproachTactical" onclick="aggIncChoiceTactical();" value="Tactical">
+            <span id="aIAT">Tactical</span></li>
+        </ul>
+      </form>
+    </div>
+    <div id="aggressivePortfolioSize"><strong>What is the account size?</strong>
+      <form action="">
+        <ul id="aggAccountSizeRadio" style="list-style-type: none;">
+          <li>
+            <input type="radio" name="acctSize" onclick="aggSize25to500k();" id="a25k-500k"/>
+            <span id="agg25to50txt"> $25K to $500K</span></li>
+          <li>
+            <input type="radio" name="acctSize" onclick="aggSize500k()" id="agg$500plus">
+            <span id="$a500+kText">$500K+</span>
+          </li>
+        </ul>
+      </form>
+    </div>
+    <div id="aggIncDesiredInvestmentVehicle"> <strong>What is the desired investment vehicle?"</strong>
+      <form>
+        <ul id="aggIncDesiredInvestmentVehicleRadio" style="list-style-type: none;">
+          <li>
+            <input type="radio" name="aggdIncDesired" onclick="funcAggIncMutualFunds();" id="aggIncMutualFunds" checked="checked"/>
+            <span id="aIDIVMF"> Mutual Funds</span></li>
+          <input type="radio" name="aggIncDesired" onclick="funcAggIncIndSecs();" id="aggIncSMA"/>
+          <span id="aIDIVR"> Mutual Funds and Individual Securities (SMA)</span>
+        </ul>
+      </form>
+    </div>
+    <div id="aggIncAcctMgr"> <strong>Who is managing the account?</strong>
+      <ul id="aggIncAcctMgrRadio" style="list-style-type:none;">
+        <li>
+          <input type="radio" name="aggIncDesired" onclick="funcAggIncMgrWFA();" id="aggIncWFA"/>
+          <span id="aIDMWF"> Wells Fargo Advisors</span></li>
+        <li>
+          <input type="radio" name="aggIncDesired" onclick="funcAggIncMgrThirdParty();" id="aggIncThirdParty"/>
+          <span id="aIDIV3"> Third Party Manager</span></li>
+      </ul>
+    </div>
+    <div id="aggTacticalAcctSize"><strong>What is the account size?</strong>
+      <form>
+        <ul id="aggTacicalAcctSizeRadio" style="list-style-type: none;">
+          <li>
+            <input type="radio" name="aggTacAcctSize" onclick="aggTac25Kto49K();" id="aggTac$25Kto$49K">
+            <span id="aTASR25">$25K to $49K</span></li>
+          <li>
+            <input type="radio" name="aggTacAcctSize" onclick="aggTac50k();" id="aggTac$50K">
+            <span id="aTASR50">$50K +</span></li>
+        </ul>
+      </form>
+    </div>
+    <div id="aggIncTacticalDesiredInvestmentVehicle"> <strong>What is the desired investment vehicle?"</strong>
+      <form>
+        <ul id="aggIncDesiredInvestmentVehicleRadioText" style="list-style-type: none;">
+          <li>
+            <input type="radio" name="aggIncDesired" onclick="funcAggTactIncMutualFunds();" id="aggIncTactMutualFunds"/>
+            <span id="aTIDIVMF"> Mutual Funds</span></li>
+          <li>
+            <input type="radio" name="aggIncDesired" onclick="funcAggTactIncETFs();" id="aggIncTactETF"/>
+            <span id="aTIDIVE"> Exchange Traded Funds (ETFs)</span></li>
+        </ul>
+      </form>
+    </div>
+  </section>
+
+  <!---------------------------------------END Aggressive Income--------------------------------------------> 
+  
+  <!----------------------------------------------Conservative Growth-------------------------------------------------->
+  <section class="master">
+  <section id="cGLinksSection"><strong id="cGDiscretionaryAdvisoryPortfoliosTitle">Discretionary Advisory Portfolios</strong>
+    <ul id="cGLinks">
+      <li id="cGL1"><a href="https://my.advisor-connection.com/infomax/PCG/research/wachovia_compass/newbuyersheets/ecgnewbuysheet.xls">Allocation Advisors Compass ETF Conservative Growth</a></li>
+      <li id="cGL2"><a href="https://my.advisor-connection.com/infomax/PCG/Marketing/Advisory/Program_Model_Sheets/Allocation_Advisors/strategic_etf_con_gr.pdf">Allocation Advisors Strategic ETF Conservative Growth</a></li>
+      <li id="cGL3"><a href="https://my.advisor-connection.com/infomax/PCG/marketing/advisory/program_model_sheets/allocation_advisors/ap_con_gr.pdf">Allocation Advisors Active/Passive Conservative Growth</a></li>
+      <li id="cGL4"><a href="https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/research/optimalblends/globalopportunities/goall.aspx">FundSource Global Opportunities Asset Allocation</a></li>
+      <li id="cGL5"><a href="https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/research/optimalblends/standardv3/conservativegr.aspx">FundSource Optimal Blend Conservative Growth</a></li>
+      <li id="cGL6"><a href="https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/research/optimalblends/taxmanagedv3/conservativegr.aspx">FundSource Tax-Managed Conservative Growth</a></li>
+      <li id="cGL7"><a href="https://my.advisor-connection.com/infomax/PCG/Products/Advisory/mfadvisory/fundsource/research/optimalblends/pathways/conservativegr.aspx">Pathways Conservative Growth</a></li>
+      <li id="cGL8"><a href="https://my.advisor-connection.com/infomax/PCG/research/wachovia_compass/newbuyersheets/ccgnewbuysheet.xls">Compass Conservative Growth</a></li>
+      <li id="cGL9"><a href="https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/dma/research/optimalblends/conservativegrowth/cg250.aspx">DMA: Conservative Growth Optimal Blend ($250,000)</a></li>
+      <li id="cGL10"><a href="https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/dma/research/optimalblends/conservativegrowth/cg750.aspx">DMA: Conservative Growth Optimal Blend ($500,000)</a></li>
+      <li id="cGL11"><a href="https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/dma/research/optimalblends/conservativegrowth/cg750.aspx">DMA: Conservative Growth Optimal Blend ($750,000)</a></li>
+      <li id="cGL12"><a href="https://my.advisor-connection.com/infomax/pcg/products/advisory/mfadvisory/fundsource/research/optimalblends/alternatives/conservativegralt.aspx">FundSource Optimal Blend Conservative Growth with Alternatives</a></li>
+    </ul>
+    <p class="cGMessage"id="cGMessage1">You have selected a Conservative Growth<br>
+      portfolio between $25K and $250K that uses<br>
+      strategic asset allocation, invests with mutual<br>
+      funds and is managed by Wells Fargo<br>
+      Advisors. FundSource best meets these criteria.</p>
+    <p class="cGMessage" id="cGMessage2">You have selected a Conservative Growth<br>
+      portfolio between $25K and $250K that uses<br>
+      strategic asset allocation and invests with<br>
+      ETFs. Allocation Advisors best meets these<br>
+      criteria.</p>
+    <p class="cGMessage" id="cGMessage3">Strategic asset allocation uses assumptions<br>
+      based on Aggressive trends and expectations of<br>
+      the intermediate to distant future (7-10 years).</p>
+    <p class="cGMessage" id="cGMessage4">You have selected a Conservative Growth<br>
+      portfolio between $250K and $500K that uses<br>
+      strategic asset allocation, invests with mutual<br>
+      funds and is managed by Wells Fargo<br>
+      Advisors.  FundSource best meets these criteria.</p>
+    <p class="cGMessage" id="cGMessage5">You have selected a Conservative Growth<br>
+      portfolio between $250K and $500K that uses<br>
+      strategic asset allocation and invests with<br>
+      ETFs. Allocation Advisors best meets these<br>
+      criteria.</p>
+    <p class="cGMessage" id="cGMessage6">You have selected a Conservative Growth<br>
+      portfolio between $250K and $500K that uses<br>
+      strategic asset allocation and invests with<br>
+      mutual funds and individual securities. DMA<br>
+      best meets these criteria.</p>
+    <p class="cGMessage" id="cGMessage7">You have selected a Conservative Growth<br>
+      portfolio between $250K and $500K that uses<br>
+      strategic asset allocation, invests with mutual<br>
+      funds and is managed by a third party.<br>
+      Pathways best meets these criteria.</p>
+    <p class="cGMessage"id="cGMessage8">You have selected a Conservative Growth<br>
+      portfolio between $25K and $250K that uses<br>
+      strategic asset allocation, invests with mutual<br>
+      funds and is managed by a third party.<br>
+      Pathways best meets these criteria.</p>
+    <p class="cGMessage" id="cGMessage9">You have selected a Conservative Growth<br>
+      portfolio between $500K and $750K that uses<br>
+      strategic asset allocation, invests with mutual<br>
+      funds and is managed by Wells Fargo<br>
+      Advisors.  FundSource best meets these criteria.</p>
+    <p class="cGMessage" id="cGMessage10">You have selected a Conservative Growth<br>
+      portfolio between $500K and $750K that uses<br>
+      strategic asset allocation, invests with mutual<br>
+      funds and is managed by a third party.<br>
+      Pathways best meets these criteria.</p>
+    <p class="cGMessage" id="cGMessage11">You have selected a Conservative Growth<br>
+      portfolio between $500K and $750K that uses<br>
+      strategic asset allocation and invests with <br>
+      ETFs. Allocation Advisors best meets these criteria.</p>
+    <p class="cGMessage" id="cGMessage12">You have selected a Conservative Growth<br>
+      portfolio between $500K and $750K that uses<br>
+      strategic asset allocation and invests with <br>
+      mutual funds and individual securities. DMA<br>
+      best meets these criteria. Select a link<br>
+      above to learn more about the various DMA<br>
+      models and their corresponding minimums.</p>
+    <p class="cGMessage" id="cGMessage13">You have selected a Conservative Growth<br>
+      portfolio over $750K that uses strategic asset<br>
+      allocation, invests with mutual funds and is<br>
+      managed by Wells Fargo Advisors.<br>
+      FundSource best meets these criteria.</p>
+    <p class="cGMessage" id="cGMessage14">You have selected a Conservative Growth<br>
+      portfolio over $750K that uses strategic asset<br>
+      allocation, invests with mutual funds and is<br>
+      managed by a third party.<br>
+      Pathways best meets these criteria.</p>
+    <p class="cGMessage" id="cGMessage15">You have selected a Conservative Growth<br>
+      portfolio over $750K that uses strategic asset<br>
+      allocation and invests with ETFs. Allocation<br>
+      Advisors best meets these criteria.</p>
+    <p class="cGMessage" id="cGMessage16">You have selected a Conservative Growth<br>
+      portfolio over $750K that uses strategic asset<br>
+      allocation and invests with mutual funds and<br>
+      individual securities. DMA best meets these<br>
+      criteria. Select a link above to learn more<br>
+      about the various DMA models and their<br>
+      corresponding minimums.</p>
+    <p class="cGMessage" id="cGMessage17">Sometimes we recognize the need for short-<br>
+      term adjustments to these modals to reflect<br>
+      our current thinking about near-term risks and<br>
+      opportunities -- and we make these<br>
+      adjustments on an ad hoc or as-needed basis.<br>
+      This process is often referred to as tactical<br>
+      asset allocation. The adjustments are<br>
+      called tilts.</p>
+    <p class="cGMessage" id="cGMessage18">You have selected a Conservative Growth<br>
+      portfolio between $25K and $49K that uses<br>
+      tactical asset allocation. FundSource best<br>
+      meets these criteria.</p>
+    <p class="cGMessage" id="cGMessage19">You have selected a Conservative Growth<br>
+      portfolio between $50K and $249K that uses<br>
+      tactical asset allocation.  FundSource best<br>
+      meets these criteria.</p>
+    <p class="cGMessage" id="cGMessage20">You have selected a Conservative Growth<br>
+      portfolio between $50K and $249K that uses<br>
+      tactical asset allocation and invests with<br>
+      exchange-traded funds.  Allocation Advisors:<br>
+      Compass ETF Conservative Growth best meets<br>
+      these criteria.</p>
+    <p class="cGMessage" id="cGMessage21">You have selected a Conservative Growth portfolio<br>
+      over $250K that uses tactical asset allocation and<br>
+      invests with mutual funds. FundSource best<br>
+      meets these criteria.</p>
+    <p class="cGMessage" id="cGMessage22">You have selected a Conservative Growth portfolio<br>
+      over $250K that uses tactical asset allocation and<br>
+      invests with exchange-traded funds. Allocation<br>
+      Advisors: Compass ETF Conservative Growth<br>
+      best meets these criteria.</p>
+    <p class="cGMessage" id="cGMessage23">You have selected a Conservative Growth portfolio<br>
+      over $250K that uses tactical asset allocation and<br>
+      invests individual securities. Compass best<br>
+      meets these criteria.</p>
+    <p id="cGSelectLinkMsg">Select a link above to learn more about the portfolio.</p>
+  </section>
+  <section id="cGTree">
+    <div id="cGChooseApproach"> <strong id="cGChooseApproachText">Choose an Approach</strong>.
+      <form>
+        <ul id="cGApproachChoicesLinks" style="list-style-type: none;">
+          <li id="cGApproachStrategic">
+            <input type="radio" name="cGApproach" onclick="cGStrategicRadio();" value="Strategic">
+            Strategic</li>
+          <li id="cGApproachTactical">
+            <input type="radio" name="cGApproach" onclick="cGTacticalRadio();" value="Tactical">
+            Tactical</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="cGPortfolioSize"><strong>What is the account size?</strong>
+      <form action="">
+        <ul id="cGAccountSizeRadio" style="list-style-type: none;">
+          <li id="cG25L">
+            <input type="radio" name="cGAcctSize" onclick="cGSize25();" />
+            $25K to $250K </li>
+          <li id="cG250L">
+            <input type="radio" name="cGAcctSize" onclick="cGSize250();">
+            $250K to $500K </li>
+          <li id="cG500L">
+            <input type="radio" name="cGAcctSize" onclick="cGSize500()">
+            $500K to $750K </li>
+          <li id="cG750L">
+            <input type="radio" name="cGAcctSize" onclick="cGSize750()">
+            $750K+ </li>
+        </ul>
+      </form>
+    </div>
+    <!-----------------------------Strategic------------------------------------> 
+    <!--25K-250K-->
+    <div class="displayNone" id="cGStratInvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="cGStratInvestmentVehicleRadio" style="list-style-type: none;">
+          <li id="cGStratMutualFunds">
+            <input type="radio" name="cGDesired" onclick="funcCGTS25SMF();" />
+            Mutual Funds</li>
+          <li id="CGStratETF">
+            <input type="radio" name="aggIncDesired" onclick="funcCGStratIncETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="cG25AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="cG25AcctMgrRadio" style="list-style-type:none;">
+          <li id="cG25WFA">
+            <input type="radio" name="cGDesired" onclick="funcCG25MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="cGThirdParty">
+            <input type="radio" name="cGDesired" onclick="funcCGMgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <!--end 25K-250K--> 
+    <!--250K-500K-->
+    <div class="displayNone" id="cGDesiredInvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="cGInvestVehicleRadio" style="list-style-type: none;">
+          <li id="cGMF">
+            <input type="radio" name="cGDesired" onclick="funcCG250SMF();"/>
+            Mutual Funds</li>
+          <li id="cGETF">
+            <input type="radio" name="cGDesired" onclick="funcCGETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+          <li id="cGSMA">
+            <input type="radio" name="cGDesired" onclick="cGSMAs();"/>
+            Mutual Funds and Individual Securities (SMA)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="cG250AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="cG250AcctMgrRadio" style="list-style-type:none;">
+          <li id="cGWFA">
+            <input type="radio" name="cGDesired" onclick="funcCG250MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="c250GThirdParty">
+            <input type="radio" name="cGDesired" onclick="func250Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <!--end 250K-500K--> 
+    <!----500K-750K--->
+    <div class="displayNone" id="cG500DesiredInvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="cG500InvestVehicleRadio" style="list-style-type: none;">
+          <li id="c500GMF">
+            <input type="radio" name="c500GDesired" onclick="funcCG500SMF();"/>
+            Mutual Funds</li>
+          <li id="c500GETF">
+            <input type="radio" name="cG500Desired" onclick="funcCG500ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+          <li id="c500GSMA">
+            <input type="radio" name="cG500Desired" onclick="c500GSMAs();"/>
+            Mutual Funds and Individual Securities (SMA)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="cG500AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="cG500AcctMgrRadio" style="list-style-type:none;">
+          <li id="cG500WFA">
+            <input type="radio" name="cG500Desired" onclick="funcCG500MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="c500GThirdParty">
+            <input type="radio" name="cG500Desired" onclick="func500Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <!--End 500K-750K--> 
+    <!----750K+---->
+    <div class="displayNone" id="cG750InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="cG750InvestVehicleRadio" style="list-style-type: none;">
+          <li id="c750GMF">
+            <input type="radio" name="c750GDesired" onclick="funcCG750SMF();"/>
+            Mutual Funds</li>
+          <li id="c750GETF">
+            <input type="radio" name="cG750Desired" onclick="funcCG750ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+          <li id="c750GSMA">
+            <input type="radio" name="cG750Desired" onclick="c750GSMAs();"/>
+            Mutual Funds and Individual Securities (SMA)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="cG750AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="cG750AcctMgrRadio" style="list-style-type:none;">
+          <li id="cG750WFA">
+            <input type="radio" name="cG750Desired" onclick="funcCG750MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="c750GThirdParty">
+            <input type="radio" name="cG750Desired" onclick="func750Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <!------End 750K-------> 
+    <!--------------------------------END Strategic-------------------------------------------> 
+    <!--------------------------------Tactical----------------------------------------------->
+    <div class="displayNone" id="cGTPortfolioSize"><strong>What is the account size?</strong>
+      <form action="">
+        <ul id="cGTAccountSizeRadio" style="list-style-type: none;">
+          <li id="cGT25">
+            <input type="radio" name="cGTAcctSize" onclick="cGTSize25();" />
+            $25K to $49K </li>
+          <li id="cGT50">
+            <input type="radio" name="cGTAcctSize" onclick="cGTSize50();">
+            $50K to $249K </li>
+          <li id="cGT250">
+            <input type="radio" name="cGTAcctSize" onclick="cGTSize250()">
+            $250K+ </li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="cGS50TIV"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="cG50TIVRadio" style="list-style-type: none;">
+          <li id="cG50TTMF">
+            <input type="radio" name="cGTDesired" onclick="funcCGTS50SMF();" />
+            Mutual Funds</li>
+          <li id="CG50TETF">
+            <input type="radio" name="cGTDesired" onclick="funcCG50TETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="cGT250IV"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="cGT250IVRadio" style="list-style-type: none;">
+          <li id="cG250TMF">
+            <input type="radio" name="cG250TDesired" onclick="funcCGT250SMF();"/>
+            Mutual Funds</li>
+          <li id="cG250TETF">
+            <input type="radio" name="cG250TDesired" onclick="funcCGT250ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+          <li id="cG250TSMA">
+            <input type="radio" name="cG250TDesired" onclick="cGT250SMAs();"/>
+            Individual Securities (SMAs)</li>
+        </ul>
+      </form>
+    </div>
+  </section>
+  </section>
+  <!-----------------------------------------------END Conservative Growth---------------------------------------------> 
+  <!---------------------------------------------------Moderate Growth------------------------------------------------->
+  <section class="master">
+  <section class="displayNone" id="mGLinksSection"><strong id="mGDAPTitle">Discretionary Advisory Portfolios</strong>
+    <ul id="mGLinks">
+      <li id="mGL1"><a href="">Allocation Advisors: Strategic ETF Moderate Growth</a></li>
+      <li id="mGL2"><a href="">Allocation Advisors: Ibbotson ETF Moderate Growth</a></li>
+      <li id="mGL3"><a href="">Allocation Advisors: Compass ETF Moderate Growth</a></li>
+      <li id="mGL4"><a href="">Allocation Advisors: CAAP Plus Moderate Growth</a></li>
+      <li id="mGL5"><a href="">Allocation Advisors Active/Passive Moderate Growth</a></li>
+      <li id="mGL6"><a href="">FundSource Global Opportunities Moderate Growth</a></li>
+      <li id="mGL7"><a href="">FundSource Optimal Blend Moderate Growth</a></li>
+      <li id="mGL8"><a href="">FundSource Tax-Managed Moderate Growth</a></li>
+      <li id="mGL9"><a href="">FuncSource Core American Moderate Growth</a></li>
+      <li id="mGL10"><a href="">FundSource Core American Global Moderate Growth</a></li>
+      <li id="mGL11"><a href="">FundSource Global Opportunities Growth</a></li>
+      <li id="mGL12"><a href="">FundSource Optimal Blend Moderate Growth with Alternatives</a></li>
+      <li id="mGL13"><a href="">Pathways Moderate Growth</a></li>
+      <li id="mGL14"><a href="">Compass Moderate Growth</a></li>
+      <li id="mGL15"><a href="">DMA: Moderate Growth Optimal Blend ($250,000)</a></li>
+      <li id="mGL16"><a href="">DMA: Moderate Growth Optimal Blend ($500,000)</a></li>
+      <li id="mGL17"><a href="">DMA: Moderate Growth Optimal Blend ($750,000)</a></li>
+    </ul>
+    <p class="mGMessage" id="mGMessage1">Strategic asset allocation uses assumptions<br>
+      based on Aggressive trends and expectations for<br>
+      the intermediate to distant future (7-10 years).</p>
+    <p class="mGMessage" id="mGMessage2">You have selected a Moderate Growth portfolio<br>
+      between $25K and $250K that uses strategic asset<br>
+      allocation, invests in mutual funds and is managed<br>
+      by Wells Fargo Advisors. FundSource and Allocation<br>
+      Advisors; Active/Passive best meet these criteria.</p>
+    <p class="mGMessage" id="mGMessage3">You have selected a Moderate Growth portfolio<br>
+      between $25K and $250K that uses strategic asset<br>
+      allocation, invests in exchange traded funds and id<br>
+      managed by a third party. Pathways best meets<br>
+      these criteria.</p>
+    <p class="mGMessage" id="mGMessage4">You have selected a Moderate Growth portfolio<br>
+      between $250K and $500K that uses strategic asset<br>
+      allocation, invests in mutual funds and is managed<br>
+      by Wells Fargo Advisors. FundSource and Allocation<br>
+      Advisors: Active/Passive best meet these criteria.</p>
+    <p class="mGMessage" id="mGMessage5">You have selected a Moderate Growth portfolio<br>
+      between $250K and $500K that uses strategic asset<br>
+      allocation, invests in mutual funds and is managed<br>
+      by a third Party. Pathways best meets these criteria.</p>
+    <p class="mGMessage" id="mGMessage6">You have selected a Moderate Growth portfolio<br>
+      between $500K and $750K that uses strategic asset<br>
+      allocation, invests in mutual funds and is managed<br>
+      by Wells Fargo Advisors. FundSource best meets<br>
+      these criteria.</p>
+    <p class="mGMessage" id="mGMessage7">You have selected a Moderate Growth portfolio<br>
+      between $500K and $750K that uses strategic asset<br>
+      allocation, invests in mutual funds and is managed<br>
+      by a third party. Pathways best meets these criteria.</p>
+    <p class="mGMessage" id="mGMessage8">You have selected a Moderate Growth portfolio<br>
+      between $250K and $500K that uses strategic asset<br>
+      allocation, invests in exchange traded funds and id<br>
+      managed by Wells Fargo Advisors. Allocation Advisors<br>
+      best meets these criteria.</p>
+    <p class="mGMessage" id="mGMessage9">You have selected a Moderate Growth portfolio<br>
+      between $250K and $500K that uses strategic asset<br>
+      allocation, invests in exchange traded funds and id<br>
+      managed by a third party. Allocation Advisors<br>
+      Ibbotson best meets these criteria.</p>
+    <p class="mGMessage" id="mGMessage10">You have selected a Moderate Growth portfolio<br>
+      between $250K and $500K that uses strategic<br>
+      asset allocation and invests in mutual funds<br>
+      and individual securities. DMA best meets<br>
+      these criteria. Select the link above to learn<br>
+      more about the portfolio and it's corres-<br>
+      ponding minimums.</p>
+    <p class="mGMessage" id="mGMessage11">You have selected a Moderate Growth portfolio<br>
+      between $500K and $750K that uses strategic asset<br>
+      allocation, invests in exchange traded funds and id<br>
+      managed by Wells Fargo Advisors. Allocation Advisors<br>
+      best meets these criteria.</p>
+    <p class="mGMessage" id="mGMessage12">You have selected a Moderate Growth portfolio<br>
+      between $500K and $750K that uses strategic asset<br>
+      allocation, invests in exchange traded funds and id<br>
+      managed by a third party. Allocation Advisors<br>
+      Ibbotson best meets these criteria.</p>
+    <p class="mGMessage" id="mGMessage13">You have selected a Moderate Growth portfolio<br>
+      between $500K and $750K that uses strategic<br>
+      asset allocation and invests in mutual funds<br>
+      and individual securities. DMA best meets<br>
+      these criteria. Select a link above to learn<br>
+      more about a portfolio and it's corresponding<br>
+      minimums.</p>
+    <p class="mGMessage" id="mGMessage14">You have selected a Moderate Growth portfolio<br>
+      over $750K that uses strategic assetallocation,<br>
+      invests in mutual funds and is managed<br>
+      by Wells Fargo Advisors. FundSource best meets<br>
+      these criteria.</p>
+    <p class="mGMessage" id="mGMessage15">You have selected a Moderate Growth portfolio<br>
+      over $750K that uses strategic assetallocation,<br>
+      invests in mutual funds and is managed by a third<br>
+      party. Pathways best meets these criteria.</p>
+    <p class="mGMessage" id="mGMessage16">You have selected a Moderate Growth portfolio<br>
+      over $750K that uses strategic asset allocation,<br>
+      invests in exchange traded funds and is managed<br>
+      by Wells Fargo Advisors. Allocation Advisors best<br>
+      meets these criteria.</p>
+    <p class="mGMessage" id="mGMessage17">You have selected a Moderate Growth portfolio<br>
+      over $750K that uses strategic asset allocation,<br>
+      invests in exchange traded funds and is managed<br>
+      by a third party. Allocation Advisors Ibbotson<br>
+      best meets these criteria.</p>
+    <p class="mGMessage" id="mGMessage18">You have selected a Moderate Growth portfolio<br>
+      over $750K that uses strategic asset allocation<br>
+      and invests in mutual funds and individual<br>
+      securities. DMA best meetsthese criteria. Select<br>
+      the link above to learn more about the portfolio<br>
+      and it's corresponding minimums.</p>
+    <p class="mGMessage" id="mGMessage19">Sometimes we recognize the need for short-term<br>
+      adjustments to these models to reflect our current<br>
+      thinking about near-term risks and opportunities.<br>
+      We make these adjustments on an ad hoc<br>
+      or as-needed basis. This process is often referred<br>
+      to as tactical asset allocation. These adjustments<br>
+      are called tilts.</p>
+    <p class="mGMessage" id="mGMessage20">You have chosen a Moderate Growth portfolio<br>
+      between $25K and $49K that uses tactical asset<br>
+      allocation. FundSource best meets these criteria.</p>
+    <p class="mGMessage" id="mGMessage21">You have chosen a Moderate Growth portfolio<br>
+      between $50K and $249K that uses tactical asset<br>
+      allocation and invests in mutual funds.<br>
+      FundSource best meets these criteria.</p>
+    <p class="mGMessage" id="mGMessage22">You have chosen a Moderate Growth portfolio<br>
+      between $50K and $249K that uses tactical asset<br>
+      allocation and invests in exchange-traded<br>
+      funds. Allocation Advisors: Compass ETF best<br>
+      meets these criteria.</p>
+    <p class="mGMessage" id="mGMessage23">You have chosen a Moderate Growth portfolio<br>
+      over $250K that uses tactical asset allocation and<br>
+      invests in mutual funds. FundSource best meets<br>
+      these criteria.</p>
+    <p class="mGMessage" id="mGMessage24">You have chosen a Moderate Growth portfolio<br>
+      over $250K that uses tactical asset<br>
+      allocation and invests in exchange-traded<br>
+      funds. Compass best meets these criteria.</p>
+    <p class="mGMessage" id="mGMessage25">You have chosen a Moderate Growth portfolio<br>
+      over $250K that uses tactical asset<br>
+      allocation and invests in individual securities.<br>
+      Compass best meets these criteria.</p>
+    <p class="mGMessage" id="mGMessage26">Cyclical asset allocation is a process that<br>
+      reevaluates capital market assumptions for most<br>
+      critical asset classes every three months with an<br>
+      eye toward positioning portfolios appropriately for<br>
+      the next 36 months.</p>
+    <p class="mGMessage" id="mGMessage27">You have chosen a Moderate Growth portfolio that<br>
+      uses cyclical asset allocation. Allocation Advisors<br>
+      best meets these criteria. The minimum for this<br>
+      program ranges from $25k to $50K.</p>
+    <p id="mGSelectLinkMsg">Select a link above to learn more about the portfolio.</p>
+  </section>
+  <section id="mGTree">
+    <div id="mGChooseApproach"> <strong id="mGChooseApproachText">Choose an Approach</strong>.
+      <form>
+        <ul id="mGApproachChoicesLinks" style="list-style-type: none;">
+          <li id="mGApproachStrategic">
+            <input type="radio" name="mGApproach" onclick="mGStrategicRadio();" value="Strategic">
+            Strategic</li>
+          <li id="mGApproachTactical">
+            <input type="radio" name="mGApproach" onclick="mGTacticalRadio();" value="Tactical">
+            Tactical</li>
+          <li id="mGApproachCyclical">
+            <input type="radio" name="mGApproach" onclick="mGCyclicalRadio();" value="Cyclical">
+            Cyclical</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mGPortfolioSize"><strong>What is the account size?</strong>
+      <form action="">
+        <ul id="mGAccountSizeRadio" style="list-style-type: none;">
+          <li id="mG25">
+            <input type="radio" name="mGAcctSize" onclick="mGSize25();" />
+            $25K to $250K </li>
+          <li id="mG250">
+            <input type="radio" name="mGAcctSize" onclick="mGSize250();">
+            $250K to $500K </li>
+          <li id="mG500">
+            <input type="radio" name="mGAcctSize" onclick="mGSize500()">
+            $500K to $750K </li>
+          <li id="mG750">
+            <input type="radio" name="mGAcctSize" onclick="mGSize750()">
+            $750K+ </li>
+        </ul>
+      </form>
+    </div>
+    
+    <!-------------------------------Moderate Growth Strategic------------------------------------>
+    
+    <div class="displayNone" id="mG25InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="mG25InvestVehicleRadio" style="list-style-type: none;">
+          <li id="m25GMF">
+            <input type="radio" name="m25GDesired" onclick="funcMG25SMF();"/>
+            Mutual Funds</li>
+          <li id="m25GETF">
+            <input type="radio" name="mG25Desired" onclick="funcMG25ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mG25AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="mG25AcctMgrRadio" style="list-style-type:none;">
+          <li id="mG25WFA">
+            <input type="radio" name="mG25Desired" onclick="funcMG25MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="m25GThirdParty">
+            <input type="radio" name="mG25Desired" onclick="funcMG25Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mG250InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="mG250InvestVehicleRadio" style="list-style-type: none;">
+          <li id="mG250MF">
+            <input type="radio" name="mG250Desired" onclick="mG250SMF();"/>
+            Mutual Funds</li>
+          <li id="mG250ETF">
+            <input type="radio" name="mG250Desired" onclick="mG250ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+          <li id="mG250SMA">
+            <input type="radio" name="mG250Desired" onclick="m250GSMAs();"/>
+            Mutual Funds and Individual Securities (SMA)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mG250MFAcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="mG250MFAcctMgrRadio" style="list-style-type:none;">
+          <li id="mG250MFWFA">
+            <input type="radio" name="mG250MFDesired" onclick="funcMG250MFMgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="mG250MFThirdParty">
+            <input type="radio" name="mG250MFDesired" onclick="funcMG250MFMgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mG250ETFAcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="mG250ETFAcctMgrRadio" style="list-style-type:none;">
+          <li id="mG250ETFWFA">
+            <input type="radio" name="mG250ETFDesired" onclick="funcMG250ETFMgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="m25G0ETFThirdParty">
+            <input type="radio" name="mG250ETFDesired" onclick="funcMG250ETFMgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mG500InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="mG500InvestVehicleRadio" style="list-style-type: none;">
+          <li id="mG500MF">
+            <input type="radio" name="mG500Desired" onclick="mGMF500SMF();"/>
+            Mutual Funds</li>
+          <li id="mG500ETF">
+            <input type="radio" name="mG500Desired" onclick="mG500ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+          <li id="mG500SMA">
+            <input type="radio" name="mG500Desired" onclick="mG500SMAs();"/>
+            Mutual Funds and Individual Securities (SMA)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mGMF500AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="mGMF500AcctMgrRadio" style="list-style-type:none;">
+          <li id="mGMF500WFA">
+            <input type="radio" name="mGMF500Desired" onclick="mGMF500MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="mGM500FThirdParty">
+            <input type="radio" name="mGMF500Desired" onclick="mGMF500Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mG500ETFAcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="mGMF500ETFAcctMgrRadio" style="list-style-type:none;">
+          <li id="mG500ETFWFA">
+            <input type="radio" name="mG500ETFDesired" onclick="mG500ETFMgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="mG500ETFFThirdParty">
+            <input type="radio" name="mG500ETFDesired" onclick="mG500ETFMgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mG750InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="mG750InvestVehicleRadio" style="list-style-type: none;">
+          <li id="mG750MF">
+            <input type="radio" name="mG750Desired" onclick="mGMF750SMF();"/>
+            Mutual Funds</li>
+          <li id="mG750ETF">
+            <input type="radio" name="mG750Desired" onclick="mG750ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+          <li id="mG750SMA">
+            <input type="radio" name="mG750Desired" onclick="mG750SMAs();"/>
+            Mutual Funds and Individual Securities (SMA)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mG750MFAcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="mG750MFETFAcctMgrRadio" style="list-style-type:none;">
+          <li id="mG750MFWFA">
+            <input type="radio" name="mG750MFDesired" onclick="mG750MFMgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="mG750MFFThirdParty">
+            <input type="radio" name="mG750MFFDesired" onclick="mG750MFMgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mG750ETFAcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="mG750ETFAcctMgrRadio" style="list-style-type:none;">
+          <li id="mG750ETFWFA">
+            <input type="radio" name="mG750ETFDesired" onclick="mG750ETFMgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="mG750ETFFThirdParty">
+            <input type="radio" name="mG750ETFFDesired" onclick="mG750ETFMgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <!--------------------------------END Strategic--------------------------------------> 
+    <!-------------------------------------------Moderate Growth Tactical--------------------------------------------------------->
+    <div class="displayNone" id="mGTPortfolioSize"><strong>What is the account size?</strong>
+      <form action="">
+        <ul id="mGTAccountSizeRadio" style="list-style-type: none;">
+          <li id="mGT25">
+            <input type="radio" name="mGTAcctSize" onclick="mGTSize25();" />
+            $25K to $49K </li>
+          <li id="mGT50">
+            <input type="radio" name="mGTAcctSize" onclick="mGTSize50();">
+            $50 to $249K </li>
+          <li id="mGT250">
+            <input type="radio" name="mGTAcctSize" onclick="mGTSize250()">
+            $250K + </li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mGT50InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="mG750InvestVehicleRadio" style="list-style-type: none;">
+          <li id="mGT50MF">
+            <input type="radio" name="mGT50Desired" onclick="mGMT50SMF();"/>
+            Mutual Funds</li>
+          <li id="mGT50ETF">
+            <input type="radio" name="mGT50Desired" onclick="mGT50ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mGT250InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="mGT250InvestVehicleRadio" style="list-style-type: none;">
+          <li id="mGT250MF">
+            <input type="radio" name="mGT250Desired" onclick="mGMFT250SMF();"/>
+            Mutual Funds</li>
+          <li id="mGT250ETF">
+            <input type="radio" name="mGT250Desired" onclick="mGT250ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+          <li id="mGT250SMA">
+            <input type="radio" name="mGT250Desired" onclick="mGT250SMAs();"/>
+            Mutual Funds and Individual Securities (SMA)</li>
+        </ul>
+      </form>
+    </div>
+    <!-----------------------------------------End Tactical------------------------------------------------------------------------> 
+    <!---------------------------------------------Cyclical------------------------------------------------------------------------> 
+    <!-----------------------------------------End Cyclical-----------------------------------------------------------------------> 
+  </section>
+  </section>
+  <!----------------------------------------------------------END Moderate Growth-----------------------------------------------------------------------------------------> 
+  <!------------------------------------------Aggressive Growth------------------------------------------------------------------>
+  <section class="master">
+  <section  class="displayNone" id="aGLinksSection"><strong id="aGDAPTitle">Discretionary Advisory Portfolios</strong>
+    <ul id="aGLinks">
+      <li id="aGL1"><a href="">Allocation Advisors: Strategic ETF Aggressive Growth</a></li>
+      <li id="aGL2"><a href="">Allocation Advisors: Ibbotson ETF Aggressive Growth</a></li>
+      <li id="aGL3"><a href="">Allocation Advisors: Compass ETF Aggressive Growth</a></li>
+      <li id="aGL4"><a href="">Allocation Advisors: CAAP Plus Aggressive Growth</a></li>
+      <li id="aGL5"><a href="">FundSource Optimal Blend Aggressive Growth</a></li>
+      <li id="aGL6"><a href="">FundSource Tax-Managed Aggressive Growth</a></li>
+      <li id="aGL7"><a href="">FuncSource Core American Growth</a></li>
+      <li id="aGL8"><a href="">FundSource Core American Global Aggressive Growth</a></li>
+      <li id="aGL9"><a href="">FundSource Optimal Blend Aggressive Growth with Alternatives</a></li>
+      <li id="aGL10"><a href="">Pathways Aggressive Growth</a></li>
+      <li id="aGL11"><a href="">Compass Aggressive Growth</a></li>
+      <li id="aGL12"><a href="">DMA: Aggressive Growth Optimal Blend ($250,000)</a></li>
+      <li id="aGL13"><a href="">DMA: Aggressive Growth Optimal Blend ($500,000)</a></li>
+      <li id="aGL14"><a href="">DMA: Aggressive Growth Optimal Blend ($750,000)</a></li>
+      <li id="aGL15"><a href="">FundSource Global Opportunities Growth</a></li>
+    </ul>
+    <p class="aGMessage" id="aGMessage1">Strategic asset allocation uses assumptions<br>
+      based on Aggressive trends and expectations for<br>
+      the intermediate to distant future (7-10 years).</p>
+    <p class="aGMessage" id="aGMessage2">You have chosen an Aggressive Growth portfolio<br>
+      between $25K and $250K that uses strategic asset<br>
+      allocation, invest in mutual funds and is<br>
+      managed by Wells Fargo Advisors. FundSource<br>
+      best meets these criteria.</p>
+    <p class="aGMessage" id="aGMessage3">You have chosen an Aggressive Growth portfolio<br>
+      between $25K and $250K that uses strategic asset<br>
+      allocation, invest in mutual funds and is managed<br>
+      by a third party. FundSource best meets these<br>
+      criteria.</p>
+    <p class="aGMessage" id="aGMessage4">You have chosen an Aggressive Growth portfolio<br>
+      between $25K and $250K that uses strategic asset<br>
+      allocation, invest in exchange traded funds and is<br>
+      managed by Wells Fargo Advisors. Allocation<br>
+      Advisors best meets these criteria.</p>
+    <p class="aGMessage" id="aGMessage5">You have chosen an Aggressive Growth portfolio<br>
+      between $25K and $250K that uses strategic asset<br>
+      allocation, invest in exchange traded funds and is<br>
+      managed by a third party. Allocation Advisors<br>
+      Ibbotson best meets these criteria.</p>
+    <p class="aGMessage" id="aGMessage6">You have chosen an Aggressive Growth portfolio<br>
+      between $250K and $500K that uses strategic asset<br>
+      allocation, invest in exchange traded funds and is<br>
+      managed by Wells Fargo Advisors. Allocation<br>
+      Advisors best meets these criteria.</p>
+    <p class="aGMessage" id="aGMessage7">You have chosen an Aggressive Growth portfolio<br>
+      between $250K and $500K that uses strategic asset<br>
+      allocation, invest in exchange traded funds and is<br>
+      managed by a third party. Allocation Advisors: Ibbotson<br>
+      best meets these criteria.</p>
+    <p class="aGMessage" id="aGMessage8">You have chosen an Aggressive Growth<br>
+      portfolio between $250K and $500K that uses<br>
+      strategic asset allocation and invests in mutual<br>
+      funds and individual securities.  DMA best<br>
+      meets these criteria. Select the link above to<br>
+      learn more about the portfolios and their<br>
+      corresponding minimums.</p>
+    <p class="aGMessage" id="aGMessage9">You have chosen an Aggressive Growth portfolio<br>
+      between $500K and $750K that uses strategic asset<br>
+      allocation, invest in mutual funds and is managed<br>
+      by Wells Fargo Advisors. FundSource<br>
+      best meets these criteria.</p>
+    <p class="aGMessage" id="aGMessage10">You have chosen an Aggressive Growth portfolio<br>
+      between $500K and $750K that uses strategic asset<br>
+      allocation, invest in mutual funds and is<br>
+      managed by a third party. Pathways best meets these criteria.</p>
+    <p class="aGMessage" id="aGMessage11">You have chosen an Aggressive Growth portfolio<br>
+      between $500K and $750K that uses strategic asset<br>
+      allocation, invest in exchange traded funds and is<br>
+      managed by Wells Fargo Advisors. Allocation Advisors<br>
+      best meets these criteria.</p>
+    <p class="aGMessage" id="aGMessage12">You have chosen an Aggressive Growth portfolio<br>
+      between $500K and $750K that uses strategic asset<br>
+      allocation, invest in exchange traded funds and is<br>
+      managed by a third party. Allocation Advisors<br>
+      Ibbotson best meets these criteria.</p>
+    <p class="aGMessage" id="aGMessage13">You have chosen an Aggressive Growth<br>
+      portfolio between $500K and $750K that uses<br>
+      strategic asset allocation and invests in mutual<br>
+      funds and individual securities.  DMA best<br>
+      meets these criteria. Select the link above to<br>
+      learn more about the portfolios and their<br>
+      corresponding minimums.</p>
+    <p class="aGMessage" id="aGMessage14">You have chosen an Aggressive Growth portfolio<br>
+      over $750K that uses strategic asset allocation,<br>
+      invest in mutual funds and is managed by<br>
+      Wells Fargo Advisors. FundSource best<br>
+      meets these criteria.</p>
+    <p class="aGMessage" id="aGMessage15">You have chosen an Aggressive Growth portfolio<br>
+      over $750K that uses strategic asset allocation,<br>
+      invest in mutual funds and is managed bya third<br>
+      party. Pathways best meets these criteria.</p>
+    <p class="aGMessage" id="aGMessage16">You have chosen an Aggressive Growth portfolio<br>
+      over $750K that uses strategic asset allocation,<br>
+      invest in exchange traded funds and is managed by<br>
+      Wells Fargo Advisors. Allocation Advisors best meets<br>
+      these criteria.</p>
+    <p class="aGMessage" id="aGMessage17">You have chosen an Aggressive Growth portfolio<br>
+      over $750K that uses strategic asset allocation,<br>
+      invest in exchange traded funds and is managed by<br>
+      a third party. Allocation Advisors: Ibbotson best meets<br>
+      these criteria.</p>
+    <p class="aGMessage" id="aGMessage18">You have chosen an Aggressive Growth<br>
+      portfolio over $750K that uses<br>
+      strategic asset allocation and invests in mutual<br>
+      funds and individual securities.  DMA best<br>
+      meets these criteria. Select the link above to<br>
+      learn more about the portfolios and their<br>
+      corresponding minimums.</p>
+    <p class="aGMessage" id="aGMessage19">Sometimes we recognize the need for short-<br>
+      term adjustments to these models to reflect our<br>
+      current thinking about near-term risks and<br>
+      opportunities. We make these adjustments<br>
+      on an ad hoc or as-needed basis. This process is<br>
+      often referred to as tactical asset allocation.<br>
+      These adjustments are called tilts.</p>
+    <p class="aGMessage" id="aGMessage20">You have chosen an Aggressive Growth portfolio<br>
+      between $25K and $249K that uses tactical asset allocation,<br>
+      invest in exchange traded funds. Allocation<br>
+      Advisors: Compass ETF Aggressive Growth best meets these criteria.</p>
+    <p class="aGMessage" id="aGMessage21">You have chosen an Aggressive Growth portfolio<br>
+      over $250K that uses tactical asset allocation, invest<br>
+      in exchange traded funds. Allocation Advisors:<br>
+      Compass ETF Aggressive Growth best meets these<br>
+      criteria.</p>
+    <p class="aGMessage" id="aGMessage22">You have chosen an Aggressive Growth portfolio<br>
+      over $250K that uses tactical asset allocation,<br>
+      invest in individual securities. Compass best meets<br>
+      this criterion.</p>
+    <p class="aGMessage" id="aGMessage23">Cyclical asset allocation is a process that<br>
+      reevaluates capital market assumptions for<br>
+      most critical asset classes every three months<br>
+      with an eye toward positioning portfolios<br>
+      appropriately for the next 36 months.<br>
+      <br>
+      You have chosen an Aggressive Growth<br>
+      portfolio that uses cyclical asset allocation.<br>
+      Allocation Advisors best meets these criteria.<br>
+      The minimum for this program ranges from<br>
+      $25K to $50K.</p>
+    <p id="aGSelectLinkMsg">Select a link above to learn more about the portfolio.</p>
+  </section>
+  <section id="aGTree">
+    <div id="aGChooseApproach"> <strong id="aGChooseApproachText">Choose an Approach</strong>.
+      <form>
+        <ul id="aGApproachChoicesLinks" style="list-style-type: none;">
+          <li id="aGApproachStrategic">
+            <input type="radio" name="aGApproach" onclick="aGStrategicRadio();" value="Strategic">
+            Strategic</li>
+          <li id="aGApproachTactical">
+            <input type="radio" name="aGApproach" onclick="aGTacticalRadio();" value="Tactical">
+            Tactical</li>
+          <li id="aGApproachCyclical">
+            <input type="radio" name="aGApproach" onclick="aGCyclicalRadio();" value="Cyclical">
+            Cyclical</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="aGPortfolioSize"><strong>What is the account size?</strong>
+      <form action="">
+        <ul id="aGAccountSizeRadio" style="list-style-type: none;">
+          <li id="aG25">
+            <input type="radio" name="aGAcctSize" onclick="aGSSize25();" />
+            $25K to $250K </li>
+          <li id="aG250">
+            <input type="radio" name="aGAcctSize" onclick="aGSSize250();">
+            $250K to $500K </li>
+          <li id="aG500">
+            <input type="radio" name="aGAcctSize" onclick="aGSSize500()">
+            $500K to $750K </li>
+          <li id="aG750">
+            <input type="radio" name="aGAcctSize" onclick="aGSSize750()">
+            $750K+ </li>
+        </ul>
+      </form>
+    </div>
+    <!--------------------------------------------Strategic------------------------------------------------->
+    <div class="displayNone" id="aGS25InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="aGSM25InvestVehicleRadio" style="list-style-type: none;">
+          <li id="aGS25MF">
+            <input type="radio" name="aGS25Desired" onclick="aGS25SMF();"/>
+            Mutual Funds</li>
+          <li id="aGS25ETF">
+            <input type="radio" name="aGS25Desired" onclick="aGS25ETF();"/>
+            Exchange Traded Funds (ETFs)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="aGSM25ETFAcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="aGSM25MAcctMgrRadio" style="list-style-type:none;">
+          <li id="aGSM25MWFA">
+            <input type="radio" name="aGSM25MDesired" onclick="aGSM25MMgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="aGSM25MThirdParty">
+            <input type="radio" name="aGSM25MDesired" onclick="aGSM25MMgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="aGSE25AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="aGS25EAcctMgrRadio" style="list-style-type:none;">
+          <li id="aGSE25WFA">
+            <input type="radio" name="aGSE25Desired" onclick="aGSE25MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="aGSME25ThirdParty">
+            <input type="radio" name="aGSE25Desired" onclick="aGSE25Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="aGS250InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="aGS250InvestVehicleRadio" style="list-style-type: none;">
+          <li id="aGS250MF">
+            <input type="radio" name="aGS250Desired" onclick="aGS250SMF();"/>
+            Mutual Funds</li>
+          <li id="aGS250ETF">
+            <input type="radio" name="aGS250Desired" onclick="aGS250ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+          <li id="aGS250SMA">
+            <input type="radio" name="aGS250Desired" onclick="aGS250SMAs();"/>
+            Mutual Funds and Individual Securities (SMA)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="aGSE250AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="aGS250EAcctMgrRadio" style="list-style-type:none;">
+          <li id="aGSE250WFA">
+            <input type="radio" name="aGSE250Desired" onclick="aGSE250MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="aGSME250ThirdParty">
+            <input type="radio" name="aGSE250Desired" onclick="aGSE250Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="aGS500InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="aGS500InvestVehicleRadio" style="list-style-type: none;">
+          <li id="aGS500MF">
+            <input type="radio" name="aGS500Desired" onclick="aGS500SMF();"/>
+            Mutual Funds</li>
+          <li id="aGS500ETF">
+            <input type="radio" name="aGS500Desired" onclick="aGS500ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+          <li id="aGS500SMA">
+            <input type="radio" name="aGS500Desired" onclick="aGS500SMAs();"/>
+            Mutual Funds and Individual Securities (SMA)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="aGSM500AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="aGSM500AcctMgrRadio" style="list-style-type:none;">
+          <li id="aGSM500WFA">
+            <input type="radio" name="aGSM500Desired" onclick="aGSM500MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="aGSM500ThirdParty">
+            <input type="radio" name="aGSM500Desired" onclick="aGSM500Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="aGSE500AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="aGSE500AcctMgrRadio" style="list-style-type:none;">
+          <li id="aGSE500WFA">
+            <input type="radio" name="aGSE500Desired" onclick="aGSE500MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="aGSE500ThirdParty">
+            <input type="radio" name="aGSE500Desired" onclick="aGSE500Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="aGS750InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="aGS750InvestVehicleRadio" style="list-style-type: none;">
+          <li id="aGS750MF">
+            <input type="radio" name="aGS750Desired" onclick="aGS750SMF();"/>
+            Mutual Funds</li>
+          <li id="aGS750ETF">
+            <input type="radio" name="aGS750Desired" onclick="aGS750ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+          <li id="aGS750SMA">
+            <input type="radio" name="aGS750Desired" onclick="aGS750SMAs();"/>
+            Mutual Funds and Individual Securities (SMA)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="aGSM750AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="aGSM750AcctMgrRadio" style="list-style-type:none;">
+          <li id="aGSM750WFA">
+            <input type="radio" name="aGSM750Desired" onclick="aGSM750MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="aGSM750ThirdParty">
+            <input type="radio" name="aGSM750Desired" onclick="aGSM750Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="aGSE750AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="aGSE750AcctMgrRadio" style="list-style-type:none;">
+          <li id="aGSE750WFA">
+            <input type="radio" name="aGSE750Desired" onclick="aGSE750MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="aGSE750ThirdParty">
+            <input type="radio" name="aGSE750Desired" onclick="aGSE750Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <!------------------------------------------------End Strategic Begin Tactical----------------------------------------------------->
+    <div class="displayNone" id="aGTPortfolioSize"><strong>What is the account size?</strong>
+      <form action="">
+        <ul id="aGTAccountSizeRadio" style="list-style-type: none;">
+          <li id="aGT50">
+            <input type="radio" name="aGTAcctSize" onclick="aGTSSize25();" />
+            $25K to $249K </li>
+          <li id="aGT250">
+            <input type="radio" name="aGTAcctSize" onclick="aGTSSize250();">
+            $250K+ </li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="aGT25InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="aGT25InvestVehicleRadio" style="list-style-type: none;">
+          <li id="aGT25ETF">
+            <input type="radio" name="aGT25Desired" onclick="aGT25ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+          <li id="aGT25SMA">
+            <input type="radio" name="aGT25Desired" onclick="aGT25SMAs();"/>
+            Individual Securities (SMA)</li>
+        </ul>
+      </form>
+    </div>
+    </section>
+    </section>
+    <!----------------------------------------End Aggressive Growth-----------------------------------------------------------------> 
+    <!--------------------------------------Conservative Growth & Income------------------------------------------------------------>
+  <section class="master">
+  <section class="displayNone" id="cGILinksSection"><strong id="cGIDAPTitle">Discretionary Advisory Portfolios</strong>
+    <ul id="cGILinks">
+      <li id="cGIL1"><a href="">Allocation Advisors: Strategic ETF Conservative Growth & Income</a></li>
+      <li id="cGIL2"><a href="">Allocation Advisors: Ibbotson ETF Conservative Growth & Income</a></li>
+      <li id="cGIL3"><a href="">Allocation Advisors: Compass ETF Conservative Growth & Income</a></li>
+      <li id="cGIL4"><a href="">Allocation Advisors: CAAP Plus Conservative Growth & Income</a></li>
+      <li id="cGIL5"><a href="">Allocation Advisors: Active/Passive Conservative Growth & Income</a></li>
+      <li id="cGIL6"><a href="">FundSource Optimal Blend Conservative Growth & Income</a></li>
+      <li id="cGIL7"><a href="">FundSource Tax-Managed Conservative Growth & Income</a></li>
+      <li id="cGIL8"><a href="">FundSource Optimal Blend Conservative Growth & Income with Alternatives</a></li>
+      <li id="cGIL9"><a href="">FundSource Multi-Strategy Income</a></li>
+      <li id="cGIL10"><a href="">Pathways Conservative Growth & Income</a></li>
+      <li id="cGIL11"><a href="">Compass Conservative Growth & Income</a></li>
+      <li id="cGIL12"><a href="">DMA: Conservative Growth & Income Optimal Blend ($250,000)</a></li>
+      <li id="cGIL13"><a href="">DMA: Conservative Growth & Income Optimal Blend ($500,000)</a></li>
+      <li id="cGIL14"><a href="">DMA: Conservative Growth & Income Optimal Blend ($750,000)</a></li>
+      <li id="cGIL15"><a href="">Download This</a></li>
+    </ul>
+    <p class="cGIMessage" id="cGIMessage1">Strategic asset allocation uses assumptions<br>
+      based on Aggressive trends and expectations for<br>
+      the intermediate to distant future (7-10 years).</p>
+    <p class="aGMessage" id="cGIMessage2">You have chosen an Conservative Growth & Income portfolio<br>
+      between $25K and $250K that uses strategic asset
+      allocation,<br>
+      invest in mutual funds and is
+      managed by Wells Fargo Advisors.<br>
+      FundSource best meets these criteria.</p>
+    <p class="aGMessage" id="cGIMessage3">You have chosen an Conservative Growth & Income portfolio<br>
+      between $25K and $250K that uses strategic asset
+      allocation,<br>
+      invest in mutual funds and is
+      managed by a third party. Pathways<br>
+      best meets these criteria.</p>
+    <p class="aGMessage" id="cGIMessage4">You have chosen an Conservative Growth & Income portfolio<br>
+      between $25K and $250K that uses strategic asset
+      allocation,<br>
+      invest in exchange traded funds and is
+      managed by Wells Fargo<br>
+      Advisors. Allocation Advisors 
+      best meets these criteria.</p>
+    <p class="aGMessage" id="cGIMessage5">You have chosen an Conservative Growth & Income portfolio<br>
+      between $25K and $250K that uses strategic asset
+      allocation,<br>
+      invest in exchange traded funds and is
+      managed by a third party.<br>
+      Allocation Advisors 
+      best meets these criteria.</p>
+    <p class="aGMessage" id="cGIMessage6">You have chosen an Conservative Growth & Income portfolio<br>
+      between $250K and $500K that uses strategic asset
+      allocation,<br>
+      invest in mutual funds and is
+      managed by Wells Fargo Advisors.<br>
+      FundSource best meets these criteria.</p>
+    <p class="aGMessage" id="cGIMessage7">You have chosen an Conservative Growth & Income portfolio<br>
+      between $250K and $500K that uses strategic asset
+      allocation,<br>
+      invest in mutual funds and is
+      managed by a third party.<br>
+      Pathways best meets these criteria.</p>
+    <p class="aGMessage" id="cGIMessage8">You have chosen an Conservative Growth & Income portfolio<br>
+      between $250K and $500K that uses strategic asset
+      allocation,<br>
+      invest in exchange traded funds. Allocation Advisors 
+      best meets<br>
+      these criteria.</p>
+    <p class="aGMessage" id="cGIMessage9">You have chosen an Conservative Growth & Income portfolio<br>
+      between $250K and $500K that uses strategic asset
+      allocation,<br>
+      invest in mutual funds and individual securities.<br>
+      DMA best meets these criteria.</p>
+    <p class="aGMessage" id="cGIMessage10">You have chosen an Conservative Growth & Income portfolio<br>
+      between $500K and $750K that uses strategic asset
+      allocation,<br>
+      invest in mutual funds and is
+      managed by Wells Fargo Advisors.<br>
+      FundSource best meets these criteria.</p>
+    <p class="aGMessage" id="cGIMessage11">You have chosen an Conservative Growth & Income portfolio<br>
+      between $500K and $750K that uses strategic asset allocation,<br>
+      invest in mutual funds and is managed by a third party. Pathways<br>
+      best meets these criteria.</p>
+    <p class="aGMessage" id="cGIMessage12">You have chosen an Conservative Growth & Income portfolio<br>
+      over $750K that uses strategic asset
+      allocation,<br>
+      invest in mutual funds and is
+      managed by Wells Fargo Advisors.<br>
+      FundSource best meets these criteria.</p>
+    <p class="aGMessage" id="cGIMessage13">You have chosen an Conservative Growth & Income portfolio<br>
+      over $750K that uses strategic asset
+      allocation, invest in mutual<br>
+      funds and is
+      managed by a third party. Pathways 
+      best meets<br>
+      these criteria.</p>
+     <p class="aGMessage" id="cGIMessage13a">You have chosen an Conservative Growth & Income portfolio<br>
+      over $750K that uses strategic asset
+      allocation, invest in exchange traded<br>
+      funds and is
+      managed by a third party. Allocation Advisors 
+      best meets<br>
+      these criteria.</p>
+      
+    <p class="cGIMessage" id="cGIMessage14">Sometimes we recognize the need for short-term adjustments to these<br>
+      models to reflect our current thinking about near-term risks and<br>
+      opportunities. We make these adjustments on an ad hoc or as-needed<br>
+      basis. This process is often referred to as tactical asset allocation. These<br>
+      adjustments are called tilts.<br>
+      <br>
+      You have chosen a Conservative Growth & Income portfolio that uses<br>
+      tactical asset allocation. Compass and International Commodity best<br>
+      meets these criteria.</p>
+    <p class="cGIMessage" id="cGIMessage15">Sometimes we recognize the need for short-term adjustments to these<br>
+      models to reflect our current thinking about near-term risks and<br>
+      opportunities. We make these adjustments on an ad hoc or as-needed<br>
+      basis. This process is often referred to as tactical asset allocation. These<br>
+      adjustments are called tilts.<br>
+      <br>
+      You have chosen a Conservative Growth & Income portfolio between<br>
+      $50K and $249K that uses tactical asset allocation. Compass and<br>
+      International Commodity best meets these criteria.</p>
+    <p class="cGIMessage" id="cGIMessage16">Sometimes we recognize the need for short-term adjustments to these<br>
+      models to reflect our current thinking about near-term risks and<br>
+      opportunities. We make these adjustments on an ad hoc or as-needed<br>
+      basis. This process is often referred to as tactical asset allocation. These<br>
+      adjustments are called tilts.</p>
+    <p class="cGIMessage" id="cGIMessage17">Sometimes we recognize the need for short-term adjustments to these<br>
+      models to reflect our current thinking about near-term risks and<br>
+      opportunities. We make these adjustments on an ad hoc or as-needed<br>
+      basis. This process is often referred to as tactical asset allocation. These<br>
+      adjustments are called tilts.<br>
+      <br>
+      You have chosen a Conservative Growth & Income portfolio over<br>
+      $250K that uses tactical asset allocation and invests with ETFs.<br>
+      Allocation Advisor best meets these criteria.</p>
+    <p class="cGIMessage" id="cGIMessage18">Sometimes we recognize the need for short-term adjustments to these<br>
+      models to reflect our current thinking about near-term risks and<br>
+      opportunities. We make these adjustments on an ad hoc or as-needed<br>
+      basis. This process is often referred to as tactical asset allocation. These<br>
+      adjustments are called tilts.<br>
+      <br>
+      You have chosen a Conservative Growth & Income portfolio over<br>
+      $250K that uses tactical asset allocation and invests with<br>
+      individual securities. Compass Conservative Growth & Income best<br>
+      meets these criteria.</p>
+    <p class="cGIMessage" id="cGIMessage19">Cyclical asset allocation is a process that reevaluates capital market<br>
+      assumptions for most critical asset classes every three months with an<br>
+      eye toward positioning portfolios appropriately for the next 36 months.<br>
+      <br>
+      You have selected a Conservative Growth & Income portfolio that<br>
+      uses cyclical asset allocation.  Allocation Advisors best meets these<br>
+      criteria.</p>
+    <p class="aGMessage" id="cGIMessage20">You have chosen an Conservative Growth & Income portfolio<br>
+      between $500K and $750K that uses strategic asset allocation,<br>
+      invest in mutual funds and individual securities. DMA
+      best<br> meets these criteria.</p>  
+      
+    <p id="cGISelectLinkMsg">Select a link above to learn more about the portfolio.</p>
+  </section>
+  <section id="cGITree">
+    <div id="cGIChooseApproach"> <strong id="cGIChooseApproachText">Choose an Approach</strong>.
+      <form>
+        <ul id="cGIApproachChoicesLinks" style="list-style-type: none;">
+          <li id="cGIApproachStrategic">
+            <input type="radio" name="cGIApproach" onclick="cGIStrategicRadio();" value="Strategic">
+            Strategic</li>
+          <li id="cGIApproachTactical">
+            <input type="radio" name="cGIApproach" onclick="cGITacticalRadio();" value="Tactical">
+            Tactical</li>
+          <li id="cGIApproachCyclical">
+            <input type="radio" name="cGIApproach" onclick="cGICyclicalRadio();" value="Cyclical">
+            Cyclical</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="cGIPortfolioSize"><strong>What is the account size?</strong>
+      <form action="">
+        <ul id="cGIAccountSizeRadio" style="list-style-type: none;">
+          <li id="cGI25">
+            <input type="radio" name="cGIAcctSize" onclick="cGISize25();" />
+            $25K to $250K </li>
+          <li id="cGI250">
+            <input type="radio" name="cGIAcctSize" onclick="cGISize250();">
+            $250K to $500K </li>
+          <li id="cGI500">
+            <input type="radio" name="cGIAcctSize" onclick="cGISize500();">
+            $500K to $750K </li>
+          <li id="cGI750">
+            <input type="radio" name="cGIAcctSize" onclick="cGISize750();">
+            $750K+ </li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="cGIS25InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="cGIS25InvestVehicleRadio" style="list-style-type: none;">
+          <li id="cGIS25MF">
+            <input type="radio" name="cGIS25Desired" onclick="cGIS25SMF();"/>
+            Mutual Funds</li>
+          <li id="cGIS25ETF">
+            <input type="radio" name="cGIS25Desired" onclick="cGIS25ETF();"/>
+            Exchange Traded Funds (ETFs)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="cGIS25AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="cGSM25MAcctMgrRadio" style="list-style-type:none;">
+          <li id="cGISM25WFA">
+            <input type="radio" name="cGISM25Desired" onclick="cGISM25MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="cGISM25ThirdParty">
+            <input type="radio" name="cGISM25Desired" onclick="cGISM25Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="cGISE25AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="cGISE25AcctMgrRadio" style="list-style-type:none;">
+          <li id="cGISE25WFA">
+            <input type="radio" name="cGISE25Desired" onclick="cGISE25MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="cGISE25ThirdParty">
+            <input type="radio" name="cGISE25Desired" onclick="cGISE25Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="cGIS250InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="cGIS250aGS750InvestVehicleRadio" style="list-style-type: none;">
+          <li id="cGIS250MF">
+            <input type="radio" name="cGIS250Desired" onclick="cGIS250MF();"/>
+            Mutual Funds</li>
+          <li id="cGIS250ETF">
+            <input type="radio" name="cGIS250Desired" onclick="cGIS250ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+          <li id="cGIS250SMA">
+            <input type="radio" name="cGIS250Desired" onclick="cGIS250SMAs();"/>
+            Mutual Funds and Individual Securities (SMA)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="cGISM250AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="cGISM250AcctMgrRadio" style="list-style-type:none;">
+          <li id="cGISM250WFA">
+            <input type="radio" name="cGISM250Desired" onclick="cGISM250MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="cGISM250ThirdParty">
+            <input type="radio" name="cGISM250Desired" onclick="cGISM250Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="cGISM500InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="cGIS500aGS750InvestVehicleRadio" style="list-style-type: none;">
+          <li id="cGIS500MF">
+            <input type="radio" name="cGIS500Desired" onclick="cGIS500MF();"/>
+            Mutual Funds</li>
+          <li id="cGIS500ETF">
+            <input type="radio" name="cGIS500Desired" onclick="cGIS500ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+          <li id="cGIS500SMA">
+            <input type="radio" name="cGIS500Desired" onclick="cGIS500SMAs();"/>
+            Mutual Funds and Individual Securities (SMA)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="cGISM500AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="cGISM500AcctMgrRadio" style="list-style-type:none;">
+          <li id="cGISM500WFA">
+            <input type="radio" name="cGISM500Desired" onclick="cGISM500MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="cGISM500ThirdParty">
+            <input type="radio" name="cGISM500Desired" onclick="cGISM500Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="cGISM750InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="cGIS750aGS750InvestVehicleRadio" style="list-style-type: none;">
+          <li id="cGIS750MF">
+            <input type="radio" name="cGIS750Desired" onclick="cGIS750MF();"/>
+            Mutual Funds</li>
+          <li id="cGIS750ETF">
+            <input type="radio" name="cGIS750Desired" onclick="cGIS750ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+          <li id="cGIS750SMA">
+            <input type="radio" name="cGIS750Desired" onclick="cGIS750SMAs();"/>
+            Mutual Funds and Individual Securities (SMA)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="cGISM750AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="cGISM750AcctMgrRadio" style="list-style-type:none;">
+          <li id="cGISM750WFA">
+            <input type="radio" name="cGISM750Desired" onclick="cGISM750MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="cGISM750ThirdParty">
+            <input type="radio" name="cGISM750Desired" onclick="cGISM750Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <!------------------------------Tactical--------------------------------------->
+    <div class="displayNone" id="cGITPortfolioSize"><strong>What is the account size?</strong>
+      <form action="">
+        <ul id="cGITAccountSizeRadio" style="list-style-type: none;">
+          <li id="cGIT25">
+            <input type="radio" name="cGITAcctSize" onclick="cGITSize25();" />
+            $25K to $49K </li>
+          <li id="cGIT50">
+            <input type="radio" name="cGITAcctSize" onclick="cGITSize50();">
+            $50K to $249K </li>
+          <li id="cGIT250">
+            <input type="radio" name="cGITAcctSize" onclick="cGITSize250();">
+            $250+ </li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="cGIST250InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="cGIST250InvestVehicleRadio" style="list-style-type: none;">
+          <li id="cGIST250ETF">
+            <input type="radio" name="cGIST250Desired" onclick="cGIST250ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+          <li id="cGIST250SMA">
+            <input type="radio" name="cGIST250Desired" onclick="cGIST250SMAs();"/>
+            Individual Securities (SMA)</li>
+        </ul>
+      </form>
+    </div>
+  </section>
+  </section>
+  <!--------------------------------------------end Conservative Growth & Income----------------------------------------------> 
+  <!-----------------------------------------------Moderate Growth & Income---------------------------------------------------->
+  <section class="master">
+  <section class="displayNone" id="mGILinksSection"><strong id="mGIDAPTitle">Discretionary Advisory Portfolios</strong>
+    <ul id="mGILinks">
+      <li id="mGIL1"><a href="">Allocation Advisors: Strategic ETF Moderate Growth & Income</a></li>
+      <li id="mGIL2"><a href="">Allocation Advisors: Ibbotson ETF Moderate Growth & Income</a></li>
+      <li id="mGIL3"><a href="">Allocation Advisors: CAAP Plus Moderate Growth & Income</a></li>
+      <li id="mGIL4"><a href="">Allocation Advisors: CAAP Plus Moderate Growth & Income Tax Managed</a></li>
+      <li id="mGIL5"><a href="">Allocation Advisors: Compass ETF Moderate Growth & Income</a></li>
+      <li id="mGIL6"><a href="">Allocation Advisors: CAAP Plus Moderate Growth & Income</a></li>
+      <li id="mGIL7"><a href="">Allocation Advisors: Active/Passive Moderate Growth & Income</a></li>
+      <li id="mGIL8"><a href="">FundSource Optimal Blend Moderate Growth & Income</a></li>
+      <li id="mGIL9"><a href="">FundSource Tax-Managed Moderate Growth & Income</a></li>
+      <li id="mGIL10"><a href="">FundSource Core American Moderate Growth & Income</a></li>
+      <li id="mGIL11"><a href="">FundSource Optimal Blend Moderate Growth & Income with Alternatives</a></li>
+      <li id="mGIL12"><a href="">FundSource Multi-Strategy Balanced Income</a></li>
+      <li id="mGIL13"><a href="">Pathways Moderate Growth & Income</a></li>
+      <li id="mGIL14"><a href="">Compass Moderate Growth & Income</a></li>
+      <li id="mGIL15"><a href="">Compass Income Multi-Asset Portfolio</a></li>
+      <li id="mGIL16"><a href="">DMA: Moderate Growth & Income Optimal Blend ($250,000)</a></li>
+      <li id="mGIL17"><a href="">DMA: Moderate Growth & Income Optimal Blend ($500,000)</a></li>
+      <li id="mGIL18"><a href="">DMA: Moderate Growth & Income Optimal Blend ($750,000)</a></li>
+      <li id="mGIL19"><a href="">FundSource Global Opportunities Growth & Income</a></li>
+      <li id="mGIL20"><a href="">Download This</a></li>
+    </ul>
+    <p class="cGIMessage" id="mGIMessage1">Strategic asset allocation uses assumptions<br>
+      based on Aggressive trends and expectations for<br>
+      the intermediate to distant future (7-10 years).</p>
+    <p class="mGIMessage" id="mGIMessage2">You have chosen an Moderate Growth & Income portfolio<br>
+      between $25K and $250K that uses strategic asset
+      allocation,<br>
+      invests in mutual funds and is
+      managed by Wells Fargo Advisors.<br>
+      FundSource best meets these criteria.</p>
+    <p class="mGIMessage" id="mGIMessage3">You have chosen an Moderate Growth & Income portfolio<br>
+      between $25K and $250K that uses strategic asset
+      allocation,<br>
+      invests in mutual funds and is
+      managed by a third party.<br>
+      Pathways best meets these criteria.</p>
+    <p class="mGIMessage" id="mGIMessage4">You have chosen an Moderate Growth & Income portfolio<br>
+      between $25K and $250K that uses strategic asset
+      allocation,<br>
+      invests in exchange traded funds and is
+      managed by Wells Fargo<br>
+      Advisors.
+      Allocation Advisor best meets these criteria.</p>
+    <p class="mGIMessage" id="mGIMessage5">You have chosen an Moderate Growth & Income portfolio<br>
+      between $25K and $250K that uses strategic asset
+      allocation,<br>
+      invests in exchange traded funds and is
+      managed by a third party.<br>
+      Allocation Advisor Ibbotson best meets these criteria.</p>
+    <p class="mGIMessage" id="mGIMessage6">You have chosen an Moderate Growth & Income portfolio<br>
+      between $250K and $500K that uses strategic asset
+      allocation,<br>
+      invests in mutual funds and is
+      managed by Wells Fargo Advisors.<br>
+      FundSource and Allocation Advisors best meets these criteria.</p>
+    <p class="mGIMessage" id="mGIMessage7">You have chosen an Moderate Growth & Income portfolio<br>
+      between $250K and $500K that uses strategic asset
+      allocation,<br>
+      invests in mutual funds and is
+      managed by a third party.<br>
+      Pathways best meets these criteria.</p>
+    <p class="mGIMessage" id="mGIMessage8">You have chosen an Moderate Growth & Income portfolio<br>
+      between $500K and $750K that uses strategic asset
+      allocation,<br>
+      invests in mutual funds and is
+      managed by Wells Fargo Advisors.<br>
+      FundSource and Allocation Advisors best meets these criteria.</p>
+    <p class="mGIMessage" id="mGIMessage9">You have chosen an Moderate Growth & Income portfolio<br>
+      between $500K and $750K that uses strategic asset
+      allocation,<br>
+      invests in mutual funds and is
+      managed by a third party.<br>
+      Pathways best meets these criteria.</p>
+    <p class="mGIMessage" id="mGIMessage10">You have chosen an Moderate Growth & Income portfolio<br>
+      between $500K and $750K that uses strategic asset
+      allocation,<br>
+      invests in exchange traded funds and is
+      managed by Wells Fargo Advisors.<br>
+      Allocation Advisors best meets these criteria.</p>
+    <p class="mGIMessage" id="mGIMessage11">You have chosen an Moderate Growth & Income portfolio<br>
+      between $500K and $750K that uses strategic asset
+      allocation,<br>
+      invests in exchange traded funds and is
+      managed by a third party.<br>
+      Allocation Advisors: Ibbotson best meets these criteria.</p>
+    <p class="mGIMessage" id="mGIMessage12">You have chosen an Moderate Growth & Income portfolio<br>
+      over $750K that uses strategic asset
+      allocation,<br>
+      invests in mutual funds and is
+      managed by Wells Fargo Advisors.<br>
+      FundSource and Allocation Advisors best meets these criteria.</p>
+    <p class="mGIMessage" id="mGIMessage13">You have chosen an Moderate Growth & Income portfolio<br>
+      over $750K that uses strategic asset
+      allocation,<br>
+      invests in mutual funds and is
+      managed by a third party.<br>
+      Pathways best meets these criteria.</p>
+    <p class="mGIMessage" id="mGIMessage14">You have chosen an Moderate Growth & Income portfolio<br>
+      over $750K that uses strategic asset
+      allocation,<br>
+      invests in mutual funds and is
+      managed by a third party.<br>
+      Pathways best meets these criteria.</p>
+    <p class="mGIMessage" id="mGIMessage15">You have chosen an Moderate Growth & Income portfolio<br>
+      over $750K that uses strategic asset
+      allocation,
+      invests<br>
+      in exchange traded funds and is
+      managed by Wells Fargo<br>
+      Advisors.
+      Allocation Advisors best meets these criteria.</p>
+    <p class="mGIMessage" id="mGIMessage16">You have chosen an Moderate Growth & Income portfolio<br>
+      over $750K that uses strategic asset
+      allocation,
+      invests<br>
+      in exchange traded funds and is
+      managed by a third party.<br>
+      Allocation Advisors Ibbotson best meets these criteria.</p>
+    <p class="mGIMessage" id="mGIMessage17">You have chosen an Moderate Growth & Income portfolio<br>
+      over $750K that uses strategic asset
+      allocation,
+      invests<br>
+      in exchange traded funds and individual securities. DMA best<br>
+      meets these criteria. Select a link above to learn more<br>
+      about the various DMA models and their corresponding<br>
+      minimums.</p>
+    <p class="mGIMessage" id="mGIMessage18">Sometimes we recognize the need for short-term adjustments to these<br>
+      models to reflect our current thinking about near-term risks and<br>
+      opportunities. We make these adjustments on an ad hoc or as-needed<br>
+      basis. This process is often referred to as tactical asset allocation. These<br>
+      adjustments are called tilts.</p>
+    <p class="mGIMessage" id="mGIMessage19">You have chosen a Moderate Growth & Income<br>
+      portfolio between $25K and $49K that uses tactical<br>
+      asset allocation. FundSource Global 
+      Opportunities<br>
+      or Allocation Advisors: International &  
+      Commodity<br>
+      Growth & Income best meets these criteria.</p>
+    <p class="mGIMessage" id="mGIMessage20">You have chosen a Moderate Growth & Income<br>
+      portfolio between $25K and $49K that uses tactical<br>
+      asset allocation. FundSource Global 
+      Opportunities<br>
+      Growth & Income best meets these criteria.</p>
+    <p class="mGIMessage" id="mGIMessage21">You have chosen a Moderate Growth & Income<br>
+      portfolio between $50K and $249K that uses tactical<br>
+      asset allocation and invests with mutual funds. Fund-<br>
+      Source Global 
+      Opportunities Growth & Income best<br>
+      meets these criteria.</p>
+    <p class="mGIMessage" id="mGIMessage22">You have chosen a Moderate Growth & Income<br>
+      portfolio between $50K and $249K that uses tactical<br>
+      asset allocation and invests with exchange traded funds.<br>
+      Allocation Advisors: Compass ETF Moderate Growth & <br>
+      Income best meets these criteria.</p>
+    <p class="mGIMessage" id="mGIMessage23">You have chosen a Moderate Growth & Income 
+      portfolio<br>
+      between $50K and $249K that uses tactical
+      asset<br>
+      allocation and invests with individual stocks and bonds. <br>
+      Compass Income Multi-Asset Portfolio best meets<br>
+      these criteria.</p>
+    <p class="mGIMessage" id="mGIMessage24">You have chosen a Moderate Growth & Income<br>
+      portfolio over $250K that uses tactical
+      asset allocation<br>
+      and invests with mutual funds. FundSource Global<br>
+      Opportunities  best meets these criteria.</p>
+    <p class="mGIMessage" id="mGIMessage25">You have chosen a Moderate Growth & Income<br>
+      portfolio over $250K that uses tactical
+      asset allocation<br>
+      and invests with exchange traded funds. Allocation Advisors:<br>
+      Compass ETF Moderate Growth & <br>
+      Income best meets these criteria.</p>
+    <p class="mGIMessage" id="mGIMessage26">You have chosen a Moderate Growth & Income<br>
+      portfolio over $250K that uses tactical
+      asset allocation<br>
+      and invests with individual securities. Compass Moderate<br>
+      Growth & Income best meets these criteria.</p>
+    <p class="mGIMessage" id="mGIMessage27">Cyclical asset allocation is a process that reevaluates capital market<br>
+      assumptions for most critical asset classes every three months with<br>
+      an eye toward positioning portfolios appropriately for the next 36 months.</p>
+    <p class="mGIMessage" id="mGIMessage28">You have chosen a Moderate Growth & Income portfolio that uses cyclical<br>
+      asset allocation. Allocation Advisors best meets these criteria.</p>
+    <p class="mGIMessage" id="mGIMessage29">You have chosen an Moderate Growth & Income portfolio<br>
+      between $500K and $750K that uses strategic asset
+      allocation,<br>
+      invests in mutual funds and individual securities.<br>
+      DMA best meets these criteria.</p>
+      
+    <p class="mGIMessage" id="mGIMessage30">You have chosen an Moderate Growth & Income portfolio<br>
+      between $250K and $500K that uses strategic asset
+      allocation,<br>
+      invests in exchange traded funds and is
+      managed by Wells Fargo<br> Advisors.
+      Allocation Advisors best meets these criteria.</p>
+      
+    <p class="mGIMessage" id="mGIMessage31">You have chosen an Moderate Growth & Income portfolio<br>
+      between $250K and $500K that uses strategic asset
+      allocation,<br>
+      invests in exchange traded funds and is
+      managed by a third party.<br>
+      Allocation Advisors best meets these criteria.</p>
+      
+    <p class="mGIMessage" id="mGIMessage32">You have chosen an Moderate Growth & Income portfolio<br>
+      between $250K and $500K that uses strategic asset
+      allocation,<br>
+      invests in mutual funds and individual securities and is
+      managed<br> by Wells Fargo Advisors.
+      DMA and Allocation Advisors best<br> meets these criteria.</p>
+      
+    <p id="mGISelectLinkMsg">Select a link above to learn more about the portfolio.</p>
+  </section>
+  <section id="mGITree">
+ <div id="mGIChooseApproach"> <strong id="mGIChooseApproachText">Choose an Approach</strong>.
+      <form>
+        <ul id="mGIApproachChoicesLinks" style="list-style-type: none;">
+          <li id="mGIApproachStrategic">
+            <input type="radio" name="mGIApproach" onclick="mGIStrategicRadio();" value="Strategic">
+            Strategic</li>
+          <li id="mGIApproachTactical">
+            <input type="radio" name="mGIApproach" onclick="mGITacticalRadio();" value="Tactical">
+            Tactical</li>
+          <li id="mGIApproachCyclical">
+            <input type="radio" name="mGIApproach" onclick="mGICyclicalRadio();" value="Cyclical">
+            Cyclical</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mGIPortfolioSize"><strong>What is the account size?</strong>
+      <form action="">
+        <ul id="mGIAccountSizeRadio" style="list-style-type: none;">
+          <li id="mGI25">
+            <input type="radio" name="mGIAcctSize" onclick="mGISize25();" />
+            $25K to $250K </li>
+          <li id="mGI250">
+            <input type="radio" name="mGIAcctSize" onclick="mGISize250();">
+            $250K to $500K </li>
+          <li id="mGI500">
+            <input type="radio" name="mGIAcctSize" onclick="mGISize500();">
+            $500K to $750K </li>
+          <li id="mGI750">
+            <input type="radio" name="mGIAcctSize" onclick="mGISize750();">
+            $750K+ </li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mGISM25InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="mGISInvestVehicleRadio" style="list-style-type: none;">
+          <li id="mGIS25MF">
+            <input type="radio" name="mGIS25Desired" onclick="mGIS25MF();"/>
+            Mutual Funds</li>
+          <li id="mGIS25ETF">
+            <input type="radio" name="mGIS25Desired" onclick="mGIS25ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mGISM25AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="cGISM25AcctMgrRadio" style="list-style-type:none;">
+          <li id="mGISM250WFA">
+            <input type="radio" name="mGISM25Manager" onclick="mGISM25MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="mGISM25ThirdParty">
+            <input type="radio" name="mGISM25Manager" onclick="mGISM25Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mGISE25AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="mGISE25AcctMgrRadio" style="list-style-type:none;">
+          <li id="mGISE25WFA">
+            <input type="radio" name="mGISE25Manager" onclick="mGISE25MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="mGISE25ThirdParty">
+            <input type="radio" name="mGISE25Manager" onclick="mGISE25Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mGIS250InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="mGIS250InvestVehicleRadio" style="list-style-type: none;">
+          <li id="mGIS250MF">
+            <input type="radio" name="mGIS250Desired" onclick="mGIS250MF();"/>
+            Mutual Funds</li>
+          <li id="mGIS250ETF">
+            <input type="radio" name="mGIS250Desired" onclick="mGIS250ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+          <li id="mGIS250SMA">
+            <input type="radio" name="mGIS250Desired" onclick="mGISE250SMAs();"/>
+            Mutual Funds and Individual Securities (SMA)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mGISM250AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="mGISM250AcctMgrRadio" style="list-style-type:none;">
+          <li id="mGISM250WFA">
+            <input type="radio" name="mGISM250Manager" onclick="mGISM250MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="mGISM250ThirdParty">
+            <input type="radio" name="mGISM250Manager" onclick="mGISM250Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mGISE250AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="mGISE250AcctMgrRadio" style="list-style-type:none;">
+          <li id="mGISE250WFA">
+            <input type="radio" name="mGISE250Manager" onclick="mGISE250MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="mGISE250ThirdParty">
+            <input type="radio" name="mGISE250Manager" onclick="mGISE250Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mGIS500InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="mGIS500InvestVehicleRadio" style="list-style-type: none;">
+          <li id="mGIS500MF">
+            <input type="radio" name="mGIS500Desired" onclick="mGIS500MF();"/>
+            Mutual Funds</li>
+          <li id="mGIS500ETF">
+            <input type="radio" name="mGIS500Desired" onclick="mGIS500ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+          <li id="mGIS500SMA">
+            <input type="radio" name="mGIS500Desired" onclick="mGIS500SMAs();"/>
+            Mutual Funds and Individual Securities (SMA)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mGISM500AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="mGISM500AcctMgrRadio" style="list-style-type:none;">
+          <li id="mGISM500WFA">
+            <input type="radio" name="mGISM500Manager" onclick="mGISM500MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="mGISM500ThirdParty">
+            <input type="radio" name="mGISM500Manager" onclick="mGISM500Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mGIS750InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="mGIS750InvestVehicleRadio" style="list-style-type: none;">
+          <li id="mGIS750MF">
+            <input type="radio" name="mGIS750Desired" onclick="mGIS750MF();"/>
+            Mutual Funds</li>
+          <li id="mGIS750ETF">
+            <input type="radio" name="mGIS750Desired" onclick="mGIS750ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+          <li id="mGIS750SMA">
+            <input type="radio" name="mGIS750Desired" onclick="mGIS750SMAs();"/>
+            Mutual Funds and Individual Securities (SMA)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mGISM750AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="mGISM750AcctMgrRadio" style="list-style-type:none;">
+          <li id="mGISM750WFA">
+            <input type="radio" name="mGISM750Manager" onclick="mGISM750MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="mGISM750ThirdParty">
+            <input type="radio" name="mGISM750Manager" onclick="mGISM750Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mGISE750AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="mGISE750AcctMgrRadio" style="list-style-type:none;">
+          <li id="mGISE750WFA">
+            <input type="radio" name="mGISE750Manager" onclick="mGISE750MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="mGISE750ThirdParty">
+            <input type="radio" name="mGISE750Manager" onclick="mGISE750Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <!-----------------------------------end Strategic---------------------------------------------------> 
+    <!-----------------------------------------begin Tactical--------------------------------------------->
+    <div class="displayNone" id="mGITPortfolioSize"><strong>What is the account size?</strong>
+      <form action="">
+        <ul id="mGITAccountSizeRadio" style="list-style-type: none;">
+          <li id="mGIT25">
+            <input type="radio" name="mGITAcctSize" onclick="mGITSize25();" />
+            $25K to $49K </li>
+          <li id="mGIT50">
+            <input type="radio" name="mGITAcctSize" onclick="mGITSize50();">
+            $50K to $249K </li>
+          <li id="mGIT250">
+            <input type="radio" name="mGITAcctSize" onclick="mGITSize250();">
+            $250+ </li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mGIT25InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="mGIT25InvestVehicleRadio" style="list-style-type: none;">
+          <li id="mGIT25MF">
+            <input type="radio" name="mGIT25Desired" onclick="mGIT25MF();"/>
+            Mutual Funds</li>
+          <li id="mGIT25ETF">
+            <input type="radio" name="mGIT25Desired" onclick="mGIT25ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mGIT50InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="mGIT50InvestVehicleRadio" style="list-style-type: none;">
+          <li id="mGIT50MF">
+            <input type="radio" name="mGIT50Desired" onclick="mGIT50MF();"/>
+            Mutual Funds</li>
+          <li id="mGIT50ETF">
+            <input type="radio" name="mGI505Desired" onclick="mGIT50ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+          <li id="mGIT50ISB">
+            <input type="radio" name="mGI505Desired" onclick="mGIT50ISBs();"/>
+            Individual Stocks and Bonds</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="mGIT250InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="mGIT250InvestVehicleRadio" style="list-style-type: none;">
+          <li id="mGIT250MF">
+            <input type="radio" name="mGIT250Desired" onclick="mGIT250MF();"/>
+            Mutual Funds</li>
+          <li id="mGIT250ETF">
+            <input type="radio" name="mGI250Desired" onclick="mGIT250ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+          <li id="mGIT250ISB">
+            <input type="radio" name="mGI250Desired" onclick="mGIT250SMAs();"/>
+            Individual Securities (SMAs)</li>
+        </ul>
+      </form>
+    </div>
+    <!-------------------------------------end Tactical----------------------------------------------------> 
+  </section>
+  </section>
+  <!--------------------------------------------END Moderate Growth & Income----------------------------------------------------> 
+  <!-------------------------------------------Aggressive Growth & Income------------------------------------------------------->
+  <section class="master">
+  <section class="displayNone" id="aGILinksSection"><strong id="aGIDAPTitle">Discretionary Advisory Portfolios</strong>
+    <ul id="aGILinks">
+      <li id="aGIL1"><a href="">Allocation Advisors Compass ETF Aggressive Growth & Income</a></li>
+      <li id="aGIL2"><a href="">FundSource Global Opportunities Asset Allocation</a></li>
+      <li id="aGIL3"><a href="">FundSource Optimal Blend Aggressive Growth & Income</a></li>
+      <li id="aGIL4"><a href="">FundSource Optimal Blend Aggressive Growth & Income with Alternatives</a></li>
+      <li id="aGIL5"><a href="">FundSource Tax-Managed Aggressive Growth & Income</a></li>
+      <li id="aGIL6"><a href="">FundSource Global Opportunities Aggressive Growth & Income</a></li>
+      <li id="aGIL7"><a href="">Pathways Aggressive Growth & Income</a></li>
+      <li id="aGIL8"><a href="">Compass Aggressive Growth & Income</a></li>
+      <li id="aGIL9"><a href="">DMA: Moderate Growth & Income Optimal Blend ($250,000)</a></li>
+      <li id="aGIL10"><a href="">DMA: Moderate Growth & Income Optimal Blend ($500,000)</a></li>
+      <li id="aGIL11"><a href="">DMA: Moderate Growth & Income Optimal Blend ($750,000)</a></li>
+      <li id="aGIL12"><a href="">Download This</a></li>
+      <li class="commonLi2"><a class="commonLink" id="aGIL13" href="#">View This</a></li>
+    </ul>
+    <p class="aGIMessage" id="aGIMessage1">Strategic asset allocation uses assumptions<br>
+      based on Aggressive trends and expectations for<br>
+      the intermediate to distant future (7-10 years).</p>
+    <p class="aGMessage" id="aGIMessage2">You have chosen an Aggressive Growth & Income portfolio<br>
+      between $25K and $250K that uses strategic asset allocation, <br>
+      invests in mutual funds and is managed by Wells Fargo Advisors.<br>
+      FundSource best meets these criteria.</p>
+    <p class="aGMessage" id="aGIMessage3">You have chosen an Aggressive Growth & Income portfolio<br>
+      between $25K and $250K that uses strategic asset allocation, <br>
+      invests in mutual funds and is managed by a third party.<br>
+      Pathways best meets these criteria.</p>
+    <p class="aGMessage" id="aGIMessage4">You have chosen an Aggressive Growth & Income portfolio<br>
+      between $250K and $500K that uses strategic asset allocation, <br>
+      invests in mutual funds and is managed by Wells Fargo Advisors.<br>
+      FundSource best meets these criteria.</p>
+    <p class="aGMessage" id="aGIMessage5">You have chosen an Aggressive Growth & Income portfolio<br>
+      between $250K and $500K that uses strategic asset allocation, <br>
+      invests in mutual funds and is managed by a third party.<br>
+      Pathways best meets these criteria.</p>
+    <p class="aGMessage" id="aGIMessage6">You have chosen an Aggressive Growth & Income portfolio<br>
+      between $250K and $500K that uses strategic asset allocation,<br>
+      invests in mutual funds and individual securities and is managed<br>
+      by Wells Fargo Advisors. DMA best meets these criteria.</p>
+    <p class="aGMessage" id="aGIMessage7">You have chosen an Aggressive Growth & Income portfolio<br>
+      between $500K and $750K that uses strategic asset allocation, <br>
+      invests in mutual funds and is managed by Wells Fargo Advisors.<br>
+      FundSource best meets these criteria.</p>
+    <p class="aGMessage" id="aGIMessage8">You have chosen an Aggressive Growth & Income portfolio<br>
+      between $500K and $750K that uses strategic asset allocation, <br>
+      invests in mutual funds and is managed by a third party.<br>
+      Pathways best meets these criteria.</p>
+    <p class="aGMessage" id="aGIMessage9">You have chosen an Aggressive Growth & Income portfolio<br>
+      between $500K and $750K that uses strategic asset allocation, <br>
+      invests in mutual funds and individual securities and is managed<br>
+      by Wells Fargo Advisors.
+      DMA best meets these criteria.</p>
+    <p class="aGMessage" id="aGIMessage10">You have chosen an Aggressive Growth & Income portfolio<br>
+      over $750K that uses strategic asset allocation,
+      invests in mutual<br>
+      funds and is managed by Wells Fargo Advisors.
+      FundSource best<br>
+      meets these criteria.</p>
+    <p class="aGMessage" id="aGIMessage11">You have chosen an Aggressive Growth & Income portfolio<br>
+      over $750K that uses strategic asset allocation,
+      invests in mutual<br>
+      funds and is managed by a third party.
+      Pathways best meets<br>
+      these criteria.</p>
+    <p class="aGMessage" id="aGIMessage12">You have chosen an Aggressive Growth & Income portfolio<br>
+      over $750K that uses strategic asset allocation and
+      invests in<br>
+      mutual funds and individual securities.
+      DMA best meets these<br>
+      criteria.</p>
+    <p class="aGMessage" id="aGIMessage13">Sometimes we recognize the need for short-term adjustments to<br>
+      these models to reflect our current thinking about newr-term risks<br>
+      and opportunities. These adjustments are made on an ad hoc or as<br>
+      needed basis. This process is often referred to as tactical asset<br>
+      allocation. These adjustments are called tilts.</p>
+    <p class="aGMessage" id="aGIMessage14">You have chosen an Aggressive Growth & Income portfolio<br>
+      between $25K and $49K that uses tactical asset allocation.</p>
+    <p class="aGMessage" id="aGIMessage15">You have chosen an Aggressive Growth & Income portfolio<br>
+      between $25K and $49K that uses tactical asset allocation and <br>
+      invests in mutual funds. FundSource best meets these criteria.</p>
+    <p class="aGMessage" id="aGIMessage16">You have chosen an Aggressive Growth & Income portfolio<br>
+      between $50K and $249K that uses tactical asset allocation,
+      and invests in<br>
+      mutual funds. FundSource best meets these criteria.</p>
+    <p class="aGMessage" id="aGIMessage17">You have chosen an Aggressive Growth & Income portfolio<br>
+      between $50K abd $249K that uses tactical asset allocation,
+      and invests in<br>
+      exchange traded funds. Compass ETF Aggressive Growth & <br>
+      Income best meets these criteria.</p>
+    <p class="aGMessage" id="aGIMessage18">You have chosen an Aggressive Growth & Income portfolio<br>
+      over $250K that uses tactical asset allocation and
+      invests in<br>
+      mutual funds. FundSource best meets these criteria.</p>
+    <p class="aGMessage" id="aGIMessage19">You have chosen an Aggressive Growth & Income portfolio<br>
+      over $250K that uses tactical asset allocation,
+      and invests in<br>
+      exchange traded funds. Compass ETF Aggressive Growth & <br>
+      Income best meets these criteria.</p>
+    <p class="aGMessage" id="aGIMessage20">You have chosen an Aggressive Growth & Income portfolio<br>
+      over $250K that uses tactical asset allocation and
+      invests in<br>
+      individual securities.
+      Compass best meets these criteria.</p>
+    <p id="aGISelectLinkMsg">Select a link above to learn more about the portfolio.</p>
+  </section>
+  <section id="aGITree">
+    <div id="aGIChooseApproach"> <strong id="aGIChooseApproachText">Choose an Approach</strong>.
+      <form>
+        <ul id="aGIApproachChoicesLinks" style="list-style-type: none;">
+          <li id="aGIApproachStrategic">
+            <input type="radio" name="aGIApproach" onclick="aGIStrategicRadio();" value="Strategic">
+            Strategic</li>
+          <li id="aGIApproachTactical">
+            <input type="radio" name="aGIApproach" onclick="aGITacticalRadio();" value="Tactical">
+            Tactical</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="aGIPortfolioSize"><strong>What is the account size?</strong>
+      <form action="">
+        <ul id="aGIAccountSizeRadio" style="list-style-type: none;">
+          <li id="aGI25">
+            <input type="radio" name="aGIAcctSize" onclick="aGISize25();" />
+            $25K to $250K </li>
+          <li id="aGI250">
+            <input type="radio" name="aGIAcctSize" onclick="aGISize250();">
+            $250K to $500K </li>
+          <li id="aGI500">
+            <input type="radio" name="aGIAcctSize" onclick="aGISize500();">
+            $500K to $750K </li>
+          <li id="aGI750">
+            <input type="radio" name="aGIAcctSize" onclick="aGISize750();">
+            $750K+ </li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="aGISE750AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="aGISE750AcctMgrRadio" style="list-style-type:none;">
+          <li id="aGISE750WFA">
+            <input type="radio" name="aGISE750Manager" onclick="aGISE750MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="aGISE750ThirdParty">
+            <input type="radio" name="aGISE750Manager" onclick="aGISE750Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="aGIS25InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="aGIS25InvestVehicleRadio" style="list-style-type: none;">
+          <li id="aGIS25MF">
+            <input type="radio" name="aGIS25Desired" onclick="aGIS25MF();" checked="checked"/>
+            Mutual Funds</li>
+          <li id="aGIS25ETF">
+            <input type="radio" name="aGIS25Desired" onclick="aGIS25ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="aGIS25AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="aGISM25AcctMgrRadio" style="list-style-type:none;">
+          <li id="aGISM25WFA">
+            <input type="radio" name="aGISM25Manager" onclick="aGISM25MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="aGISM25ThirdParty">
+            <input type="radio" name="aGISM25Manager" onclick="aGISM25Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="aGISM250InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="aGISM250InvestVehicleRadio" style="list-style-type: none;">
+          <li id="aGISM250MF">
+            <input type="radio" name="aGISM250Desired" onclick="aGISM250MF();"/>
+            Mutual Funds</li>
+          <li id="aGISM250ETF">
+            <input type="radio" name="aGISM250Desired" onclick="aGISM250ETFs();"/>
+            Mutual Funds and Individual Securities (SMAs)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="aGISM250AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="aGISM250AcctMgrRadio" style="list-style-type:none;">
+          <li id="aGISM250WFA">
+            <input type="radio" name="aGISM2505Manager" onclick="aGISM250MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="aGISM250ThirdParty">
+            <input type="radio" name="aGISM250Manager" onclick="aGISM250Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="aGIS500InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="aGIS500InvestVehicleRadio" style="list-style-type: none;">
+          <li id="aGIS500MF">
+            <input type="radio" name="aGIS500Desired" onclick="aGIS500MF();"/>
+            Mutual Funds</li>
+          <li id="aGIS500ETF">
+            <input type="radio" name="aGIS500Desired" onclick="aGIS500ETFs();"/>
+            Mutual Funds and Individual Securities (SMAs)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="aGISM500AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="aGISM500AcctMgrRadio" style="list-style-type:none;">
+          <li id="aGISM500WFA">
+            <input type="radio" name="aGISM500Manager" onclick="aGISM500MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="aGISM500ThirdParty">
+            <input type="radio" name="aGISM500Manager" onclick="aGISM500Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="aGIS750InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="aGIS750InvestVehicleRadio" style="list-style-type: none;">
+          <li id="aGIS750MF">
+            <input type="radio" name="aGIS750Desired" onclick="aGIS750MF();"/>
+            Mutual Funds</li>
+          <li id="aGIS750ETF">
+            <input type="radio" name="aGIS750Desired" onclick="aGIS750ETFs();"/>
+            Mutual Funds and Individual Securities (SMAs)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="aGISM750AcctMgr"> <strong>Who is managing the account?</strong>
+      <form>
+        <ul id="aGISM750AcctMgrRadio" style="list-style-type:none;">
+          <li id="aGISM750WFA">
+            <input type="radio" name="aGISM750Manager" onclick="aGISM750MgrWFA();"/>
+            Wells Fargo Advisors</li>
+          <li id="aGISM750ThirdParty">
+            <input type="radio" name="aGISM750Manager" onclick="aGISM750Mgr3p();"/>
+            Third Party Manager</li>
+        </ul>
+      </form>
+    </div>
+    <!-----------------------------------------End Strategic--------------------------------------------------------------------> 
+    <!-------------------------------------------Begin Tactical----------------------------------------------------------------->
+    <div class="displayNone" id="aGITPortfolioSize"><strong>What is the account size?</strong>
+      <form action="">
+        <ul id="mGITAccountSizeRadio" style="list-style-type: none;">
+          <li id="aGIT25">
+            <input type="radio" name="aGITAcctSize" onclick="aGITSize25();" />
+            $25K to $49K </li>
+          <li id="aGIT50">
+            <input type="radio" name="aGITAcctSize" onclick="aGITSize50();">
+            $50K to $249K </li>
+          <li id="aGIT250">
+            <input type="radio" name="aGITAcctSize" onclick="aGITSize250();">
+            $250+ </li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="aGIT25InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="aGIT25InvestVehicleRadio" style="list-style-type: none;">
+          <li id="aGIT25MF">
+            <input type="radio" name="aGIT25Desired" onclick="aGIT25MF();"/>
+            Mutual Funds</li>
+          <li id="aGIT25ETF">
+            <input type="radio" name="aGIT25Desired" id="aGIETFLink" onclick="aGIT25ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="aGIT50InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="aGIT50InvestVehicleRadio" style="list-style-type: none;">
+          <li id="aGIT50MF">
+            <input type="radio" name="aGIT50Desired" onclick="aGIT50MF();"/>
+            Mutual Funds</li>
+          <li id="aGIT50ETF">
+            <input type="radio" name="aGIT50Desired" onclick="aGIT50ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+        </ul>
+      </form>
+    </div>
+    <div class="displayNone" id="aGIT250InvestmentVehicle"> <strong>What is the desired investment vehicle?</strong>
+      <form>
+        <ul id="aGIT250InvestVehicleRadio" style="list-style-type: none;">
+          <li id="aGIT250MF">
+            <input type="radio" name="aGIT250Desired" onclick="aGIT250MF();"/>
+            Mutual Funds</li>
+          <li id="aGIT250ETF">
+            <input type="radio" name="aGIT250Desired" onclick="aGIT250ETFs();"/>
+            Exchange Traded Funds (ETFs)</li>
+          <li id="aGIT250SMA">
+            <input type="radio" name="aGIT250Desired" onclick="aGIT250SMAs();"/>
+            Individual Securities (SMAs)</li>
+        </ul>
+      </form>
+    </div>
+    <!-------------------------------------------end Tactical-------------------------------------------------------------------> 
+  </section>
+  </section>
+  <!-------------------------------------------end Aggressive Growth & Income---------------------------------------------------->
+  <p id="wfaEndNote">This is the end of this scenario.  You can view your solution(s) by clicking on a link to the right. </p>
+  
+  <div id="aGIModal" class="modal">
+          <div class="aGIPane"> 
+            <div id="aGIModalBanner"><strong id="aGIPaneTitle">FundSource:</strong></div>
+           
+                <ul class="modalLinks">
+                <strong class="modalTitle">Open an Account</strong>
+                  <li><a href="">SmartStation New Account Opening</a></li>
+                  <li><a href="">Operational Procedures</a></li>
+                  <li><a href="">FundSource Paperwork</a></li>
+                </ul>
+                <ul class="modalLinks">
+                <strong class="modalTitle">Learn about the Product</strong>
+                  <li><a href="">Client Product Guide</a></li>
+                  <li><a href="">FundSource Global Opportunities Asset Allocator</a></li>
+                  <li><a href="">Product Home Page</a></li>
+                </ul>
+                <ul class="modalLinks">
+                <strong class="modalTitle">Client Proposal</strong>
+                  <li><a href="">Print Proposal</a></li>
+                </ul>
+                <strong id="cInfo">Contact Information</strong>
+                <p id="contInfo">For product support please contact 888-MKT-DESK<br> (888-658-3375) or
+                314-955-2210. For Operational<br> Support please contact 800-775-7021;
+                Option 1,1.</p>
+
+            
+            <button class="aGIClose" id="close" type="button">close</button>
+            <script src="aGIModalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

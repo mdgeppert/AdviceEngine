@@ -1,0 +1,173 @@
+body{width: 100vw;}
+
+body{background: #F2F2F2; font-size: .8vw;}
+
+#banner{width: 100%; margin-left: -1vw; margin-top: -1vh; height: 6vh;border-bottom: 2px solid #D6D6D6; background: #FFFFFF;}
+
+#bannerText{margin-top: 1.5vh; margin-left: 17vw; font-size: 3vh; font-weight: bold; position: absolute;}
+
+h1{margin-left: 18vw; font-size: 2.5vh;}
+
+h4{margin-left: 17.25vw;}
+
+#title{color: #FFFFFF; font-size: 24px; margin-top: 2px; margin-left: 10px; position: absolute;}
+
+#radioOptions{margin-left: 10vw;}
+
+#radioBlock{margin-left:4vw; background: #FFFFFF; border: 1px solid #D6D6D6; margin-top: 2vh;width: 90%; padding-bottom: 1vh;}
+
+.radioLeft{width: 15vw;} 
+
+.radioCenter{width: 15vw; margin-top: .5vh;}
+
+.radioRight{width: 18vw; margin-top: .5vh;}
+
+#sectionOne{margin-left: 18vw; width: 90%; height: 58vh; overflow: auto;}
+
+.mainMenu{display: inline-block; list-style-type: none; color: #000000; font-weight: bold; font-size: .8vw;}
+
+#discretionaryAdvisoryPortfolios{background: #FFFFFF; border: 1px solid #D6D6D6; width: 19%; margin-top: 2vh; margin-left: 5vw;}
+
+#conservativeIncomeOptions{margin-top: 9vh; margin-left: 10vw; display: none;}
+
+#dAP{margin-top: -2vh; position: absolute;}
+
+#diaTitle{font-size: .8vw; position: absolute;}
+
+a{color: #0000FF; font-size: .8vw;}
+
+#diaTitle{margin-left: 2.2vw; margin-top: 1vh; position: absolute;}
+
+#menuList1{list-style-type: none; margin-top: 3.5vh; margin-left: -1%;}
+
+.listItem1{padding-bottom: 1vh; margin-left: 1vw;}
+
+#clause1{margin-left: 37%; margin-top: -15vh; font-size: 1.4vh;}
+
+#clause2{margin-left: 37%; margin-top: 2vh; display: block; font-size: 1.4vh;} 
+
+#clause3{margin-left: 37%; margin-top: 1vh; display: block; font-size: 1.4vh;}  
+
+#buttons{margin-left: 31vw; bottom: 2vh; position: absolute;}
+
+.navButton{display: inline-block; margin-left: .75vw; position: relative;}
+
+#bottomButtons{display: inline-block;}
+
+#goHome{width: 10vw; height: 3vh;; border-radius: 8px; background:linear-gradient(to right, #FFFFFF, #C9E1EB);font-size: 1.25vh;}
+
+#startOver{width: 10vw; border-radius: 8px; background:linear-gradient(to right, #FFFFFF, #C9E1EB);font-size: 1.25vh; height: 3vh;}
+
+#aEHome{border-radius: 8px;  width: 10vw; height: 3vh; background:linear-gradient(to right, #FFFFFF, #C9E1EB); font-size: 1.25vh;} 
+
+#sectionConservativeIncome{margin-left: 10vw; margin-top: 4vh;} 
+
+#conservativeIncomeLinks{margin-left: 35vw; margin-top: -6.5vh; position: absolute; display: none}
+
+#selectLink{display: none; margin-left: 2vw;}
+
+#selectLinkMsg{display: none; margin-left: 2vw;}
+
+
+
+#chooseApproachConservativeIncome{margin-top: 2vh; list-style-type: none;}
+
+#chooseApproachConservativeIncome li{margin-top: .75vh;}
+
+#chooseApproachRadio{list-style-type: none;}
+
+#modIncAcctSizeRadio{list-style-type: none;}
+
+#showOnStrategic{display: none; margin-left: 2vw;}
+
+#showOnStrategic2{display: none; margin-left: 2vw;}
+
+#showOnStrategic3{display: none; margin-left: 2vw;}
+
+#showOnStrategic4{display: none; margin-left: 2vw;}
+
+#showOnTactical1{display: none; margin-left: 2vw;}
+
+#showOnTactical2{display: none; margin-left: 2vw;}
+
+#showOnTactical3{display: none; margin-left: 2vw;}
+
+#wfaEndNote{display: none; text-indent: none; height: 10%; width: 15%; margin-left: 28vw; margin-top: 35vh; border-radius: 8px; padding: .5vw; background: linear-gradient(to right, #C5D79D, #E9F1DC);border: 1px solid #D6D6D6;}
+
+#investmentVehicle{display: none;}
+
+#conservativePortfolioSize{display: none; margin-top: -7vh;}
+
+#accountSizeRadio{list-style-type: none;}
+
+#mfRadio{list-style-type: none;}
+
+#acctMgr{display: none;}
+
+#acctManagerRadio{list-style-type: none;}
+
+#moderateIncomeChooseApproach{margin-left: 10vw; margin-top: 4vh; display: none;}
+
+#moderateIncomeLinksSection{margin-top: 0; margin-left: 35vw; display: none; position: absolute;}
+
+#moderateIncomeOptions{margin-left: 17vh;}
+
+#moderateApproachChoices{display: none; list-style-type: none;margin-left: -38.5%; margin-top: 2vh;}
+
+#moderateIncomeInitiallinks{margin-top: -9.75vh; margin-left: 35vw; display: none;}
+
+#moderateIncomePassage{margin-left: 3.5vh; display: none;}
+
+#moderateIncomePassage1{margin-left: 3.5vh;}
+
+#modDiscAdvPortLinks{list-style-type: none;}
+
+#modDiscAdvPortLinks li{margin-top: .75vh;}
+
+#moderateApproachChoicesLinks{list-style-type: none;}
+
+#modIncAcctSize{display: none;}
+
+#modIncDesiredInvestmentVehicle{display: none; list-style-type: none;}
+
+#modIncDesiredInvestmentVehicleRadio{list-style-type: none;}
+
+#modIncAcctMgr{display: none;}
+
+#modIncAcctMgrRadio{list-style-type: none;}
+
+#moderateIncomePassageEnd{display: none; margin-left: 27vw; margin-top: -18vh;}
+
+#moderateIncomePassageEnd500{display: none; margin-left: 27vw; margin-top: -18vh;}
+
+#moderateIncomePassageEnd500B{display: none; margin-left: 27vw; margin-top: -18vh;}
+
+#moderateIncomePassageEnd500C{display: none; margin-left: 27vw; margin-top: -18vh;}
+
+#moderateIncomePassageEnd500Third{display: none; margin-left: 27vw; margin-top: -18vh;}
+
+#moderateIncomePassageEndCont{display: none; margin-left: 27vw;}
+
+#moderateIncomePassageEnd3rdParty{display: none; margin-left: 2vw;}
+
+#discretionaryTacticalPassage{display: none; margin-left: 2vw;}
+
+#modTacicalAcctSizeRadio{list-style-type: none;}
+
+#modTacticalAcctSize{display: none; }
+
+#modIncAcct25to49{display: none; margin-left: 3.5vh;}
+
+#modIncAcct50{display: none; margin-left: 3.5vh;}
+
+#modIncTacticalDesiredInvestmentVehicle{display: none;}
+
+#modCyclicalPassage1{display: none; margin-left: 2vw;}
+
+#modCyclicalPassage2{display: none; margin-left: 2vw;}
+
+#selectLinkMsg{margin-left: 37vw;}
+
+.masterRadio{margin-left: 15vw;}
+
+.master{margin-left: 14vw;}

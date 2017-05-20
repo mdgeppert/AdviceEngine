@@ -1,0 +1,23 @@
+.displayNone{display: none;}
+
+#mGILinksSection{margin-top: 47vh; margin-left: 35vw; overflow: auto; max-height: 47vh; height: 55vh;padding-right: 2vw;}
+
+#mGILinks{list-style-type: none;}
+
+#mGILinks li{padding-bottom: 8px;}
+
+#mGITree{margin-left: 10vw; margin-top: 4vh; display: none;}
+
+.mGIMessage{margin-left: 2vw; display: none;}
+
+#mGISelectLinkMsg{margin-left: 2vw; }
+
+#mGIL15{display: none;} 
+
+::-webkit-scrollbar{width:1px; }
+
+#mGIL19{display: none;}
+
+#mGIL20{display: none;}
+
+#mGITree{margin-top: -47vh; margin-left: 9vw;}

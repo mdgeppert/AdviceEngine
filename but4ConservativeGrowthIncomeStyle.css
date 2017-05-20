@@ -1,0 +1,17 @@
+.displayNone{display: none;}
+
+#cGILinksSection{margin-top: 3vh; margin-left: 35vw; display: none; overflow: auto; max-height: 45vh; height: 55vh;padding-right: 2vw;}
+
+#cGILinks{list-style-type: none;}
+
+#cGILinks li{padding-bottom: 8px;}
+
+#cGITree{margin-top: -45vh; margin-left: 9vw;}
+
+.cGIMessage{margin-left: 2vw; display: none;}
+
+#cGIChooseApproach{display: none;}
+
+#cGISelectLinkMsg{margin-left: 2vw; }
+
+#cGIL15{display: none;}

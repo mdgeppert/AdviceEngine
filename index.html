@@ -1,0 +1,1305 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Advice Engine</title>
+<link href="/pcg/technology/smartstation_apps/hidden/design/fonts/HCo_fonts.css" rel="stylesheet" type="text/css">
+<link href="/pcg/technology/smartstation_apps/hidden/design/ss_site.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="/pcg/technology/smartstation_apps/hidden/design/vfs8rzg-d.css">
+<link href="AdviceEngineStyle.css" rel="stylesheet" type="text/css"/>
+<link href="modalStyle.css" rel="stylesheet" type="text/css"/>
+<link href="modalClose" rel="stylesheet" type="text/css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="indexScript.js" type="text/javascript"></script>
+</head>
+
+<body style="overflow: none;">
+<div class="container" style="overflow: none;">
+  <div class="row">
+    <div class="col-md-12">
+      <div id="banner">
+        <strong id="pageTitle">Advice Engine</strong>
+      </div>
+      <section id="everything">
+        <div id="subBanner"><span id="subBannerText">Use the Advice Engine to...</span>
+          <ul id="AEInstrux">
+            <li>Easily pinpoint the opinions on the economy, the markets and specific asset classes</li>
+            <li>Apply advice within the open architecture of products available or clients' portfolios</li>
+          </ul>
+        </div>
+        <table id="menuBar">
+          <tr>	
+            <td><a class="menuTab"id="macrooutlook"  href="javascript:void window.open('https://my.advisor-connection.com/infomax/PCG/products/national_sales/norep/advice_engine_details.aspx','macroOutlook','width=1300px, height=1000px')"> Macro Outlook</a></td>
+            <td><input type="button" class="menuTab" id="assetClasses" style="font-family: ariel;" onClick="showbut2()" value="Asset Classes and Products"></td>
+            <td><input type="button" class="menuTab" id="sectorsProducts" style="font-family: ariel;" onClick="showbut3()" value="Sectors and Products"></td>
+            <td><a class="menuTab" id="incomeCenter" style="font-family: ariel" href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/technology/smartstation_apps/income_center/default.aspx','incomeCenter','width=1300px, height=1000px')">Income Center</a></td>
+            <td><input type="button" class="menuTab" style="font-family: ariel;" onClick="showHiddenBlock()" value="Recommendations"></td>
+          </tr>
+        </table>
+        <div id="thirdBanner"><span id="thirdBannerText">Click on a link within an asset class to view the tactical recommendation and investment vehicles to consider for each investment objective/sector.</span></div>
+        <div id="forthBanner"><span id="forthBannerText">Sector Strategies are provided by the Wells Fargo Investment Institute.</span></div>
+        <ul id="hiddenBlock">
+          <li class="hidden"> <strong style="color: #000000">-- <a class="commonLink" href="javascript:void window.open('https://my.advisor-connection.com/infomax/pcg/research/recommendations/client_risk_profile/client_risk_profile_homepage.aspx','investor profile','height=800, width=1500')"> Investor Profile Questionnaire</a></strong> </li>
+          <li class="hidden" style="margin-top: 0;"> <strong style="color: #000000">-- <a class="commonLink" href="javascript:void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/resources/general/portfolio_proposal/create_custom_models.pdf', 'Select Own Investments', 'height=800, width=1500')">Select my own investments within each asset class.</a></strong> </li>
+          <li class="hidden" style="margin-top: 2vh;"> <strong style="color: #000000">-- <a class="commonLink" href="but4.html" target="_blank">Select a <i>discretionary</i> Advisory portfolio.</a></strong></li>
+        </ul>
+        <script src="hiddenBlockScript.js"></script>
+		  
+        <section id="but2">
+          <div class="block"> <strong class="sectTitle">Traditional Income</strong>
+            <ul class="List">
+              <li class="commonLi" style="margin-left: -1.5vh;">Short Term Fixed income</li>
+              <li class="commonLi"><a class="commonLink" id="shortTermFixedIncomeTaxableModalLink" href="#">Taxable</a></li>
+              <li class="commonLi"><a class="commonLink" id="shortTermFixedIncomeTaxExemptModalLink" href="#">Tax Exempt</a></li>
+            </ul>
+            <ul class="tIList">
+              <li class="commonLi" style="margin-left: -1.5vh;">Intermediate-Term Fixed Income</li>
+              <li class="commonLi"><a class="commonLink" id="intermediateTermFixedIncomeTaxableModalLink" href="#">Taxable</a></li>
+              <li class="commonLi"><a class="commonLink" id="intermediateTermFixedIncomeTaxExemptModalLink" href="#">Tax Exempt</a></li>
+            </ul>
+            <ul class="tIList">
+              <li class="commonLi" style="margin-left: -1.5vh;">Long-Term Fixed Income</li>
+              <li class="commonLi"><a class="commonLink" id="longTermFixedIncomeTaxableModalLink" href="#">Taxable</a></li>
+              <li class="commonLi"><a class="commonLink" id="longTermFixedIncomeTaxExemptModalLink" href="#">Tax Exempt</a></li>
+            </ul>
+            <ul class="sublist">
+              <li class="commonLi">Related</li>
+              <li class="commonLi"><a class="commonLink"href="javascript:void window.open('https://my.advisor-connection.com/infomax/PCG/research/news/asg_publications/fixed_income_playbook.aspx','fixedIncomePlaybook','width=1200')">Fixed Income Playbook</a></li>
+              <li class="commonLi"><a class="commonLink"href="javascript:void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/fixed_income_strategy/municipal_playbook.pdf','muniBondPlaybook','width=1200')">Municipal Bond Playbook</a></li>
+            </ul>
+          </div>
+          <div class="block"> <strong class="sectTitle">Alternative Income</strong>
+            <ul class="List">
+              <li class="commonLi"><a class="commonLink" id="highYieldModalLink" href="#">High Yield</a></li>
+              <li class="commonLi"><a class="commonLink" id="internationalFixedIncomeModalLink" href="#">International Fixed Income</a></li>
+              <li class="commonLi"><a class="commonLink" id="emergingMarketfixedIncomeModalLink" href="#">Emerging Market Fixed Income</a> </li>
+              <li class="commonLi"><a class="commonLink" id="reitsModalLink" href="#">REITS</a></li>
+            </ul>
+              
+            <ul class="sublist">
+              <li class="commonLi">Related</li>
+              <li class="commonLi"><a class="commonLink" href="javascript:void window.open('https://my.advisor-connection.com/infomax/pcg/research/wfii/institute/resources/snapshots.pdf','internationalCommoditySnapshots','width=1200')">International &  Commodity Snapshots</a></li>
+            </ul>
+			</div>
+          <div class="block"> <strong class="sectTitle">Equities</strong>
+            <ul class="List">
+              <li class="commonLi"><a class="commonLink" id="largeCapGrowthEquitiesModalLink" href="#">Large-Cap Growth</a></li>
+              <li class="commonLi"><a class="commonLink" id="largeCapValueEquitiesModalLink" href="#">Large-Cap Value</a></li>
+              <li class="commonLi"><a class="commonLink" id="midCapGrowthEquitiesModalLink" href="#">Mid-Cap Growth</a></li>
+              <li class="commonLi"><a class="commonLink" id="midCapValueEquitiesModalLink" href="#">Mid-Cap Value</a></li>
+              <li class="commonLi"><a class="commonLink" id="smallCapGrowthEquitiesModalLink" href="#">Small-Cap Growth</a></li>
+              <li class="commonLi"><a class="commonLink" id="smallCapValueEquitiesModalLink" href="#">Small-Cap Value</a></li>
+              <li class="commonLi"><a class="commonLink" id="developedForeignEquitiesModalLink" href="#">Developed Foreign</a> </li>
+              <li class="commonLi"><a class="commonLink" id="emergingMarketsEquitiesModalLink" href="#">Emerging Markets</a></li>
+            </ul>
+             
+            <ul class="sublist">
+              <li class="commonLi">Related</li>
+              <li class="commonLi"><a class="commonLink" href="javascript:void window.open('https://my.advisor-connection.com/infomax/PCG/research/equity_strategy/resources/pdf/asgrecommendations.pdf','recommendations','width=1200')">Recommendations</a></li>
+            </ul>
+          </div>
+          <div class="block"> <strong class="sectTitle">Other</strong>
+              <table>
+                  <tr>
+            <ul class="List">
+              <li class="commonLi"><a class="commonLink" id="cashModalLink" href="#)">Cash</a></li>
+              <li class="commonLi"><a class="commonLink" id="commoditiesModalLink" href="#">Commodities</a></li>
+              <li class="commonLi"><a class="commonLink" id="alternativeInvestmentsModalLink" href="#">Alt. Investments</a></li>
+            </ul>  
+                      </tr>
+                  <tr>
+            <ul class="sublist" style="margin-top: -20vh;position: absolute;">
+              <li class="commonLi">Related</li>
+              <li class="commonLi"><a class="commonLink" href="javascript:void window.open('https://my.advisor-connection.com/infomax/pcg/research/wfii/institute/resources/snapshots.pdf','internationalCommoditySnapshots','width=1200')">International & Commodity Snapshots</a></li>
+            </ul>
+                      </tr>
+                  </table>
+          </div>
+          <script src="but2Script.js"></script>
+        </section>
+        <section id="but2Disclaimer">
+          <div id="but2DisclaimerLine"><strong>Disclaimer:</strong></div>
+          <div class="but2DisclaimerBlock">
+            <p class="disclaimerText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc. </p>
+            <p class="disclaimerText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc. </p>
+            <p class="disclaimerText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc. </p>
+            <p class="disclaimerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc. </p>
+            <p class="disclaimerText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc. </p>
+            <p class="disclaimerText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.</p>
+          </div>
+          <div class="but2DisclaimerBlock">
+            <p class="disclaimerText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc. </p>
+            <p class="disclaimerText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc. </p>
+            <p class="disclaimerText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc. </p>
+            <p class="disclaimerText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.</p>
+            <p class="disclaimerText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc. </p>
+          </div>
+          <div class="but2DisclaimerBlock">
+            <p class="disclaimerText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.</p>
+            <p class="disclaimerText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc. </p>
+            <p class="disclaimerText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc. </p>
+            <p class="disclaimerText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc. </p>
+          </div>
+        </section>
+        <section id="but3">
+          <table style="border-collapse: collapse;">
+            <!--Master Table-->
+            <tr>
+              <td><table class="but3Block">
+                  <!--Left Sub-Table-->
+                  <tr>
+                    <td><div id="equitySectors"><strong class="sectTitle">Equity Sectors</strong></div>
+                      <ul class="List">
+                        <li class="commonLi3"><a class="commonLink" id="consumerDiscretionaryModalLink" href="#">Consumer Discretionary</a></li>
+                        <li class="commonLi3"><a class="commonLink" id="consumerStaplesModalLink" href="#">Consumer Staples</a></li>
+                        <li class="commonLi3"><a class="commonLink" id="energyModalLink" href="#">Energy</a></li>
+                        <li class="commonLi3"><a class="commonLink" id="financialsModalLink" href="#">Financials</a></li>
+                        <li class="commonLi3"><a class="commonLink" id="healthCareModalLink" href="#">Health Care</a></li>
+                      </ul>
+                      <ul class="relatedList2" style="width: 22vw;">
+                        <li class="commonLi3">Related</li>
+                        <li class="commonLi3"><a class="commonLink" href="javascript:void window.open('https://my.advisor-connection.com/infomax/pcg/research/asg/equity_strategy/asgsectorsnapshotsexternal.pdf','equitySecSnap','width=1200')">Equity Sector Snapshots</a></li>
+                        <li class="commonLi3"><a class="commonLink" href="javascript:void window.open('https://my.advisor-connecton.com/infomax/PCG/Products/National_Sales/pdf/market_events.pdf', 'equitySecSnap','width=1200', 'Financials','width=665, height=415')">S&P Sector Performance Recommendations</a></li>
+                        <li class="commonLi3"><a class="commonLink" href="javascript:void window.open('https://my.advisor-connection.com/infomax/PCG/research/equity_strategy/sector_insights/sector_insights.aspx', 'sectorInsights','width=1200')">Sector Insights</a></li>
+                      </ul></td>
+                    <td><ul style="margin-top: -8vh; width: 16vw;">
+                        <li class="commonLi3"><a class="commonLink" id="industrialsModalLink" href="#">Industrials</a></li>
+                        <li class="commonLi3"><a class="commonLink" id="informationTechnologyModalLink" href="#">Information Technology</a></li>
+                        <li class="commonLi3"><a class="commonLink" id="materialsModalLink" href="#">Materials</a></li>
+                        <li class="commonLi3"><a class="commonLink" id="telecommModelLink" href="#">Telecommunications Services</a></li>
+                        <li class="commonLi3"><a class="commonLink" id="utilitiesModalLink" href="#">Utilities</a></li>
+                      </ul></td>
+                  </tr>
+                </table>
+                
+                <!--End Left Sub-Table--></td>
+              <td><table class="but3Block" style="margin-left: .2vw;">
+                  <!--Right Sub-Table-->
+                  <tr>
+                    <td><div id="fixedIncomeSectors"><strong class="sectTitle">Fixed Income Sectors</strong></div>
+                      <ul class="List">
+                        <li class="commonLi2"><a class="commonLink" id="agencySecuritiesModalLink" href="#">Agency Secutities</a></li>
+                        <li class="commonLi2"><a class="commonLink" id="corporateBondsModalLink" href="#">Corporate Bonds</a></li>
+                        <li class="commonLi2"><a class="commonLink" id="preferredsModalLink" href="#">Preferreds</a></li>
+                        <li class="commonLi2"><a class="commonLink" id="mortgageBackedSecuritiesModalLink" href="#">Mortgage Backed Securities</a></li>
+                      </ul>
+                      <ul class="relatedList3">
+                        <li class="commonLi2">Related</li>
+                        <li class="commonLi2"><a class="commonLink" href="javascript:void window.open('https://my.advisor-connection.com/infomax/PCG/research/news/asg_publications/fixedincomeplaybook.pdf','fixedIncomePlaybook','width=1200')">Fixed-Income Playbook</a></li>
+                        <li class="commonLi2"><a class="commonLink" href="javascript:void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/fixed_income_strategy/municipal_playbook.pdf','municipalBondPlaybook','width=1200')">Municipal Bond Playbook</a></li>
+                      </ul></td>
+                    <td><ul style="margin-top: -9vh; margin-left: 8vw;">
+                        <li class="commonLi2"><a class="commonLink" id="treasuriesModalLink" href="#">Treasuries</a></li>
+                        <li class="commonLi2"><a class="commonLink" id="tipsModalLink" href="#">TIPs</a></li>
+                        <li class="commonLi2"><a class="commonLink" id="municipalsModalLink" href="#"> Municipals</a></li>
+                      </ul></td>
+                  </tr>
+                </table>
+                
+                <!--End Right Sub-Table--></td>
+            </tr>
+          </table>
+			<script src="but3Script.js"></script>
+          <!--End Master Table-->
+        </section>
+        <section id="but3Disclaimer">
+          <div id="but3DisclaimerLine"> <strong>Disclaimer:</strong> </div>
+          <div class="but3DisclaimerBlock">
+            <p class="disclaimerText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.. </p>
+            <p class="disclaimerText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.</p>
+            <p class="disclaimerText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc. </p>
+            <p class="disclaimerText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc. </p>
+            <p class="disclaimerText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.</p>
+          </div>
+          <div class="but3DisclaimerBlock">
+            <p class="disclaimerText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc. </p>
+            <p class="disclaimerText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.</p>
+            <p class="disclaimerText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.</p>
+            <p class="disclaimerText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc. </p>
+            <p class="disclaimerText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.</p>
+            <p class="disclaimerText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.</p>
+          </div>
+        </section>
+        <!---------------------------------------Modals------------------------------------------> 
+        
+        <!--------------------------------agencySecuritiesModal---------------------------------->
+        
+        <div id="agencySecuritiesModal" class="modal">
+          <div class="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="neutral.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Agency Securities:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.    
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <center>
+              <table id="paneTable">
+                <tr>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/masters/program/fixedincomegrid_open.aspx','name','width=1200vw')">SMAs</a></td>
+                </tr>
+                <tr>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/fixed_income/resources/pdf/saleidea.pdf','name','width=1200vw')">Individual Secutities</a></td>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/fixed_income/uit/fxincunittrusthome.aspx','name','width=1200vw')">UITs</a></td>
+                </tr>
+                <tr>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed End Funds</a></td>
+                </tr>
+              </table>
+            </center>
+            <button class="asclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!------------------end agencySecuritiesModal------------------------> 
+        <!---------------------------alternativeInvestmentsModal------------------------>
+        <div id="alternativeInvestmentsModal" class="modal">
+          <div id="pane"> <span class="subTitle" style="margin-left: 20px;">Tactical Recommendation:</span>
+            <div id="modalBanner"><span id="paneTitle">Alternative Investments:</span></div>
+            <textarea style="width: 620px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.    
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/FileNotFoundInfoMAX.aspx?aspxerrorpath=/infomax/PCG/products/alternative_investments/products/managed_futures/default.aspx','name','width=1200vw')">Managed Futures</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/research/optimalblends/alternatives/alternative_strategies.aspx','name','width=1200vw')">Mutual Fund Model</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/program/alternativesgrid.aspx','name','width=1200vw')">Mutual Funds</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/FileNotFoundInfoMAX.aspx?aspxerrorpath=/infomax/PCG/products/alternative_investments/products/hedge_funds/default.aspx','name','width=1200vw')">Hedge Funds</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/STEP/Pages/Current.aspx?AdviceProductType=OTHCOMM','name','width=1200vw')">Market-Linked Investments</a></td>
+                <td><a href="javascript: void window.open('')"></a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('')"></a></td>
+                <td><a href="javascript: void window.open('')"></a></td>
+                <td><a href="javascript: void window.open('')"></a></td>
+              </tr>
+            </table>
+            <button class="aiclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!------------------------end alternativeInvestmentsModal------------------------> 
+        <!------------------------------cashModal---------------------------------->
+        <div id="cashModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="neutral.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Cash:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.  
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/resource_account/news/default.aspx','name','width=1200vw')">Resource Account</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/fixed_income/resources/pdf/saleidea.pdf','name','width=1200vw')">Treasury Bills</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/pcg/products/fixed_income/taxable_products/cds/cdhome.aspx#CDRates','name','width=1200vw')">Certificates of Deposit</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/pcg/products/mutual_funds/news/positionmoneyfunds.aspx','name','width=1200vw')">Money Market Funds</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/operations/assetmovecsh/othrcsh_mmkts/mmktrt01.aspx','name','width=1200vw')">Bank Deposit Sweep</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/pcg/products/fixed_income/taxable_products/commercial_paper/commercial_paper.aspx','name','width=1200vw')">Commercial Paper</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('')"></a></td>
+                <td><a href="javascript: void window.open('')"></a></td>
+                <td><a href="javascript: void window.open('')"></a></td>
+              </tr>
+            </table>
+            <button class="caclose"id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!-----------------------------end cashModal-------------------------------> 
+        <!-----------------------------commoditiesModal------------------------------->
+        <div id="commoditiesModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="neutral.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Commodities:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed-End Funds</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/STEP/Pages/Current.aspx?AdviceProductType=OTHCOMM','name','width=1200vw')">Market-Linked Investments</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/program/specialtygrid.aspx','name','width=1200vw')">Mutual Funds</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/Products/UITs/trends/uit_asset_classes.aspx#com','name','width=1200vw')">UITs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Syndicate/Pages/Current.aspx?AdviceProductType=OTHCOMM','name','width=1200vw')">Equity & CEF New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('')"></a></td>
+                <td><a href="javascript: void window.open('')"></a></td>
+                <td><a href="javascript: void window.open('')"></a></td>
+              </tr>
+            </table>
+            <button class="coclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!---------------------------end commoditiesModal------------------------> 
+        
+        <!------------------consumerDiscretionaryModal------------------------>
+        <div id="consumerDiscretionaryModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="overweight.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Consumer Discretionary:</span></div>
+            <textarea>TLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.   
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <center>
+              <table id="paneTable">
+                <tr>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/mutual_funds/resources/xls/mfq_screen.xls')">Mutual Funds</a></td>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                </tr>
+                <tr>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/uits/trends/uit_sector.aspx#cd','name','width=1200vw')">UITs</a></td>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/equity_strategy/resources/pdf/asgrecommendations.pdf','name','width=1200vw')">Individual Securities</a></td>
+                </tr>
+              </table>
+            </center>
+            <button class="cdclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!------------------end consumerDiscretionaryModal------------------------> 
+        <!------------------consumerStaplesModal------------------------>
+        <div id="consumerStaplesModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="neutral.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Consumer Staples:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.  
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <center>
+              <table id="paneTable">
+                <tr>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/mutual_funds/resources/xls/mfq_screen.xls')">Mutual Funds</a></td>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                </tr>
+                <tr>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/uits/trends/uit_sector.aspx#health','name','width=1200vw')">UITs</a></td>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/equity_strategy/resources/pdf/asgrecommendations.pdf','name','width=1200vw')">Individual Securities</a></td>
+                </tr>
+              </table>
+            </center>
+            <button class="csclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!------------------------end consumerStaplesModal--------------------------------> 
+        <!------------------------emergingMarketsFixedIncomeModal-------------------------------->
+        <div id="emergingMarketFixedIncomeModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="neutral.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Emerging Markets Fixed Income:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/fixed_income/taxable_products/international_bonds/internationalbondshome.aspx','name','width=1200vw')">Individual Securities</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/STEP/Pages/Current.aspx?AdviceProductType=ALTEMGFIX','name','width=1200vw')">Market-Linked Investments</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/program/fixedincomegrid.aspx#HY','name','width=1200vw')">Mutual Funds</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed-End Funds</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Syndicate/Pages/Current.aspx?AdviceProductType=ALTEMGFIX','name','width=1200vw')">Equity & CEF New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/Products/UITs/trends/uit_asset_classes.aspx#emd','name','width=1200vw')">UITs</a></td>
+                <td><a href="javascript: void window.open('')"></a></td>
+                <td><a href="javascript: void window.open('')"></a></td>
+              </tr>
+            </table>
+            <button class="emficlose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!------------------------end emergingMarketsFixedIncomeModal--------------------------------> 
+        <!------------------------corporateBondsModal-------------------------------->
+        <div id="corporateBondsModal" class="modal">
+          <div class="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="neutral.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Corporate Bonds:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.
+  </textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/masters/program/fixedincomegrid_open.aspx','name','width=1200vw')">SMAs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Syndicate/Pages/Current.aspx')">Equity & CEF New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/fixed_income_strategy/recommended_corporates.pdf','name','width=1200vw')">Individual Securities</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/fixed_income/uit/fxincunittrusthome.aspx','name','width=1200vw')">UITs</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed-End Funds</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('')"></a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/program/fixedincomegrid.aspx','name','width=1200vw')">Mutual Funds</a></td>
+                <td><a href="javascript: void window.open('')"></a></td>
+              </tr>
+            </table>
+            <button class="cbclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!----------------------end corporateBondsModal-----------------------> 
+        <!-----------------------------energyModal----------------------------------->
+        <div id="energyModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="underweight.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Energy:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.  
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <center>
+              <table id="paneTable">
+                <tr>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/mutual_funds/resources/xls/mfq_screen.xls')">Mutual Funds</a></td>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                </tr>
+                <tr>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/uits/trends/uit_sector.aspx#health','name','width=1200vw')">UITs</a></td>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/equity_strategy/resources/pdf/asgrecommendations.pdf','name','width=1200vw')">Individual Securities</a></td>
+                </tr>
+              </table>
+            </center>
+            <button class="eclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!----------------------end energyModal-----------------------> 
+        <!----------------------end financialsModal----------------------->
+        <div id="financialsModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="neutral.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Financials:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.    
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <center>
+              <table id="paneTable">
+                <tr>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/mutual_funds/resources/xls/mfq_screen.xls')">Mutual Funds</a></td>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                </tr>
+                <tr>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/uits/trends/uit_sector.aspx#health','name','width=1200vw')">UITs</a></td>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/equity_strategy/resources/pdf/asgrecommendations.pdf','name','width=1200vw')">Individual Securities</a></td>
+                </tr>
+              </table>
+            </center>
+            <button class="ficlose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!-----------------------------end financialsModal-----------------------------------> 
+        
+        <!------------------------------------equitiesModals----------------------------> 
+        
+        <!------------------------------------largeCapGrowthModal---------------------------->
+        <div id="largeCapGrowthEquitiesModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="overweight.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Equities, Large-Cap Growth:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.
+          </textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('http://pcg-infomax.wachovia.net/PortBuilder/Best_In_Class/Common_StockLargeCapGrowth.shtm','name','width=1200vw')">Individual Securities</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/STEP/Pages/Current.aspx?AdviceProductType=EQLARCAPG','name','width=1200vw')">Market-Linked Investments</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/program/usequitygrid.aspx','name','width=1200vw')">Mutual Funds</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed-End Funds</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Syndicate/Pages/Current.aspx?AdviceProductType=EQLARCAPG','name','width=1200vw')">Equity & CEF New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/masters/program/usequitygrid_open.aspx','name','width=1200vw')">Separately Managed Accounts</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/Products/UITs/trends/uit_asset_classes.aspx#lc','name','width=1200vw')">UITs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Preferred/Pages/Preferred.aspx?AdviceProductType=EQLARCAPG','name','width=1200vw')">Preferred New Issue</a></td>
+              </tr>
+            </table>
+            <button class="lcgeclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!------------------------------------end largeCapGrowthModal----------------------------> 
+        <!------------------------------------largeCapValueModal---------------------------->
+        <div id="largeCapValueEquitiesModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="overweight.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Equities, Large-Cap Value:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.  
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('http://pcg-infomax.wachovia.net/portbuilder/Best_In_Class/Common_StockLargeCapValue.shtm', 'Individual Securities','name','width=1200vw')">Individual Securities</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/STEP/Pages/Current.aspx?AdviceProductType=EQLARCAPV','name','width=1200vw')">Market-Linked Investments</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/program/usequitygrid.aspx','name','width=1200vw')">Mutual Funds</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed-End Funds</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Syndicate/Pages/Current.aspx?AdviceProductType=EQLARCAPV','name','width=1200vw')">Equity & CEF New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/masters/program/usequitygrid_open.aspx','name','width=1200vw')">Separately Managed Accounts</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/Products/UITs/trends/uit_asset_classes.aspx#lc','name','width=1200vw')">UITs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Preferred/Pages/Preferred.aspx?AdviceProductType=EQLARCAPV','name','width=1200vw')">Preferred New Issue</a></td>
+              </tr>
+            </table>
+            <button class="lcveclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!------------------------------------end largeCapValueModal----------------------------> 
+        <!------------------------------------midCapGrowthModal----------------------------------->
+        <div id="midCapGrowthEquitiesModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="neutral.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Equities, Mid-Cap Growth:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.
+
+   
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('http://pcg-infomax.wachovia.net/portbuilder/Best_In_Class/Common_StockMidCapGrowth.shtm')">Individual Securities</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf')">ETPs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/STEP?AdviceProductType=EQMIDCAPG')">Market-Linked Investments</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/program/usequitygrid.aspx#MC','name','width=1200vw')">Mutual Funds</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed-End Funds</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Syndicate/Pages/Current.aspx?AdviceProductType=EQMIDCAPG','name','width=1200vw')">Equity & CEF New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/masters/program/usequitygrid_open.aspx#SC','name','width=1200vw')">Separately Managed Accounts</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/Products/UITs/trends/uit_asset_classes.aspx#mc','name','width=1200vw')">UITs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Preferred/Pages/Preferred.aspx?AdviceProductType=EQMIDCAPG','name','width=1200vw')">Preferred New Issue</a></td>
+              </tr>
+            </table>
+            <button class="mcgeclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!------------------------------------end midCapGrowthModal--------------------------------> 
+        <!------------------------------------midCapValueModal----------------------------------->
+        <div id="midCapValueEquitiesModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="neutral.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Equities, Mid-Cap Value:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('http://pcg-infomax.wachovia.net/portbuilder/Best_In_Class/Common_StockMidCapValue.shtm')"> Individual Securities</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf')">ETPs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/STEP/Pages/Current.aspx?AdviceProductType=EQMIDCAPV')">Market-Linked Investments</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/program/usequitygrid.aspx#MC','name','width=1200vw')">Mutual Funds</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed-End Funds</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Syndicate/Pages/Current.aspx?AdviceProductType=EQMIDCAPV','name','width=1200vw')">Equity & CEF New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/masters/program/usequitygrid_open.aspx#SC','name','width=1200vw')">Separately Managed Accounts</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/Products/UITs/trends/uit_asset_classes.aspx#mc','name','width=1200vw')">UITs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Preferred/Pages/Preferred.aspx?AdviceProductType=EQMIDCAPV','name','width=1200vw')">Preferred New Issue</a></td>
+              </tr>
+            </table>
+            <button class="mcveclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!------------------------------------end midCapValueModal--------------------------------> 
+        <!------------------------------------smallCapGrowthModal----------------------------------->
+        <div id="smallCapGrowthEquitiesModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="underweight.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Equities, Small-Cap Growth:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.  
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('http://pcg-infomax.wachovia.net/portbuilder/Best_In_Class/Common_StockSmallCapGrowth.shtm','name','width=1200vw')">Individual Securities</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/STEP/Pages/Current.aspx?AdviceProductType=EQSMLCAPG','name','width=1200vw')">Market-Linked Investments</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/program/usequitygrid.aspx#MC','name','width=1200vw')">Mutual Funds</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed-End Funds</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Syndicate/Pages/Current.aspx?AdviceProductType=EQSMLCAPG','name','width=1200vw')">Equity & CEF New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/masters/program/usequitygrid_open.aspx#SC','name','width=1200vw')">Separately Managed Accounts</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/Products/UITs/trends/uit_asset_classes.aspx#sc','name','width=1200vw')">UITs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Preferred/Pages/Preferred.aspx?AdviceProductType=EQSMLCAPG','name','width=1200vw')">Preferred New Issue</a></td>
+              </tr>
+            </table>
+            <button class="scgeclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!------------------------------------end smallCapGrowthModal--------------------------------> 
+        <!------------------------------------smallCapValueModal----------------------------------->
+        <div id="smallCapValueEquitiesModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="underweight.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Equities, Small-Cap Value:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('http://pcg-infomax.wachovia.net/portbuilder/Best_In_Class/Common_StockSmallCapValue.shtm','name','width=1200vw')">Individual Securities</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/STEP/Pages/Current.aspx?AdviceProductType=EQSMLCAPV','name','width=1200vw')">Market-Linked Investments</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/program/usequitygrid.aspx#MC','name','width=1200vw')">Mutual Funds</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed-End Funds</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Syndicate/Pages/Current.aspx?AdviceProductType=EQSMLCAPV','name','width=1200vw')">Equity & CEF New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/masters/program/usequitygrid_open.aspx#SC','name','width=1200vw')">Separately Managed Accounts</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/Products/UITs/trends/uit_asset_classes.aspx#sc','name','width=1200vw')">UITs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Preferred/Pages/Preferred.aspx?AdviceProductType=EQSMLCAPV','name','width=1200vw')">Preferred New Issue</a></td>
+              </tr>
+            </table>
+            <button class="scveclose"id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!------------------------------------end smallCapValueModal--------------------------------> 
+        <!------------------------------------developed ForeignModal----------------------------------->
+        <div id="developedForeignEquitiesModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="overweight.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Equities, Developed Foreign:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('http://pcg-infomax.wachovia.net/portbuilder/Best_In_Class/Common_StockInternationalEquity.shtm','name','width=1200vw')">Individual Securities</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/STEP/Pages/Current.aspx?AdviceProductType=EQDEVFRG','name','width=1200vw')">Market-Linked Investments</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/program/internationalgrid.aspx','name','width=1200vw')">Mutual Funds</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed-End Funds</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Syndicate/Pages/Current.aspx?AdviceProductType=EQDEVFRG','name','width=1200vw')">Equity & CEF New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/masters/program/intlglobalgrid_open.aspx','name','width=1200vw')">Separately Managed Accounts</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/Products/UITs/trends/uit_asset_classes.aspx#df','name','width=1200vw')">UITs</a></td>
+              </tr>
+            </table>
+            <button class="dfeclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!------------------------------------end developedForeignModal--------------------------------> 
+        <!------------------------------------emergingMarketsModal----------------------------------->
+        <div id="emergingMarketsEquitiesModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="underweight.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Equities, Emerging Markets:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/program/internationalgrid.aspx#EM','name','width=1200vw')">Mutual Funds</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/STEP/Pages/Current.aspx?AdviceProductType=EQEMGMKT','name','width=1200vw')">Market-Linked Investments</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/Products/UITs/trends/uit_asset_classes.aspx#em','name','width=1200vw')">UITs</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed-End Funds</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Syndicate/Pages/Current.aspx?AdviceProductType=EQEMGMKT','name','width=1200vw')">Equity & CEF New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/masters/program/intlglobalgrid_open.aspx','name','width=1200vw')">Separately Managed Accounts</a></td>
+              </tr>
+            </table>
+            <button class="emeclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!------------------------------------end emergingMarketsModal--------------------------------> 
+        <!-----------------------------------end equitiesModal----------------------------> 
+        <!------------------------------healthCareModal----------------------------------->
+        <div id="healthCareModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="overweight.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Health Care:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc..  
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <center>
+              <table id="paneTable">
+                <tr>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/mutual_funds/resources/xls/mfq_screen.xls')">Mutual Funds</a></td>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                </tr>
+                <tr>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/uits/trends/uit_sector.aspx#health')">UITs</a></td>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/equity_strategy/resources/pdf/asgrecommendations.pdf','name','width=1200vw')">Individual Securities</a></td>
+                </tr>
+              </table>
+            </center>
+            <button class="hcclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!--------------------------------end healthCareModal--------------------------------> 
+        <!-----------------------------------highYieldModal-------------------------------->
+        <div id="highYieldModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="neutral.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">High Yield:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.   
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/pcg/products/fixed_income/taxable_products/high_yield_bonds/highyieldhome.aspx','name','width=1200vw')">Individual Securities</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/STEP/Pages/Current.aspx?AdviceProductType=ALTHIGHTY','name','width=1200vw')">Market-Linked Investments</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/program/fixedincomegrid.aspx#HY','name','width=1200vw')">Mutual Funds</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed-End Funds</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Syndicate/Pages/Current.aspx?AdviceProductType=ALTHIGHTY','name','width=1200vw')">Equity & CEF New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/Products/UITs/trends/uit_asset_classes.aspx#hy','name','width=1200vw')">UITs</a></td>
+                <td><a href="javascript: void window.open('')"></a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Preferred/Pages/Preferred.aspx?AdviceProductType=ALTHIGHTY','name','width=1200vw')">Preferred New Issue</a></td>
+              </tr>
+            </table>
+            <button class="hyclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!--------------------------end highYieldModal--------------------------------> 
+        <!--------------------------industrialsModal-------------------------------->
+        <div id="industrialsModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="overweight.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Industrials:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.  
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <center>
+              <table id="paneTable">
+                <tr>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/mutual_funds/resources/xls/mfq_screen.xls')">Mutual Funds</a></td>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                </tr>
+                <tr>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/uits/trends/uit_sector.aspx#health')">UITs</a></td>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/equity_strategy/resources/pdf/asgrecommendations.pdf','name','width=1200vw')">Individual Securities</a></td>
+                </tr>
+              </table>
+            </center>
+            <button class="inclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!-----------------------------end industrialsModal----------------------------------> 
+        <!---------------------------informationTechnologyModal--------------------------->
+        <div id="informationTechnologyModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="overweight.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Information Technology:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.  
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <center>
+              <table id="paneTable">
+                <tr>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/mutual_funds/resources/xls/mfq_screen.xls')">Mutual Funds</a></td>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                </tr>
+                <tr>
+                  <td><a href="javascript: void 			window.open('https://my.advisor-connection.com/infomax/PCG/products/uits/trends/uit_sector.aspx#health','name','width=1200vw')">UITs</a></td>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/equity_strategy/resources/pdf/asgrecommendations.pdf','name','width=1200vw')">Individual Securities</a></td>
+                </tr>
+              </table>
+            </center>
+            <button class="itclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!----------------------------end informationTechnologyModal------------------------------> 
+        <!----------------------------end informationTechnologyModal------------------------------>
+        <div id="internationalFixedIncomeModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="underweight.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">International Fixed Income:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc. 
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/fixed_income/taxable_products/international_bonds/internationalbondshome.aspx','name','width=1200vw')">Individual Securities</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/STEP/Pages/Current.aspx?AdviceProductType=ALTINTFIX','name','width=1200vw')">Market-Linked Investments</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/program/fixedincomegrid.aspx','name','width=1200vw')">Mutual Funds</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed-End Funds</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Syndicate/Pages/Current.aspx?AdviceProductType=ALTINTFIX','name','width=1200vw')">Equity & CEF New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('')"></a></td>
+                <td><a href="javascript: void window.open('')"></a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Preferred/Pages/Preferred.aspx?AdviceProductType=ALTINTFIX','name','width=1200vw')">Preferred New Issue</a></td>
+              </tr>
+            </table>
+            <button class="ificlose" id="close" type="button">close</button>
+          </div>
+        </div>
+        <!------------------------end internationalFixedIncome------------------------> 
+        <!-----------------------------materialsModal--------------------------->
+        <div id="materialsModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="overweight.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Materials:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.    
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <center>
+              <table id="paneTable">
+                <tr>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/mutual_funds/resources/xls/mfq_screen.xls')">Mutual Funds</a></td>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                </tr>
+                <tr>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/uits/trends/uit_sector.aspx#materials','name','width=1200vw')">UITs</a></td>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/equity_strategy/resources/pdf/asgrecommendations.pdf','name','width=1200vw')">Individual Securities</a></td>
+                </tr>
+              </table>
+            </center>
+            <button class="maclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!-----------------------------------end materialsModal----------------------------> 
+        <!---------------------------mortgageBackedSecuritiesModal---------------------->
+        <div id="mortgageBackedSecuritiesModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="neutral.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Mortgage-Backed Secutities:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc. 
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/masters/program/fixedincomegrid_open.aspx','name','width=1200vw')">SMAs</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/fixed_income/resources/pdf/saleidea.pdf','name','width=1200vw')">Individual Secutities</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/fixed_income/uit/fxincunittrusthome.aspx','name','width=1200vw')">UITs</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed-End Funds</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Syndicate/Pages/Current.aspx','name','width=1200vw')">Equity & CEF New Issue</a></td>
+              </tr>
+            </table>
+            <button class="mbsclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!---------------------end mortgageBackSecuritiesModal------------------------------> 
+        <!------------------------municipalsModal--------------------------------->
+        <div id="municipalsModal" class="modal">
+          <div id="pane"> <span class="subTitle" style="margin-left: 20px;">Tactical Recommendation:</span>
+            <div id="modalBanner"><span id="paneTitle">Municipals:</span></div>
+            <textarea style="width: 620px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.
+  </textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/masters/program/fixedincomegrid_open.aspx','name','width=1200vw')">SMAs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Syndicate/Pages/Current.aspx')">Equity & CEF New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/fixed_income/resources/pdf/saleidea.pdf','name','width=1200vw')">Individual Securities</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/fixed_income/uit/fxincunittrusthome.aspx','name','width=1200vw')">UITs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Muni/Pages/Negotiated.aspx','name','width=1200vw')">Municipal New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed-End Funds</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/program/fixedincomegrid.aspx','name','width=1200vw')">Mutual Funds</a></td>
+                <td><a href="javascript: void window.open('')"></a></td>
+              </tr>
+            </table>
+            <button id="close" class="muclose" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!---------------------------------end municipalsModal----------------------------> 
+        <!---------------------------------preferredsModal--------------------------->
+        <div id="preferredsModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="neutral.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Preferreds:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc. 
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/masters/program/fixedincomegrid_open.aspx','name','width=1200vw')">SMAs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Syndicate/Pages/Current.aspx','name','width=1200vw')">Equity & CEF New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/fixed_income_strategy/recommended_preferreds.pdf','name','width=1200vw')">Individual Securities</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/fixed_income/uit/fxincunittrusthome.aspx','name','width=1200vw')">UITs</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed-End Funds</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('')"></a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/pcg/products/fixed_income/taxable_products/preferred/fixedrate.aspx','name','width=1200vw')">Preferred New Issue</a></td>
+                <td><a href="javascript: void window.open('')"></a></td>
+              </tr>
+            </table>
+            <button class="pclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!-------------------------end preferredsModal----------------------------> 
+        <!-------------------------reitsModal---------------------------->
+        <div id="reitsModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="overweight.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">REITS:</span></div>
+            <textarea>CLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.  
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('http://pcg-infomax.wachovia.net/PortBuilder/Best_In_Class/Common_StockREITEquity.shtm','name','width=1200vw')">Individual Securities</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/STEP/Pages/Current.aspx?AdviceProductType=ALTREITS','name','width=1200vw')">Market-Linked Investments</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/program/specialtygrid.aspx','name','width=1200vw')">Mutual Funds</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed-End Funds</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Syndicate/Pages/Current.aspx?AdviceProductType=ALTREITS','name','width=1200vw')">Equity & CEF New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/masters/program/specialtygrid_open.aspx','name','width=1200vw')">Separately Managed Accounts</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/Products/UITs/trends/uit_asset_classes.aspx#reits','name','width=1200vw')">UITs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Preferred/Pages/Preferred.aspx?AdviceProductType=ALTREITS','name','width=1200vw')">Preferred New Issue</a></td>
+              </tr>
+            </table>
+            <button class="rclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!------------------------------end reitsModal---------------------------------> 
+        <!-------------------------telecommunicationsServicesModal--------------------------------->
+        <div id="telecommModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="neutral.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Telecommunication Services:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <center>
+              <table id="paneTable">
+                <tr>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/mutual_funds/resources/xls/mfq_screen.xls')">Mutual Funds</a></td>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                </tr>
+                <tr>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/uits/trends/uit_sector.aspx#health','name','width=1200vw')">UITs</a></td>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/equity_strategy/resources/pdf/asgrecommendations.pdf','name','width=1200vw')">Individual Securities</a></td>
+                </tr>
+              </table>
+            </center>
+            <button class="teclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!----------------------------end telecommunicationsServicesModal-------------------------> 
+        <!--------------------------TIPSModal------------------------------------->
+        <div id="tipsModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="overweight.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">TIPs:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc. 
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/masters/program/fixedincomegrid_open.aspx','name','width=1200vw')">SMAs</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/fixed_income/resources/pdf/saleidea.pdf','name','width=1200vw')">Individual Securities</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/fixed_income/uit/fxincunittrusthome.aspx','name','width=1200vw')">UITs</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed-End Funds</a></td>
+              </tr>
+            </table>
+            <button class="tipclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!----------------------------end TIPSModal--------------------------------------> 
+        <!----------------------------traditionalIncome--------------------------------------> 
+        <!-------------shortTermFixedIncome--------------------------->
+        <div id="shortTermFixedIncomeTaxableModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="neutral.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Short Term Fixed Income - Taxable:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/fixed_income_strategy/recommended_corporates.pdf','name','width=1200vw')">Individual Securities</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/STEP/Pages/Current.aspx?adviceProductType=SHTFIXTAX','name','width=1200vw')">Market-Linked Investments</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/program/fixedincomegrid.aspx','name','width=1200vw')">Mutual Funds</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed-End Funds</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Syndicate/Pages/Current.aspx?adviceProductType=SHTFIXTAX','name','width=1200vw')">Equity & CEF New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/masters/program/fixedincomegrid_open.aspx','name','width=1200vw')">Separately Managed Accounts</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/Products/UITs/trends/uit_asset_classes.aspx#short','name','width=1200vw')">UITs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Preferred/Pages/Preferred.aspx?adviceProductType=SHTFIXTAX','name','width=1200vw')">Preferred New Issue</a></td>
+              </tr>
+            </table>
+            <button class="stfitclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!---------------------------Tax Exempt-------------------------------------------------------------------->
+        <div id="shortTermFixedIncomeTaxExemptModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="neutral.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Short-Term Fixed Income - Tax Exempt:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc. 
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/fixed_income/resources/pdf/saleidea.pdf','name','width=1200vw')">Individual Securities</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETFs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Muni/Pages/Negotiated.aspx?adviceProductType=SHTFIXTAXE','name','width=1200vw')">Municipal New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/program/fixedincomegrid.aspx','name','width=1200vw')">Mutual Funds</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed-End Funds</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Syndicate/Pages/Current.aspx?adviceProductType=SHTFIXTAXE','name','width=1200vw')">Equity & CEF New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/masters/program/fixedincomegrid_open.aspx','name','width=1200vw')">Separately Managed Accounts</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/Products/UITs/trends/uit_asset_classes.aspx#short','name','width=1200vw')">UITs</a></td>
+                <td><a href="javascript: void window.open('')"></a></td>
+              </tr>
+            </table>
+            <button class="stfiteclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!-------------end shortTermFixedIncome---------------------------> 
+        <!-------------intermediateTermFixedIncome--------------------------->
+        <div id="intermediateTermFixedIncomeTaxableModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="overweight.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Intermediate-Term Fixed Income - Taxable:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/fixed_income_strategy/recommended_corporates.pdf','name','width=1200vw')">Individual Securities</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/STEP/Pages/Current.aspx?adviceProductType=INTFIXTAX','name','width=1200vw')">Market-Linked Investments</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/program/fixedincomegrid.aspx','name','width=1200vw')">Mutual Funds</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed-End Funds</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Syndicate/Pages/Current.aspx?adviceProductType=INTFIXTAX','name','width=1200vw')">Equity & CEF New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/masters/program/fixedincomegrid_open.aspx','name','width=1200vw')">Separately Managed Accounts</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/Products/UITs/trends/uit_asset_classes.aspx#int','name','width=1200vw')">UITs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Preferred/Pages/Preferred.aspx?adviceProductType=INTFIXTAX','name','width=1200vw')">Preferred New Issue</a></td>
+              </tr>
+            </table>
+            <button class="itfitclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!--------------------Tax Exempt---------------------------------------------->
+        <div id="intermediateTermFixedIncomeTaxExemptModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="overweight.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Intermediate-Term Fixed Income - Tax Exempt:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.  
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/fixed_income/resources/pdf/saleidea.pdf','name','width=1200vw')">Individual Securities</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Muni/Pages/Negotiated.aspx?adviceProductType=INTFIXTAXE','name','width=1200vw')">Municipal New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/program/fixedincomegrid.aspx','name','width=1200vw')">Mutual Funds</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed-End Funds</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Syndicate/Pages/Current.aspx?adviceProductType=INTFIXTAXE','name','width=1200vw')">Equity & CEF New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/masters/program/fixedincomegrid_open.aspx','name','width=1200vw')">Separately Managed Accounts</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/Products/UITs/trends/uit_asset_classes.aspx#int','name','width=1200vw')">UITs</a></td>
+                <td><a href="javascript: void window.open('')"></a></td>
+              </tr>
+            </table>
+            <button class="itfiteclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        
+        <!-------------end intermediateTermFixedIncome---------------------------> 
+        <!-------------longTermFixedIncome--------------------------->
+        
+        <div id="longTermFixedIncomeTaxableModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="underweight.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Long-Term Fixed Income - Taxable:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc. 
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/fixed_income_strategy/recommended_corporates.pdf','name','width=1200vw')">Individual Securities</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/STEP/Pages/Current.aspx?AdviceProductType=LONFIXTAX','name','width=1200vw')">Market-Linked Investments</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/program/fixedincomegrid.aspx','name','width=1200vw')">Mutual Funds</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed-End Funds</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Syndicate/Pages/Current.aspx?AdviceProductType=LONFIXTAX','name','width=1200vw')">Equity & CEF New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/masters/program/fixedincomegrid_open.aspx','name','width=1200vw')">Separately Managed Accounts</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/Products/UITs/trends/uit_asset_classes.aspx#long','name','width=1200vw')">UITs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Preferred/Pages/Preferred.aspx?AdviceProductType=LONFIXTAX','name','width=1200vw')">Preferred New Issue</a></td>
+              </tr>
+            </table>
+            <button class="ltfitclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!------------------------------------Tax Exempt--------------------------------->
+        <div id="LongTermFixedIncomeTaxExemptModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="underweight.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Long-Term Fixed Income - Tax Exempt:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.  
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/fixed_income/resources/pdf/saleidea.pdf','name','width=1200vw')">Individual Securities</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Muni/Pages/Negotiated.aspx?adviceProductType=LONFIXTAXE','name','width=1200vw')">Municipal New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/mfadvisory/fundsource/program/fixedincomegrid.aspx','name','width=1200vw')">Mutual Funds</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed-End Funds</a></td>
+                <td><a href="javascript: void window.open('http://syndicateinvestments.wellsfargo.com/Syndicate/Pages/Current.aspx?AdviceProductType=LONFIXTAXE','name','width=1200vw')">Equity & CEF New Issue</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/masters/program/fixedincomegrid_open.aspx','name','width=1200vw')">Separately Managed Accounts</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/Products/UITs/trends/uit_asset_classes.aspx#long','name','width=1200vw')">UITs</a></td>
+                <td><a href="javascript: void window.open('')"></a></td>
+              </tr>
+            </table>
+            <button class="ltfiteclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!-------------end longTermFixedIncome---------------------------> 
+        <!---------------------------------end traditionalIncome--------------------------------------> 
+        <!---------------------------------treasuriesModal-------------------------------------->
+        <div id="treasuriesModal" class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="neutral.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Treasuries:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.  
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <table id="paneTable">
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/advisory/separateaccounts/masters/program/fixedincomegrid_open.aspx')">SMAs</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/fixed_income/resources/pdf/saleidea.pdf','name','width=1200vw')">Individual Securities</a></td>
+              </tr>
+              <tr>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/fixed_income/uit/fxincunittrusthome.aspx','name','width=1200vw')">UITs</a></td>
+                <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/asg/closed_end_funds_and_etfs/reports/cef_selectlist.pdf','name','width=1200vw')">Closed-End Funds</a></td>
+              </tr>
+            </table>
+            <button class="trclose" id="close" type="button">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!-----------------------------------end treasuriesModal---------------------------------------> 
+        <!-----------------------------------------utilitiesModel------------------------------------------------>
+        <div id="utilitiesModal"class="modal">
+          <div id="pane"> <span class="subTitle">Tactical Recommendation:</span> <img src="underweight.jpg"> <!-- img dimensions:  200px x 160px -->
+            <div id="modalBanner"><span id="paneTitle">Utilities:</span></div>
+            <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et euismod ex. Praesent sed commodo tellus. Curabitur ut erat accumsan, tempus sapien auctor, lacinia nibh. Curabitur convallis ultricies dui, ut egestas mi semper id. Aliquam vitae orci congue, aliquet nulla id, ultricies nunc.  
+</textarea>
+            <div id="line"></div>
+            <span id="question">Which investment vehicle would you like to consider?</span>
+            <center>
+              <table id="paneTable">
+                <tr>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/products/mutual_funds/resources/xls/mfq_screen.xls')">Mutual Funds</a></td>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/closed_end_funds_and_etfs/resources/pdf/etfpicks.pdf','name','width=1200vw')">ETPs</a></td>
+                </tr>
+                <tr>
+                  <td><a href="javascript: void 			window.open('https://my.advisor-connection.com/infomax/PCG/products/uits/trends/uit_sector.aspx#health','name','width=1200vw')">UITs</a></td>
+                  <td><a href="javascript: void window.open('https://my.advisor-connection.com/infomax/PCG/research/equity_strategy/resources/pdf/asgrecommendations.pdf','name','width=1200vw')">Individual Securities</a></td>
+                </tr>
+              </table>
+            </center>
+            <button class="uclose" id="close" type="button" onclick="javascript:window.close()">close</button>
+            <script src="modalScripts.js" type="text/javascript"></script> 
+          </div>
+        </div>
+        <!----------------------------end utilitiesModel---------------------------------> 
+    </div>
+  </div>
+</div>
+</body>
+</html>
