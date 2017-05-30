@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{background: #F2F2F2;}
+
+#everything{margin-left: 7vh;}
+
+#banner{width: 100.5vw; margin-left: -1vw; margin-top: -1vh; min-height: 8vh;border-bottom: 2px solid #D6D6D6; background: #FFFFFF;}
+
+#pageTitle{font-size: 2.6em; margin-left: 6vw; margin-top: 1.25vh; font-family: ariel; font-weight: 600; position: absolute;}
+
+#subBanner{width: 90vw; margin-top:2vh; height: 8vh; border: 1px solid #D6D6D6; background: #FFFFFF;}
+
+#subBannerText{margin-top: 1vh; margin-left: .5vw; font-size: 1vw; position: absolute;}
+
+#thirdBanner{width: 90vw; height: 4vh; margin-top: 1vh; background:#FFFFFF; border: 1px solid #D6D6D6;}
+
+#thirdBannerText{margin-top: 1vh; margin-left: .5vw; font-size: 1vw; position: absolute;}
+
+#forthBanner{width: 90vw; height: 4vh; margin-top: 1vh; background:#FFFFFF; border: 1px solid #D6D6D6;}
+
+#forthBannerText{margin-top: 1vh; position: absolute; font-size: 1vw; margin-left: .5vw;}
+
+#AEInstrux{margin-left: 2vw; margin-top: 3vh; font-size: .99vw; width: 40vw; position: absolute;}
+
+#chooseOption{margin-left: 13.5vw; background: linear-gradient(to right, #FFE28E, #F2F2F2); width: 8.5vw;}
+
+h1{margin-top: 1vh; margin-left: 6vw; position: absolute;}
+
+.hidden{list-style-type: none; color: #0000FF !important; margin-top: -2vh; margin-left: 50vw; width:28vw; position: absolute;}
+
+#hiddenBlock{ margin-top: 2vh; display: none;}
+
+.menuTab{display: block; margin-top: 2vh; width: 12vw; background: #FFFFFF; color: #00698B; padding: .5vh 0.25vw .5vh .25vw; border: 1px solid #D6D6D6; border-collapse: collapse; text-align:center; font-size: .9vw;}
+
+.active{background:#00698B !important; color: #FFFFFF;}
+
+#but2{margin-top: 3vh; display: none;}
+
+#but3{margin-top: 3vh; display: none;}
+
+.block{display: inline-block; vertical-align: top; margin-left: .05vw; width: 23.8%; background: #FFFFFF; height:  40vh;  border: 2px solid #d6d6d6;}
+
+.but3Block{display: inline-block; vertical-align: top; margin-top: -.1vh; background: #FFFFFF; width:44.93vw; height: 38vh; border: 2px solid #D6D6D6;}
+
+.commonLink{color: #0000FF; font-size: 1vw;}
+
+.commonLi{list-style-type: none; font-size: 1vw; position: relative;}
+
+.commonLi2{padding: 0 0 .75vh 0; list-style-type: none;}
+
+.commonLi3{padding: 0 0 .75vh 0; list-style-type: none;}
+
+.sectTitle{margin-left: 2vh;margin-top: 1vh; position: absolute; font-size: 1.3vw;}
+
+.List{margin-top: 5.3vh; text-decoration: none; width: 20vw;}
+
+.sublist{bottom: 34vh; position: absolute;}
+
+.tIList{; text-decoration: none; position: relative;}
+
+#alternativeIncomeBlock{}
+
+#ai{margin-left: 2vh; margin-top: 1vh; position: absolute; font-size: 1.3vw;}
+
+#eq{margin-left: 2vh;margin-top: 1vh; position: absolute; font-size: 1.3vw;}
+
+.disclaimerText{text-indent: 20px; text-align: justify; font-size: .9vw !important; margin-top: 1vh;}
+
+#but2Disclaimer{display: none; margin-left: 2.5vw; width: 90vw;}
+
+#but2DisclaimerLine{position: absolute; margin-top:1.5vh;}
+
+.but2DisclaimerBlock{width: 27vw; margin-top: 3vh; display: inline-block;padding-right:2vw; vertical-align: top;}
+
+.but3List{margin-top: 5vh;}
+
+#but3Disclaimer{display: none; width: 110vw; margin-right: 2vw; }
+
+#but3DisclaimerLine{ position: absolute; margin-top: 2vh;}
+
+.but3DisclaimerBlock{width: 38.33333%; margin-top: 5vh; display: inline-block;padding-right: 4vw; vertical-align: top;}
+
+#equitySectors{margin-left: 1vw; margin-top: 1.5vh; width: 8vw;}
+
+#EQtext{font-size: 1vw;}
+
+#fixedIncomeSectors{margin-left: 1vw;; margin-top: 1vh; width: 12vw;}
+
+.modal {display: none; position: fixed; z-index: 1; margin-left: 25vw; top: 10vh; background: #d8d8d8; height: 45vh; width: 34vw;}
+
+.pane{height: 400px; width: 650px; border: 1px solid #000000; background: #F2F3EE; }
+
+#close{margin-left: 290px; position: absolute; margin-top: 20px; border-radius: 5px; width: 60px; height: 30px; background:linear-gradient(to right, #FFFFFF, #C9E1EB); }
+
+ #thirdBanner{display: none;}
+ 
+ #thirdBannerText{display: none;}
+ 
+ #forthBanner{display: none;}
+ 
+ #forthBannerText{display: none;}
+
+.relatedList2{font: 1.2vw ariel;}
+
+.relatedList3{font: 1.2vw ariel; margin-top: 4vh;}
+
+#alertNote{margin-top: 65vh; background: yellow; width: 39vw; margin-left: 23vw;}
